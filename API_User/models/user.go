@@ -114,8 +114,8 @@ func ResetPasswordAndSendEmail(db *sqlx.DB, email, newPassword string) error {
 	}
 	// Gửi email chứa mật khẩu mới
 	// Thông tin xác thực Gmail
-	emailFrom := "22521546@gm.uit.edu.vn" // Địa chỉ email của bạn
-	password := "1162348797"              // Mật khẩu email của bạn
+	emailFrom := "" // Địa chỉ email của bạn
+	password := ""  // Mật khẩu email của bạn
 
 	// Thông tin SMTP của Gmail
 	smtpHost := "smtp.gmail.com"

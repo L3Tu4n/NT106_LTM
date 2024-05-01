@@ -130,7 +130,7 @@ func LoginUser(c *gin.Context) {
 		return
 	}
 	//Luu token vao cookie
-	c.SetCookie("token", token, 86400, "/", "", false, true)
+	c.SetCookie("token", token, 86400, "/", "", true, true)
 	//
 	c.JSON(http.StatusOK, gin.H{"token": token, "user_id": user.ID})
 }
