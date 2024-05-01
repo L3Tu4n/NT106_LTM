@@ -21,17 +21,15 @@ func init() {
 }
 
 type JWTClaim struct {
-	Username string `json:"username"`
-	Email    string `json:"email"`
+	Email string `json:"email"`
 	jwt.StandardClaims
 }
 
-func GenerateJWT(email string, username string) (tokenString string, err error) {
+func GenerateJWT(email string) (tokenString string, err error) {
 
 	expirationTime := time.Now().Add(12 * time.Hour)
 	claims := &JWTClaim{
-		Email:    email,
-		Username: username,
+		Email: email,
 		StandardClaims: jwt.StandardClaims{
 			ExpiresAt: expirationTime.Unix(),
 		},
