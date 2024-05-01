@@ -129,6 +129,9 @@ func LoginUser(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to generate token"})
 		return
 	}
+	//Luu token vao cookie
+	c.SetCookie("token", token, 86400, "/", "", false, true)
+	//
 	c.JSON(http.StatusOK, gin.H{"token": token, "user_id": user.ID})
 }
 
