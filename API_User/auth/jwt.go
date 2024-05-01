@@ -63,3 +63,35 @@ func ValidateToken(signedToken string) (err error) {
 	}
 	return
 }
+func ExtractEmailFromToken(signedToken string, jwtKey string) (string, error) {
+	// Giải mã token và lấy claims
+	token, err := jwt.ParseWithClaims(
+		signedToken,
+		&JWTClaim{},
+		func(token *jwt.Token) (interface{}, error) {
+			return []byte(jwtKey), nil
+		},
+	)
+	if err != nil {
+		return "", err
+	}
+
+	// Kiểm tra tính hợp lệ của token
+	if !token.Valid {
+		return "", errors.New("Invalid token")
+	}
+
+	// Trích xuất thông tin email từ claims
+	claims, ok := token.Claims.(*JWTClaim)
+	if !ok {
+		return "", errors.New("Couldn't parse claims")
+	}
+
+	// Lấy email từ claims
+	email, ok := claims.Email.(string)
+	if !ok {
+		return "", errors.New("Couldn't extract email from claims")
+	}
+
+	return email, nil
+}
