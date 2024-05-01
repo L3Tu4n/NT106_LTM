@@ -23,7 +23,7 @@ namespace Login
             btEyePW1.Hide();
             btEyePW2.Hide();
             btUnEyePW2.Show();
-            btEyePW1.Show();
+            btUnEyePW1.Show();
             httpClient = new HttpClient();
         }
 
