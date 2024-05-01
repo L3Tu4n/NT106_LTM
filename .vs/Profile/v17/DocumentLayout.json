@@ -1,0 +1,169 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\NT106\\finalproject\\API Profile\\Profile\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D3D6CD5-9225-4C85-9F2D-FFF838DB1B4D}|Profile.csproj|e:\\nt106\\finalproject\\api profile\\profile\\ucplaylists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0D3D6CD5-9225-4C85-9F2D-FFF838DB1B4D}|Profile.csproj|solutionrelative:ucplaylists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D3D6CD5-9225-4C85-9F2D-FFF838DB1B4D}|Profile.csproj|e:\\nt106\\finalproject\\api profile\\profile\\ucplaylists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D3D6CD5-9225-4C85-9F2D-FFF838DB1B4D}|Profile.csproj|solutionrelative:ucplaylists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D3D6CD5-9225-4C85-9F2D-FFF838DB1B4D}|Profile.csproj|e:\\nt106\\finalproject\\api profile\\profile\\ucminiplaylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0D3D6CD5-9225-4C85-9F2D-FFF838DB1B4D}|Profile.csproj|solutionrelative:ucminiplaylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D3D6CD5-9225-4C85-9F2D-FFF838DB1B4D}|Profile.csproj|e:\\nt106\\finalproject\\api profile\\profile\\ucprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0D3D6CD5-9225-4C85-9F2D-FFF838DB1B4D}|Profile.csproj|solutionrelative:ucprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D3D6CD5-9225-4C85-9F2D-FFF838DB1B4D}|Profile.csproj|E:\\NT106\\finalproject\\API Profile\\Profile\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0D3D6CD5-9225-4C85-9F2D-FFF838DB1B4D}|Profile.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D3D6CD5-9225-4C85-9F2D-FFF838DB1B4D}|Profile.csproj|E:\\NT106\\finalproject\\API Profile\\Profile\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D3D6CD5-9225-4C85-9F2D-FFF838DB1B4D}|Profile.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D3D6CD5-9225-4C85-9F2D-FFF838DB1B4D}|Profile.csproj|E:\\NT106\\finalproject\\API Profile\\Profile\\ucprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D3D6CD5-9225-4C85-9F2D-FFF838DB1B4D}|Profile.csproj|solutionrelative:ucprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D3D6CD5-9225-4C85-9F2D-FFF838DB1B4D}|Profile.csproj|E:\\NT106\\finalproject\\API Profile\\Profile\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0D3D6CD5-9225-4C85-9F2D-FFF838DB1B4D}|Profile.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D3D6CD5-9225-4C85-9F2D-FFF838DB1B4D}|Profile.csproj|E:\\NT106\\finalproject\\API Profile\\Profile\\ucprofile.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D3D6CD5-9225-4C85-9F2D-FFF838DB1B4D}|Profile.csproj|solutionrelative:ucprofile.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ucminiPlaylist.cs [Design]",
+              "DocumentMoniker": "E:\\NT106\\finalproject\\API Profile\\Profile\\ucminiPlaylist.cs",
+              "RelativeDocumentMoniker": "ucminiPlaylist.cs",
+              "ToolTip": "E:\\NT106\\finalproject\\API Profile\\Profile\\ucminiPlaylist.cs [Design]",
+              "RelativeToolTip": "ucminiPlaylist.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T14:09:12.147Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ucPlaylists.cs",
+              "DocumentMoniker": "E:\\NT106\\finalproject\\API Profile\\Profile\\ucPlaylists.cs",
+              "RelativeDocumentMoniker": "ucPlaylists.cs",
+              "ToolTip": "E:\\NT106\\finalproject\\API Profile\\Profile\\ucPlaylists.cs",
+              "RelativeToolTip": "ucPlaylists.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAApwBIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T13:13:01.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ucPlaylists.cs [Design]",
+              "DocumentMoniker": "E:\\NT106\\finalproject\\API Profile\\Profile\\ucPlaylists.cs",
+              "RelativeDocumentMoniker": "ucPlaylists.cs",
+              "ToolTip": "E:\\NT106\\finalproject\\API Profile\\Profile\\ucPlaylists.cs [Design]",
+              "RelativeToolTip": "ucPlaylists.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T13:12:38.256Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ucProfile.cs",
+              "DocumentMoniker": "E:\\NT106\\finalproject\\API Profile\\Profile\\ucProfile.cs",
+              "RelativeDocumentMoniker": "ucProfile.cs",
+              "ToolTip": "E:\\NT106\\finalproject\\API Profile\\Profile\\ucProfile.cs",
+              "RelativeToolTip": "ucProfile.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T08:38:21.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\NT106\\finalproject\\API Profile\\Profile\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\NT106\\finalproject\\API Profile\\Profile\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T08:38:17.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "E:\\NT106\\finalproject\\API Profile\\Profile\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "E:\\NT106\\finalproject\\API Profile\\Profile\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T08:18:31.496Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ucProfile.cs [Design]",
+              "DocumentMoniker": "E:\\NT106\\finalproject\\API Profile\\Profile\\ucProfile.cs",
+              "RelativeDocumentMoniker": "ucProfile.cs",
+              "ToolTip": "E:\\NT106\\finalproject\\API Profile\\Profile\\ucProfile.cs [Design]",
+              "RelativeToolTip": "ucProfile.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T08:14:28.468Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ucProfile.Designer.cs",
+              "DocumentMoniker": "E:\\NT106\\finalproject\\API Profile\\Profile\\ucProfile.Designer.cs",
+              "RelativeDocumentMoniker": "ucProfile.Designer.cs",
+              "ToolTip": "E:\\NT106\\finalproject\\API Profile\\Profile\\ucProfile.Designer.cs",
+              "RelativeToolTip": "ucProfile.Designer.cs",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAQwKQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T08:39:07.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.config",
+              "DocumentMoniker": "E:\\NT106\\finalproject\\API Profile\\Profile\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "E:\\NT106\\finalproject\\API Profile\\Profile\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-30T08:46:21.922Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
