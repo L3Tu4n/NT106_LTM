@@ -21,12 +21,12 @@ import (
 )
 
 type User struct {
-	ID       int             `json:"ID" db:"ID"`
-	BIRTH    sql.NullFloat64 `json:"BIRTH" db:"BIRTH"` // để có thể chứa giá trị null ở cột BIRTH
-	NAME     sql.NullString  `json:"NAME" db:"NAME"`
-	EMAIL    string          `json:"EMAIL" db:"EMAIL"`
-	PASSWORD string          `json:"PASSWORD" db:"PASSWORD"`
-	GENDER   sql.NullInt64   `json:"GENDER" db:"GENDER"`
+	ID       int            `json:"ID" db:"ID"`
+	NAME     sql.NullString `json:"NAME" db:"NAME"`
+	EMAIL    string         `json:"EMAIL" db:"EMAIL"`
+	PASSWORD string         `json:"PASSWORD" db:"PASSWORD"`
+	PHONE    sql.NullString `json:"PHONE" db:"PHONE"`
+	AVATAR   []byte         `json:"AVATAR" db:"AVATAR"`
 }
 
 func (user *User) HashPassword(password string) error {

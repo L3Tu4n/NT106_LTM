@@ -28,6 +28,9 @@ func main() {
 		{
 			secured.GET("/ping", controller.Ping)
 		}
+		v1.GET("/DatamusicTrack", controller.GetDataMusic)
+		v1.GET("/DatamusicAlbum", controller.GetDataMusicAlbum)
+		v1.GET("/DatamusicArtist", controller.GetDataMusicArtist)
 	}
 	router.Run(":9999")
 }
