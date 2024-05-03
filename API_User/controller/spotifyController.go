@@ -65,27 +65,29 @@ func GetDataMusic(c *gin.Context) {
 		return
 	}
 
+	var imageUrl string
+	if len(track.Album.Images) > 0 {
+		imageUrl = track.Album.Images[0].URL
+	}
 	artistID := track.Artists[0].ID
 	artist, err := spotifyClient.GetArtist(artistID)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve artist information"})
 		return
 	}
-
-	var imageUrl string
-	if len(track.Album.Images) > 0 {
-		imageUrl = track.Album.Images[0].URL
-	}
-
 	duration := fmt.Sprintf("%d:%02d", track.Duration/60000, (track.Duration/1000)%60)
-
-	_, err = db.Exec("INSERT INTO Tracks (id,id_album,id_artist,name,duration,image) VALUES (?,?,?,?,?,?)", track.ID, track.Album.ID, artist.ID, track.Name, duration, imageUrl)
+	_, err = db.Exec("INSERT INTO Tracks (id,id_album,id_artist,name,duration,image,fs_path) VALUES (?,?,?,?,?,?,?)", track.ID, track.Album.ID, artist.ID, track.Name, duration, imageUrl, track.PreviewURL)
 	if err != nil {
 		log.Println(err)
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save data track to database"})
 		return
 	}
-	_, err = db.Exec("INSERT INTO Albums (id,name,album_images) VALUES (?,?,?)", track.Album.ID, track.Album.Name, imageUrl)
+	album, err := spotifyClient.GetAlbum(spotify.ID(track.Album.ID))
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve track information"})
+		return
+	}
+	_, err = db.Exec("INSERT INTO Albums (id,name,album_images,total_tracks,release_date,id_artist) VALUES (?,?,?,?,?,?)", album.ID, album.Name, album.Images[0].URL, album.Tracks.Total, album.ReleaseDate, album.Artists[0].ID)
 	if err != nil {
 		log.Println(err)
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save data album to database"})
@@ -143,7 +145,7 @@ func GetDataMusicAlbum(c *gin.Context) {
 	}
 	if !albumExists {
 		// Nếu album chưa tồn tại, thêm album vào cơ sở dữ liệu
-		_, err = db.Exec("INSERT INTO Albums (id,name,album_images) VALUES (?,?,?)", Album.ID, album.Name, album.Images[0].URL)
+		_, err = db.Exec("INSERT INTO Albums (id,name,album_images,total_tracks,release_date,id_artist) VALUES (?,?,?,?,?,?)", album.ID, album.Name, album.Images[0].URL, album.Tracks.Total, album.ReleaseDate, album.Artists[0].ID)
 		if err != nil {
 			log.Println(err)
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save data album to database"})
@@ -198,7 +200,7 @@ func GetDataMusicAlbum(c *gin.Context) {
 		duration := fmt.Sprintf("%d:%02d", track.Duration/60000, (track.Duration/1000)%60)
 
 		// Thêm thông tin về track vào cơ sở dữ liệu
-		_, err = db.Exec("INSERT INTO Tracks (id,id_album,id_artist,name,duration,image) VALUES (?,?,?,?,?,?)", track.ID, Album.ID, artistID, track.Name, duration, imageUrl)
+		_, err = db.Exec("INSERT INTO Tracks (id,id_album,id_artist,name,duration,image,fs_path) VALUES (?,?,?,?,?,?,?)", track.ID, Album.ID, artistID, track.Name, duration, imageUrl, track.PreviewURL)
 		if err != nil {
 			log.Println(err)
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save data track to database"})
@@ -253,8 +255,16 @@ func GetDataMusicArtist(c *gin.Context) {
 			continue // Tiếp tục với album tiếp theo nếu có lỗi
 		}
 		if !albumExists {
+			tracks, err := spotifyClient.GetAlbumTracks(album.ID)
+			if err != nil {
+				log.Println(err)
+				c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to check track existence"})
+				return
+			}
+			// Đếm số lượng track trong danh sách
+			totalTracks := len(tracks.Tracks)
 			// Nếu album chưa tồn tại, thêm album vào cơ sở dữ liệu
-			_, err = db.Exec("INSERT INTO Albums (id,name,album_images) VALUES (?,?,?)", album.ID, album.Name, album.Images[0].URL)
+			_, err = db.Exec("INSERT INTO Albums (id,name,album_images,total_tracks,release_date,id_artist) VALUES (?,?,?,?,?,?)", album.ID, album.Name, album.Images[0].URL, totalTracks, album.ReleaseDate, album.Artists[0].ID)
 			if err != nil {
 				log.Println(err)
 				c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save data album to database"})
@@ -315,9 +325,14 @@ func GetDataMusicArtist(c *gin.Context) {
 			}
 
 			duration := fmt.Sprintf("%d:%02d", track.Duration/60000, (track.Duration/1000)%60)
-
+			artistID := track.Artists[0].ID
+			artist, err := spotifyClient.GetArtist(artistID)
+			if err != nil {
+				c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve artist information"})
+				return
+			}
 			// Thêm thông tin về track vào cơ sở dữ liệu
-			_, err = db.Exec("INSERT INTO Tracks (id,id_album,id_artist,name,duration,image) VALUES (?,?,?,?,?,?)", track.ID, album.ID, artistID, track.Name, duration, imageUrl)
+			_, err = db.Exec("INSERT INTO Tracks (id,id_album,id_artist,name,duration,image,fs_path) VALUES (?,?,?,?,?,?,?)", track.ID, album.ID, artist.ID, track.Name, duration, imageUrl, track.PreviewURL)
 			if err != nil {
 				log.Println(err)
 				c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save data track to database"})
