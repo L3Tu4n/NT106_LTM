@@ -79,14 +79,14 @@
             this.lbNameAlbum.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbNameAlbum.AutoSize = true;
             this.lbNameAlbum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNameAlbum.ForeColor = System.Drawing.Color.White;
-            this.lbNameAlbum.Location = new System.Drawing.Point(26, 6);
+            this.lbNameAlbum.Location = new System.Drawing.Point(3, 0);
             this.lbNameAlbum.Name = "lbNameAlbum";
-            this.lbNameAlbum.Size = new System.Drawing.Size(124, 20);
+            this.lbNameAlbum.Size = new System.Drawing.Size(183, 29);
             this.lbNameAlbum.TabIndex = 0;
             this.lbNameAlbum.Text = "lbNameAlbum";
+            this.lbNameAlbum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel3
             // 
@@ -102,14 +102,14 @@
             this.lbNameArtist.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbNameArtist.AutoSize = true;
             this.lbNameArtist.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNameArtist.ForeColor = System.Drawing.Color.Gray;
-            this.lbNameArtist.Location = new System.Drawing.Point(32, 3);
+            this.lbNameArtist.Location = new System.Drawing.Point(3, 0);
             this.lbNameArtist.Name = "lbNameArtist";
-            this.lbNameArtist.Size = new System.Drawing.Size(118, 20);
+            this.lbNameArtist.Size = new System.Drawing.Size(183, 29);
             this.lbNameArtist.TabIndex = 0;
             this.lbNameArtist.Text = "lbNameArtist";
+            this.lbNameArtist.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // album_item
             // 
@@ -127,9 +127,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.itemImage)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="NgheSi.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 10.2pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(192, 192, 192); text-align: left; }</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="imageArtist.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -185,28 +188,6 @@
         BMA5AuAcAXCOADhHAJwjAM4RAOcIgHMEwDkC4BwBcI4AOEcAnCMAzhEA5wiAcwTAOQLgHAFwjgA4RwCc
         IwDOEQDnCIBzBMA5AuAcAXCOADhHAJwjAM4RAOcIgHMEwDkC4BwBcI4AOEcAnCMAzgULQJ8+/wLcsCN4
         fyerrQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="lbNameArtist.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 10.2pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
-  </data>
-  <data name="NgheSi.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 10.2pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(192, 192, 192); text-align: left; }</value>
-  </data>
-  <data name="bunifuPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAALcAAAC6CAYAAADs8NxBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAI8SURBVHhe7dSxDcJQFARB91+P+wMR/AAhCvDejITMs9PV
-        XZB33/frPM/P7X7a/ePvB3ggPZP1FbfSyRI3JZabLD2TZbnZIG5KLDdZeibLcrNB3JRYbrL0TJblZoO4
-        KbHcZOmZLMvNBnFTYrnJ0jNZlpsN4qbEcpOlZ7IsNxvETYnlJkvPZFluNoibEstNlp7JstxsEDcllpss
-        PZNludkgbkosN1l6Jstys0HclFhusvRMluVmg7gpsdxk6Zksy80GcVNiucnSM1mWmw3ipsRyk6Vnsiw3
-        G8RNieUmS89kWW42iJsSy02Wnsmy3GwQNyWWmyw9k2W52SBuSiw3WXomy3KzQdyUWG6y9EyW5WaDuCmx
-        3GTpmSzLzQZxU2K5ydIzWZabDeKmxHKTpWeyLDcbxE2J5SZLz2RZbjaImxLLTZaeybLcbBA3JZabLD2T
-        ZbnZIG5KLDdZeibLcrNB3JRYbrL0TJblZoO4KbHcZOmZLMvNBnFTYrnJ0jNZlpsN4qbEcpOlZ7IsNxvE
-        TYnlJkvPZFluNoibEstNlp7JstxsEDcllpssPZNludkgbkosN1l6Jstys0HclFhusvRMluVmg7gpsdxk
-        6Zksy80GcVNiucnSM1mWmw3ipsRyk6Vnsiw3G8RNieUmS89kWW42iJsSy02Wnsmy3GwQNyWWmyw9k2W5
-        2SBuSiw3WXomy3KzQdyUWG6y9EyW5WaDuCmx3GTpmSzLzQZxU2K5ydIzWT9xf16cl+e/2/3EG+Ku6w3m
-        8I1Pk8hFZgAAAABJRU5ErkJggg==
 </value>
   </data>
 </root>
