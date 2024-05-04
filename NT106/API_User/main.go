@@ -32,9 +32,17 @@ func main() {
 		v1.PUT("/profiles/update", middlewares.AuthMiddleware(), controller.Update)
 		v1.PUT("/profiles/password", middlewares.AuthMiddleware(), controller.UpdatePassword)
 		v1.PUT("/profiles/avatar", middlewares.AuthMiddleware(), controller.UpdateAvatar)
+		//spotifyController
 		v1.GET("/DatamusicTrack", controller.GetDataMusic)
 		v1.GET("/DatamusicAlbum", controller.GetDataMusicAlbum)
 		v1.GET("/DatamusicArtist", controller.GetDataMusicArtist)
+		//getdataController
+		v1.POST("/Track", controller.GetTrack)
+		v1.POST("/Album", controller.GetAlbum)
+		v1.POST("/Artist", controller.GetArtist)
+		v1.GET("/Top10Tracks", controller.GetTop10TracksByListenCount)
+		v1.GET("/Top10Albums", controller.GetTop10AlbumsByTotalTracks)
+		v1.GET("/Top10Artists", controller.GetTop10RandomArtists)
 	}
 	router.Run(":9999")
 }

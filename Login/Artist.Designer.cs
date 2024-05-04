@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Artist));
             this.imageArtist = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.lbNameAlbum = new Bunifu.UI.WinForms.BunifuLabel();
             this.lbNameArtist = new Bunifu.UI.WinForms.BunifuLabel();
+            this.NgheSi = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             ((System.ComponentModel.ISupportInitialize)(this.imageArtist)).BeginInit();
             this.bunifuPanel1.SuspendLayout();
@@ -53,39 +53,39 @@
             this.imageArtist.TabStop = false;
             this.imageArtist.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // lbNameAlbum
-            // 
-            this.lbNameAlbum.AllowParentOverrides = false;
-            this.lbNameAlbum.AutoEllipsis = false;
-            this.lbNameAlbum.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lbNameAlbum.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lbNameAlbum.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNameAlbum.ForeColor = System.Drawing.Color.White;
-            this.lbNameAlbum.Location = new System.Drawing.Point(34, 195);
-            this.lbNameAlbum.Name = "lbNameAlbum";
-            this.lbNameAlbum.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbNameAlbum.Size = new System.Drawing.Size(118, 23);
-            this.lbNameAlbum.TabIndex = 2;
-            this.lbNameAlbum.Text = "Sơn Tùng MTP";
-            this.lbNameAlbum.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lbNameAlbum.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
             // lbNameArtist
             // 
             this.lbNameArtist.AllowParentOverrides = false;
             this.lbNameArtist.AutoEllipsis = false;
             this.lbNameArtist.Cursor = System.Windows.Forms.Cursors.Default;
             this.lbNameArtist.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lbNameArtist.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNameArtist.ForeColor = System.Drawing.Color.Silver;
-            this.lbNameArtist.Location = new System.Drawing.Point(63, 223);
+            this.lbNameArtist.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNameArtist.ForeColor = System.Drawing.Color.White;
+            this.lbNameArtist.Location = new System.Drawing.Point(34, 195);
             this.lbNameArtist.Name = "lbNameArtist";
             this.lbNameArtist.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbNameArtist.Size = new System.Drawing.Size(58, 23);
-            this.lbNameArtist.TabIndex = 3;
-            this.lbNameArtist.Text = "Nghệ sĩ";
+            this.lbNameArtist.Size = new System.Drawing.Size(118, 23);
+            this.lbNameArtist.TabIndex = 2;
+            this.lbNameArtist.Text = "Sơn Tùng MTP";
             this.lbNameArtist.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lbNameArtist.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // NgheSi
+            // 
+            this.NgheSi.AllowParentOverrides = false;
+            this.NgheSi.AutoEllipsis = false;
+            this.NgheSi.Cursor = System.Windows.Forms.Cursors.Default;
+            this.NgheSi.CursorType = System.Windows.Forms.Cursors.Default;
+            this.NgheSi.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NgheSi.ForeColor = System.Drawing.Color.Silver;
+            this.NgheSi.Location = new System.Drawing.Point(63, 223);
+            this.NgheSi.Name = "NgheSi";
+            this.NgheSi.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.NgheSi.Size = new System.Drawing.Size(58, 23);
+            this.NgheSi.TabIndex = 3;
+            this.NgheSi.Text = "Nghệ sĩ";
+            this.NgheSi.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.NgheSi.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuPanel1
             // 
@@ -110,8 +110,8 @@
             this.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.BorderRadius = 36;
             this.Controls.Add(this.bunifuPanel1);
+            this.Controls.Add(this.NgheSi);
             this.Controls.Add(this.lbNameArtist);
-            this.Controls.Add(this.lbNameAlbum);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "Artist";
             this.Size = new System.Drawing.Size(186, 249);
@@ -125,8 +125,8 @@
         #endregion
 
         private Bunifu.UI.WinForms.BunifuPictureBox imageArtist;
-        private Bunifu.UI.WinForms.BunifuLabel lbNameAlbum;
         private Bunifu.UI.WinForms.BunifuLabel lbNameArtist;
+        private Bunifu.UI.WinForms.BunifuLabel NgheSi;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
     }
 }

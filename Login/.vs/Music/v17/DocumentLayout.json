@@ -1,38 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\NT106\\finalproject\\API Profile\\Login\\",
+  "WorkspaceRootPath": "D:\\NT106\\NT106_new\\Login\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|e:\\nt106\\finalproject\\api profile\\login\\ucplaylists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106_new\\Login\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106_new\\Login\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106_new\\Login\\album_item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:album_item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|d:\\nt106\\nt106_new\\login\\album_item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:album_item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106_new\\Login\\cardtrack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:cardtrack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106_new\\Login\\ucplaylists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:ucplaylists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|e:\\nt106\\finalproject\\api profile\\login\\addplaylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:addplaylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106_new\\Login\\artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|e:\\nt106\\finalproject\\api profile\\login\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106_new\\Login\\artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|e:\\nt106\\finalproject\\api profile\\login\\addplaylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:addplaylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|e:\\nt106\\finalproject\\api profile\\login\\playlist_item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:playlist_item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|e:\\nt106\\finalproject\\api profile\\login\\ucplaylists.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:ucplaylists.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|e:\\nt106\\finalproject\\api profile\\login\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|e:\\nt106\\finalproject\\api profile\\login\\ucprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106_new\\Login\\ucprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:ucprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106_new\\Login\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,109 +50,128 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "Form1.cs",
-              "DocumentMoniker": "E:\\NT106\\finalproject\\API Profile\\Login\\Form1.cs",
+              "DocumentMoniker": "D:\\NT106\\NT106_new\\Login\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "E:\\NT106\\finalproject\\API Profile\\Login\\Form1.cs",
+              "ToolTip": "D:\\NT106\\NT106_new\\Login\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAIwCQAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-03T13:26:41.76Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddPlaylist.cs",
-              "DocumentMoniker": "E:\\NT106\\finalproject\\API Profile\\Login\\AddPlaylist.cs",
-              "RelativeDocumentMoniker": "AddPlaylist.cs",
-              "ToolTip": "E:\\NT106\\finalproject\\API Profile\\Login\\AddPlaylist.cs",
-              "RelativeToolTip": "AddPlaylist.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAADwvxoAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T09:55:23.875Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ucPlaylists.cs [Design]",
-              "DocumentMoniker": "E:\\NT106\\finalproject\\API Profile\\Login\\ucPlaylists.cs",
-              "RelativeDocumentMoniker": "ucPlaylists.cs",
-              "ToolTip": "E:\\NT106\\finalproject\\API Profile\\Login\\ucPlaylists.cs [Design]",
-              "RelativeToolTip": "ucPlaylists.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T09:54:43.806Z",
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AddPlaylist.cs [Design]",
-              "DocumentMoniker": "E:\\NT106\\finalproject\\API Profile\\Login\\AddPlaylist.cs",
-              "RelativeDocumentMoniker": "AddPlaylist.cs",
-              "ToolTip": "E:\\NT106\\finalproject\\API Profile\\Login\\AddPlaylist.cs [Design]",
-              "RelativeToolTip": "AddPlaylist.cs [Design]",
+              "Title": "album_item.cs [Design]",
+              "DocumentMoniker": "D:\\NT106\\NT106_new\\Login\\album_item.cs",
+              "RelativeDocumentMoniker": "album_item.cs",
+              "ToolTip": "D:\\NT106\\NT106_new\\Login\\album_item.cs [Design]",
+              "RelativeToolTip": "album_item.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T09:55:14.794Z",
+              "WhenOpened": "2024-05-04T01:56:10.665Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "playlist_item.cs [Design]",
-              "DocumentMoniker": "E:\\NT106\\finalproject\\API Profile\\Login\\playlist_item.cs",
-              "RelativeDocumentMoniker": "playlist_item.cs",
-              "ToolTip": "E:\\NT106\\finalproject\\API Profile\\Login\\playlist_item.cs [Design]",
-              "RelativeToolTip": "playlist_item.cs [Design]",
+              "Title": "cardTrack.cs [Design]",
+              "DocumentMoniker": "D:\\NT106\\NT106_new\\Login\\cardTrack.cs",
+              "RelativeDocumentMoniker": "cardTrack.cs",
+              "ToolTip": "D:\\NT106\\NT106_new\\Login\\cardTrack.cs [Design]",
+              "RelativeToolTip": "cardTrack.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T12:26:53.71Z",
+              "WhenOpened": "2024-05-04T01:13:05.265Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ucPlaylists.Designer.cs",
-              "DocumentMoniker": "E:\\NT106\\finalproject\\API Profile\\Login\\ucPlaylists.Designer.cs",
-              "RelativeDocumentMoniker": "ucPlaylists.Designer.cs",
-              "ToolTip": "E:\\NT106\\finalproject\\API Profile\\Login\\ucPlaylists.Designer.cs",
-              "RelativeToolTip": "ucPlaylists.Designer.cs",
-              "ViewState": "AQIAAGAAAAAAAAAAAAAcwGgAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "album_item.cs",
+              "DocumentMoniker": "D:\\NT106\\NT106_new\\Login\\album_item.cs",
+              "RelativeDocumentMoniker": "album_item.cs",
+              "ToolTip": "D:\\NT106\\NT106_new\\Login\\album_item.cs",
+              "RelativeToolTip": "album_item.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAASwD0AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T10:23:11.785Z",
+              "WhenOpened": "2024-05-03T22:52:16.97Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Homepage.cs [Design]",
+              "DocumentMoniker": "D:\\NT106\\NT106_new\\Login\\Homepage.cs",
+              "RelativeDocumentMoniker": "Homepage.cs",
+              "ToolTip": "D:\\NT106\\NT106_new\\Login\\Homepage.cs [Design]",
+              "RelativeToolTip": "Homepage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T01:25:52.103Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Homepage.cs",
+              "DocumentMoniker": "D:\\NT106\\NT106_new\\Login\\Homepage.cs",
+              "RelativeDocumentMoniker": "Homepage.cs",
+              "ToolTip": "D:\\NT106\\NT106_new\\Login\\Homepage.cs",
+              "RelativeToolTip": "Homepage.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAYwDgAAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T16:23:33.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ucPlaylists.cs [Design]",
+              "DocumentMoniker": "D:\\NT106\\NT106_new\\Login\\ucPlaylists.cs",
+              "RelativeDocumentMoniker": "ucPlaylists.cs",
+              "ToolTip": "D:\\NT106\\NT106_new\\Login\\ucPlaylists.cs [Design]",
+              "RelativeToolTip": "ucPlaylists.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T09:54:43.806Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\NT106\\finalproject\\API Profile\\Login\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\NT106\\finalproject\\API Profile\\Login\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAADgvw8AAAAJAAAA",
+              "Title": "Artist.cs",
+              "DocumentMoniker": "D:\\NT106\\NT106_new\\Login\\Artist.cs",
+              "RelativeDocumentMoniker": "Artist.cs",
+              "ToolTip": "D:\\NT106\\NT106_new\\Login\\Artist.cs",
+              "RelativeToolTip": "Artist.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBwAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T11:44:02.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T22:51:13.385Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "ucProfile.cs",
-              "DocumentMoniker": "E:\\NT106\\finalproject\\API Profile\\Login\\ucProfile.cs",
-              "RelativeDocumentMoniker": "ucProfile.cs",
-              "ToolTip": "E:\\NT106\\finalproject\\API Profile\\Login\\ucProfile.cs",
-              "RelativeToolTip": "ucProfile.cs",
-              "ViewState": "AQIAAKoAAAAAAAAAAAAAAG8AAABAAAAA",
+              "Title": "Artist.cs [Design]",
+              "DocumentMoniker": "D:\\NT106\\NT106_new\\Login\\Artist.cs",
+              "RelativeDocumentMoniker": "Artist.cs",
+              "ToolTip": "D:\\NT106\\NT106_new\\Login\\Artist.cs [Design]",
+              "RelativeToolTip": "Artist.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T12:29:50.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T22:51:07.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ucProfile.cs",
+              "DocumentMoniker": "D:\\NT106\\NT106_new\\Login\\ucProfile.cs",
+              "RelativeDocumentMoniker": "ucProfile.cs",
+              "ToolTip": "D:\\NT106\\NT106_new\\Login\\ucProfile.cs",
+              "RelativeToolTip": "ucProfile.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAIAxwCoAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T12:29:50.181Z"
             }
           ]
         }

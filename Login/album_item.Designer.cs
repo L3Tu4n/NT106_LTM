@@ -28,55 +28,88 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(album_item));
-            this.lbNameAlbum = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lbNameArtist = new Bunifu.UI.WinForms.BunifuLabel();
             this.itemImage = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lbNameAlbum = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lbNameArtist = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.itemImage)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lbNameAlbum
-            // 
-            this.lbNameAlbum.AllowParentOverrides = false;
-            this.lbNameAlbum.AutoEllipsis = false;
-            this.lbNameAlbum.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lbNameAlbum.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lbNameAlbum.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNameAlbum.ForeColor = System.Drawing.Color.White;
-            this.lbNameAlbum.Location = new System.Drawing.Point(50, 183);
-            this.lbNameAlbum.Name = "lbNameAlbum";
-            this.lbNameAlbum.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbNameAlbum.Size = new System.Drawing.Size(75, 23);
-            this.lbNameAlbum.TabIndex = 1;
-            this.lbNameAlbum.Text = "Đánh Đổi";
-            this.lbNameAlbum.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lbNameAlbum.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // lbNameArtist
-            // 
-            this.lbNameArtist.AllowParentOverrides = false;
-            this.lbNameArtist.AutoEllipsis = false;
-            this.lbNameArtist.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lbNameArtist.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lbNameArtist.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNameArtist.ForeColor = System.Drawing.Color.Silver;
-            this.lbNameArtist.Location = new System.Drawing.Point(65, 212);
-            this.lbNameArtist.Name = "lbNameArtist";
-            this.lbNameArtist.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbNameArtist.Size = new System.Drawing.Size(43, 23);
-            this.lbNameArtist.TabIndex = 2;
-            this.lbNameArtist.Text = "Obito";
-            this.lbNameArtist.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lbNameArtist.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // itemImage
             // 
-            this.itemImage.Location = new System.Drawing.Point(15, 23);
+            this.itemImage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.itemImage.BackColor = System.Drawing.Color.Transparent;
+            this.itemImage.Location = new System.Drawing.Point(15, 15);
             this.itemImage.Name = "itemImage";
-            this.itemImage.Size = new System.Drawing.Size(159, 154);
+            this.itemImage.Size = new System.Drawing.Size(159, 148);
             this.itemImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.itemImage.TabIndex = 3;
             this.itemImage.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.itemImage);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.ForeColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(186, 171);
+            this.panel1.TabIndex = 4;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.lbNameAlbum);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.ForeColor = System.Drawing.Color.White;
+            this.panel2.Location = new System.Drawing.Point(0, 171);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(186, 29);
+            this.panel2.TabIndex = 5;
+            // 
+            // lbNameAlbum
+            // 
+            this.lbNameAlbum.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbNameAlbum.AutoSize = true;
+            this.lbNameAlbum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNameAlbum.ForeColor = System.Drawing.Color.White;
+            this.lbNameAlbum.Location = new System.Drawing.Point(26, 6);
+            this.lbNameAlbum.Name = "lbNameAlbum";
+            this.lbNameAlbum.Size = new System.Drawing.Size(124, 20);
+            this.lbNameAlbum.TabIndex = 0;
+            this.lbNameAlbum.Text = "lbNameAlbum";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.lbNameArtist);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 200);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(186, 29);
+            this.panel3.TabIndex = 6;
+            // 
+            // lbNameArtist
+            // 
+            this.lbNameArtist.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbNameArtist.AutoSize = true;
+            this.lbNameArtist.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNameArtist.ForeColor = System.Drawing.Color.Gray;
+            this.lbNameArtist.Location = new System.Drawing.Point(32, 3);
+            this.lbNameArtist.Name = "lbNameArtist";
+            this.lbNameArtist.Size = new System.Drawing.Size(118, 20);
+            this.lbNameArtist.TabIndex = 0;
+            this.lbNameArtist.Text = "lbNameArtist";
             // 
             // album_item
             // 
@@ -86,20 +119,27 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.BorderRadius = 36;
-            this.Controls.Add(this.itemImage);
-            this.Controls.Add(this.lbNameArtist);
-            this.Controls.Add(this.lbNameAlbum);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Name = "album_item";
             this.Size = new System.Drawing.Size(186, 249);
             ((System.ComponentModel.ISupportInitialize)(this.itemImage)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private Bunifu.UI.WinForms.BunifuLabel lbNameAlbum;
-        private Bunifu.UI.WinForms.BunifuLabel lbNameArtist;
         private System.Windows.Forms.PictureBox itemImage;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lbNameAlbum;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label lbNameArtist;
     }
 }

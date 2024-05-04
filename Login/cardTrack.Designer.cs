@@ -29,29 +29,32 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.STT = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuImageButton5 = new Bunifu.UI.WinForms.BunifuImageButton();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.Duration = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.NameAlbum = new System.Windows.Forms.LinkLabel();
+            this.ImageArtist = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.STT = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.bunifuImageButton5 = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.NameArtist = new System.Windows.Forms.LinkLabel();
             this.NameTrack = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImageArtist)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.AutoSize = true;
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Black;
             this.tableLayoutPanel1.ColumnCount = 6;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -62,37 +65,85 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Controls.Add(this.panel5, 5, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel4, 4, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel2, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel3, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.ImageArtist, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel3, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel6, 3, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 84F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(995, 84);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // pictureBox1
+            // panel5
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Music.Properties.Resources._220px_Em_của_ngày_hôm_qua;
-            this.pictureBox1.Location = new System.Drawing.Point(102, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(93, 78);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.panel5.Controls.Add(this.Duration);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(896, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(96, 78);
+            this.panel5.TabIndex = 9;
             // 
-            // panel1
+            // Duration
             // 
-            this.panel1.Controls.Add(this.STT);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(93, 78);
-            this.panel1.TabIndex = 2;
+            this.Duration.AutoSize = true;
+            this.Duration.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Duration.ForeColor = System.Drawing.Color.White;
+            this.Duration.Location = new System.Drawing.Point(15, 27);
+            this.Duration.Name = "Duration";
+            this.Duration.Size = new System.Drawing.Size(67, 25);
+            this.Duration.TabIndex = 1;
+            this.Duration.Text = "03:52";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.NameAlbum);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(598, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(292, 78);
+            this.panel4.TabIndex = 8;
+            // 
+            // NameAlbum
+            // 
+            this.NameAlbum.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.NameAlbum.AutoSize = true;
+            this.NameAlbum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameAlbum.ForeColor = System.Drawing.Color.White;
+            this.NameAlbum.LinkColor = System.Drawing.Color.White;
+            this.NameAlbum.Location = new System.Drawing.Point(0, 27);
+            this.NameAlbum.Margin = new System.Windows.Forms.Padding(0);
+            this.NameAlbum.Name = "NameAlbum";
+            this.NameAlbum.Size = new System.Drawing.Size(292, 25);
+            this.NameAlbum.TabIndex = 3;
+            this.NameAlbum.TabStop = true;
+            this.NameAlbum.Text = "Em Của Ngày Hôm Qua (EP)";
+            this.NameAlbum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.NameAlbum.VisitedLinkColor = System.Drawing.Color.White;
+            // 
+            // ImageArtist
+            // 
+            this.ImageArtist.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ImageArtist.Image = global::Music.Properties.Resources._220px_Em_của_ngày_hôm_qua;
+            this.ImageArtist.Location = new System.Drawing.Point(102, 3);
+            this.ImageArtist.Name = "ImageArtist";
+            this.ImageArtist.Size = new System.Drawing.Size(93, 78);
+            this.ImageArtist.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImageArtist.TabIndex = 1;
+            this.ImageArtist.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.STT);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(93, 78);
+            this.panel2.TabIndex = 2;
             // 
             // STT
             // 
@@ -105,14 +156,14 @@
             this.STT.TabIndex = 0;
             this.STT.Text = "1";
             // 
-            // panel2
+            // panel3
             // 
-            this.panel2.Controls.Add(this.bunifuImageButton5);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(201, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(93, 78);
-            this.panel2.TabIndex = 3;
+            this.panel3.Controls.Add(this.bunifuImageButton5);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(201, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(93, 78);
+            this.panel3.TabIndex = 3;
             // 
             // bunifuImageButton5
             // 
@@ -151,123 +202,91 @@
             this.bunifuImageButton5.Zoom = 0;
             this.bunifuImageButton5.ZoomSpeed = 10;
             // 
-            // panel3
+            // panel6
             // 
-            this.panel3.Controls.Add(this.linkLabel1);
-            this.panel3.Controls.Add(this.NameTrack);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(300, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(292, 78);
-            this.panel3.TabIndex = 7;
+            this.panel6.Controls.Add(this.NameArtist);
+            this.panel6.Controls.Add(this.NameTrack);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(300, 3);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(292, 78);
+            this.panel6.TabIndex = 7;
             // 
-            // panel4
+            // NameArtist
             // 
-            this.panel4.Controls.Add(this.linkLabel2);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(598, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(292, 78);
-            this.panel4.TabIndex = 8;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.label3);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(896, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(96, 78);
-            this.panel5.TabIndex = 9;
+            this.NameArtist.AutoSize = true;
+            this.NameArtist.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameArtist.LinkColor = System.Drawing.Color.Gray;
+            this.NameArtist.Location = new System.Drawing.Point(3, 39);
+            this.NameArtist.Name = "NameArtist";
+            this.NameArtist.Size = new System.Drawing.Size(167, 25);
+            this.NameArtist.TabIndex = 2;
+            this.NameArtist.TabStop = true;
+            this.NameArtist.Text = "Sơn Tùng M-TP";
+            this.NameArtist.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             // 
             // NameTrack
             // 
             this.NameTrack.AutoSize = true;
             this.NameTrack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameTrack.ForeColor = System.Drawing.Color.White;
-            this.NameTrack.Location = new System.Drawing.Point(30, 14);
+            this.NameTrack.Location = new System.Drawing.Point(3, 14);
             this.NameTrack.Name = "NameTrack";
             this.NameTrack.Size = new System.Drawing.Size(242, 25);
             this.NameTrack.TabIndex = 0;
             this.NameTrack.Text = "Em Của Ngày Hôm Qua";
             // 
-            // label3
+            // panel1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(15, 27);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 25);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "03:52";
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.Gray;
-            this.linkLabel1.Location = new System.Drawing.Point(64, 39);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(167, 25);
-            this.linkLabel1.TabIndex = 2;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Sơn Tùng M-TP";
-            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.ForeColor = System.Drawing.Color.White;
-            this.linkLabel2.LinkColor = System.Drawing.Color.White;
-            this.linkLabel2.Location = new System.Drawing.Point(1, 27);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(292, 25);
-            this.linkLabel2.TabIndex = 3;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Em Của Ngày Hôm Qua (EP)";
-            this.linkLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.linkLabel2.VisitedLinkColor = System.Drawing.Color.White;
+            this.panel1.AutoSize = true;
+            this.panel1.Controls.Add(this.tableLayoutPanel1);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(995, 84);
+            this.panel1.TabIndex = 0;
             // 
             // cardTrack
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.BackgroundColor = System.Drawing.Color.Black;
+            this.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Controls.Add(this.panel1);
             this.Name = "cardTrack";
-            this.Size = new System.Drawing.Size(995, 84);
-            this.Click += new System.EventHandler(this.cardTrack_Click);
+            this.Size = new System.Drawing.Size(999, 92);
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImageArtist)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label STT;
-        private System.Windows.Forms.Panel panel2;
-        private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton5;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label Duration;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.LinkLabel NameAlbum;
+        private System.Windows.Forms.PictureBox ImageArtist;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label STT;
         private System.Windows.Forms.Panel panel3;
+        private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton5;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.LinkLabel NameArtist;
         private System.Windows.Forms.Label NameTrack;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.Panel panel1;
     }
 }

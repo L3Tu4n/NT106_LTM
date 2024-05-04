@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,10 +17,36 @@ namespace Music
         {
             InitializeComponent();
         }
-
-        private void bunifuPictureBox1_Click(object sender, EventArgs e)
+        public album_item(string imageUrl, string nameartist, string namealbum)
         {
-
+            InitializeComponent();
+            // Gán các giá trị cho các thuộc tính
+            Image image = LoadImageFromUrl(imageUrl);
+            if (image != null)
+            {
+                itemImage.Image = image;
+            }
+            lbNameArtist.Text = nameartist;
+            lbNameAlbum.Text = namealbum;
+        }
+        private Image LoadImageFromUrl(string url)
+        {
+            try
+            {
+                using (WebClient webClient = new WebClient())
+                {
+                    byte[] data = webClient.DownloadData(url);
+                    using (var stream = new System.IO.MemoryStream(data))
+                    {
+                        return Image.FromStream(stream);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Failed to load image from URL: " + ex.Message);
+                return null;
+            }
         }
         public Image ItemImage
         {
