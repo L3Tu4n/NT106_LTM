@@ -68,7 +68,21 @@ func RegisterUser(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to create table verificationcode"})
 		return
 	}
-
+	// Kiểm tra xem người dùng đã tồn tại trong bảng verificationcode chưa
+	var existingCode models.Code
+	err = db.Get(&existingCode, "SELECT * FROM verificationcode WHERE EMAIL = ?", newUser.EMAIL)
+	if err == nil {
+		// Nếu tồn tại, xóa bản ghi cũ
+		_, err := db.Exec("DELETE FROM verificationcode WHERE EMAIL = ?", newUser.EMAIL)
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to delete existing user"})
+			return
+		}
+	} else if err != sql.ErrNoRows {
+		log.Println("Error querying database:", err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Database error"})
+		return
+	}
 	// Tạo mã xác minh mới và lưu vào cơ sở dữ liệu
 	verificationCode, err := models.GenerateVerificationCode(6)
 	if err != nil {

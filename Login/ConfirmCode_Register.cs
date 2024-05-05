@@ -68,5 +68,36 @@ namespace Music
             loginForm.Show();
             this.Hide();
         }
+
+        private async void tbReCode_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+                lbMessage.Text = "Vui lòng nhập email.";
+            var resetpasswordRequest = new
+            {
+                email,
+                password 
+            };
+            string json = JsonConvert.SerializeObject(resetpasswordRequest);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+            try
+            {
+                var response = await httpClient.PostAsync("http://localhost:9999/v1/Register", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    lbMessage.Text = "Chúng tôi đã gửi lại mã xác thực vào email của bạn.";
+                }
+                else
+                {
+                    if (!string.IsNullOrWhiteSpace(email))
+                        lbMessage.Text = "Gửi mã xác thực thất bại, vui lòng kiểm tra lại địa chỉ email.";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}");
+            }
+        }
     }
 }

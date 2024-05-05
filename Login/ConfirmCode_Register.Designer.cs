@@ -88,6 +88,7 @@
             this.tbReCode.TabIndex = 42;
             this.tbReCode.TabStop = true;
             this.tbReCode.Text = "Gửi lại mã ";
+            this.tbReCode.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.tbReCode_LinkClicked);
             // 
             // lbEmail
             // 
@@ -237,7 +238,7 @@
             this.lbMessage.CursorType = System.Windows.Forms.Cursors.Default;
             this.lbMessage.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMessage.ForeColor = System.Drawing.Color.Red;
-            this.lbMessage.Location = new System.Drawing.Point(300, 363);
+            this.lbMessage.Location = new System.Drawing.Point(302, 392);
             this.lbMessage.Name = "lbMessage";
             this.lbMessage.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbMessage.Size = new System.Drawing.Size(0, 0);

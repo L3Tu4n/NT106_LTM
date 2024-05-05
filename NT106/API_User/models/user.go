@@ -32,6 +32,11 @@ type User struct {
 	PHONE    sql.NullString `json:"PHONE" db:"PHONE"`
 	AVATAR   []byte         `json:"AVATAR" db:"AVATAR"`
 }
+type Code struct {
+	EMAIL    string `json:"EMAIL" db:"EMAIL"`
+	PASSWORD string `json:"PASSWORD" db:"PASSWORD"`
+	CODE     string `json:"CODE" db:"CODE"`
+}
 
 func (user *User) HashPassword(password string) error {
 	bytes, err := bcrypt.GenerateFromPassword([]byte(password), 14)
