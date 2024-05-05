@@ -318,7 +318,7 @@
             this.BackLogin.AutoSize = true;
             this.BackLogin.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackLogin.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.BackLogin.Location = new System.Drawing.Point(433, 534);
+            this.BackLogin.Location = new System.Drawing.Point(433, 524);
             this.BackLogin.Name = "BackLogin";
             this.BackLogin.Size = new System.Drawing.Size(89, 19);
             this.BackLogin.TabIndex = 39;
@@ -543,7 +543,7 @@
             this.btSignUp.ImageSize = new System.Drawing.Size(156, 49);
             this.btSignUp.ImageZoomSize = new System.Drawing.Size(176, 69);
             this.btSignUp.InitialImage = ((System.Drawing.Image)(resources.GetObject("btSignUp.InitialImage")));
-            this.btSignUp.Location = new System.Drawing.Point(394, 462);
+            this.btSignUp.Location = new System.Drawing.Point(401, 452);
             this.btSignUp.Name = "btSignUp";
             this.btSignUp.Rotation = 0;
             this.btSignUp.ShowActiveImage = true;

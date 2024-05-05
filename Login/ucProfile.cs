@@ -82,7 +82,7 @@ namespace Music
 
         private async void btnSaveChanges_Click(object sender, EventArgs e)
         {
-            if (txtPhone.Text.Length != 10)
+            if (txtPhone.Text.Length != 10 && txtPhone.Text.Length != 0)
             {
                 tbError.Show();
                 return;
@@ -115,7 +115,7 @@ namespace Music
                             if (response.IsSuccessStatusCode)
                             {
                             MessageBox.Show("Dữ liệu đã được cập nhật thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                            tbError.Hide();
                         }
                         else
                             {
