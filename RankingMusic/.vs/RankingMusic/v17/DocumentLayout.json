@@ -1,0 +1,209 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Workspace\\C#\\RankingMusic\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|C:\\Workspace\\C#\\RankingMusic\\cardsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|solutionrelative:cardsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|c:\\workspace\\c#\\rankingmusic\\cardsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|solutionrelative:cardsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|C:\\Workspace\\C#\\RankingMusic\\uscrankmusic.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|solutionrelative:uscrankmusic.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|C:\\Workspace\\C#\\RankingMusic\\cardsong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|solutionrelative:cardsong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|C:\\Workspace\\C#\\RankingMusic\\uscrankmusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|solutionrelative:uscrankmusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|C:\\Workspace\\C#\\RankingMusic\\uscrankmusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|solutionrelative:uscrankmusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|C:\\Workspace\\C#\\RankingMusic\\uscplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|solutionrelative:uscplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|C:\\Workspace\\C#\\RankingMusic\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|C:\\Workspace\\C#\\RankingMusic\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|C:\\Workspace\\C#\\RankingMusic\\uscsinger.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|solutionrelative:uscsinger.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|C:\\Workspace\\C#\\RankingMusic\\uscsinger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|solutionrelative:uscsinger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|C:\\Workspace\\C#\\RankingMusic\\uscsinger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1F9C0807-AF39-475A-974B-1FEF6E01BCDC}|RankingMusic.csproj|solutionrelative:uscsinger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CardSong.cs [Design]",
+              "DocumentMoniker": "C:\\Workspace\\C#\\RankingMusic\\CardSong.cs",
+              "RelativeDocumentMoniker": "CardSong.cs",
+              "ToolTip": "C:\\Workspace\\C#\\RankingMusic\\CardSong.cs [Design]",
+              "RelativeToolTip": "CardSong.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T07:35:08.739Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CardSong.cs",
+              "DocumentMoniker": "C:\\Workspace\\C#\\RankingMusic\\CardSong.cs",
+              "RelativeDocumentMoniker": "CardSong.cs",
+              "ToolTip": "C:\\Workspace\\C#\\RankingMusic\\CardSong.cs",
+              "RelativeToolTip": "CardSong.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAUwDUAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T17:42:05.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "USCRankMusic.Designer.cs",
+              "DocumentMoniker": "C:\\Workspace\\C#\\RankingMusic\\USCRankMusic.Designer.cs",
+              "RelativeDocumentMoniker": "USCRankMusic.Designer.cs",
+              "ToolTip": "C:\\Workspace\\C#\\RankingMusic\\USCRankMusic.Designer.cs",
+              "RelativeToolTip": "USCRankMusic.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAANEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T17:02:50.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CardSong.Designer.cs",
+              "DocumentMoniker": "C:\\Workspace\\C#\\RankingMusic\\CardSong.Designer.cs",
+              "RelativeDocumentMoniker": "CardSong.Designer.cs",
+              "ToolTip": "C:\\Workspace\\C#\\RankingMusic\\CardSong.Designer.cs",
+              "RelativeToolTip": "CardSong.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T15:32:58.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "USCRankMusic.cs",
+              "DocumentMoniker": "C:\\Workspace\\C#\\RankingMusic\\USCRankMusic.cs",
+              "RelativeDocumentMoniker": "USCRankMusic.cs",
+              "ToolTip": "C:\\Workspace\\C#\\RankingMusic\\USCRankMusic.cs",
+              "RelativeToolTip": "USCRankMusic.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T16:13:05.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "USCRankMusic.cs [Design]",
+              "DocumentMoniker": "C:\\Workspace\\C#\\RankingMusic\\USCRankMusic.cs",
+              "RelativeDocumentMoniker": "USCRankMusic.cs",
+              "ToolTip": "C:\\Workspace\\C#\\RankingMusic\\USCRankMusic.cs [Design]",
+              "RelativeToolTip": "USCRankMusic.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T07:48:40.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "USCPlay.cs [Design]",
+              "DocumentMoniker": "C:\\Workspace\\C#\\RankingMusic\\USCPlay.cs",
+              "RelativeDocumentMoniker": "USCPlay.cs",
+              "ToolTip": "C:\\Workspace\\C#\\RankingMusic\\USCPlay.cs [Design]",
+              "RelativeToolTip": "USCPlay.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T09:50:10.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Workspace\\C#\\RankingMusic\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "C:\\Workspace\\C#\\RankingMusic\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T17:09:31.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "USCSinger.Designer.cs",
+              "DocumentMoniker": "C:\\Workspace\\C#\\RankingMusic\\USCSinger.Designer.cs",
+              "RelativeDocumentMoniker": "USCSinger.Designer.cs",
+              "ToolTip": "C:\\Workspace\\C#\\RankingMusic\\USCSinger.Designer.cs",
+              "RelativeToolTip": "USCSinger.Designer.cs",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAAAIkAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T15:54:22.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "USCSinger.cs",
+              "DocumentMoniker": "C:\\Workspace\\C#\\RankingMusic\\USCSinger.cs",
+              "RelativeDocumentMoniker": "USCSinger.cs",
+              "ToolTip": "C:\\Workspace\\C#\\RankingMusic\\USCSinger.cs",
+              "RelativeToolTip": "USCSinger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T15:49:17.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "USCSinger.cs [Design]",
+              "DocumentMoniker": "C:\\Workspace\\C#\\RankingMusic\\USCSinger.cs",
+              "RelativeDocumentMoniker": "USCSinger.cs",
+              "ToolTip": "C:\\Workspace\\C#\\RankingMusic\\USCSinger.cs [Design]",
+              "RelativeToolTip": "USCSinger.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T15:39:00.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Workspace\\C#\\RankingMusic\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Workspace\\C#\\RankingMusic\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T17:31:59.43Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
