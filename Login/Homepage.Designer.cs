@@ -91,7 +91,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(973, 45);
+            this.panel1.Size = new System.Drawing.Size(952, 45);
             this.panel1.TabIndex = 169;
             // 
             // panel3
@@ -100,7 +100,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 45);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(973, 255);
+            this.panel3.Size = new System.Drawing.Size(952, 255);
             this.panel3.TabIndex = 171;
             // 
             // flowLayoutPanelAlbum
@@ -109,7 +109,7 @@
             this.flowLayoutPanelAlbum.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanelAlbum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanelAlbum.Name = "flowLayoutPanelAlbum";
-            this.flowLayoutPanelAlbum.Size = new System.Drawing.Size(973, 255);
+            this.flowLayoutPanelAlbum.Size = new System.Drawing.Size(952, 255);
             this.flowLayoutPanelAlbum.TabIndex = 1;
             // 
             // panel2
@@ -118,7 +118,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 300);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(973, 45);
+            this.panel2.Size = new System.Drawing.Size(952, 45);
             this.panel2.TabIndex = 172;
             // 
             // panel4
@@ -127,7 +127,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 345);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(973, 255);
+            this.panel4.Size = new System.Drawing.Size(952, 255);
             this.panel4.TabIndex = 173;
             // 
             // flowLayoutPanelArtist
@@ -136,7 +136,7 @@
             this.flowLayoutPanelArtist.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanelArtist.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanelArtist.Name = "flowLayoutPanelArtist";
-            this.flowLayoutPanelArtist.Size = new System.Drawing.Size(973, 255);
+            this.flowLayoutPanelArtist.Size = new System.Drawing.Size(952, 255);
             this.flowLayoutPanelArtist.TabIndex = 1;
             // 
             // panel5
@@ -145,7 +145,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 600);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(973, 45);
+            this.panel5.Size = new System.Drawing.Size(952, 45);
             this.panel5.TabIndex = 174;
             // 
             // bunifuLabel2
@@ -173,7 +173,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 645);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(973, 300);
+            this.panel6.Size = new System.Drawing.Size(952, 300);
             this.panel6.TabIndex = 175;
             // 
             // flowLayoutPanelTrack
@@ -190,6 +190,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.AutoScrollMinSize = new System.Drawing.Size(0, 773);
             this.BackColor = System.Drawing.Color.Black;
             this.Controls.Add(this.panel6);
@@ -200,7 +201,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Homepage";
-            this.Size = new System.Drawing.Size(973, 773);
+            this.Size = new System.Drawing.Size(952, 773);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);

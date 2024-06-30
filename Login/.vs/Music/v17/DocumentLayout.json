@@ -3,64 +3,40 @@
   "WorkspaceRootPath": "D:\\NT106\\NT106\\Login\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|d:\\nt106\\nt106\\login\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|d:\\nt106\\nt106\\login\\karaokeroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:karaokeroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106\\Login\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|d:\\nt106\\nt106\\login\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|d:\\nt106\\nt106\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|d:\\nt106\\nt106\\login\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|d:\\nt106\\nt106\\login\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106\\Login\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|d:\\nt106\\nt106\\login\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106\\Login\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106\\Login\\forgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:forgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106\\Login\\cardsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:cardsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106\\Login\\search.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:search.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106\\Login\\cardsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:cardsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106\\Login\\confirmcode_register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:confirmcode_register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106\\Login\\confirmcode_register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:confirmcode_register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|d:\\nt106\\nt106\\login\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106\\Login\\confirmverificationcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:confirmverificationcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106\\Login\\ucprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:ucprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106\\Login\\ucprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:ucprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106\\Login\\classcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:classcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106\\Login\\cardcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -91,10 +67,6 @@
       "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:verificationcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106\\Login\\checkformat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:checkformat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\NT106\\Login\\changepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:changepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -118,140 +90,99 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Room.cs",
+              "DocumentMoniker": "D:\\NT106\\NT106\\Login\\Room.cs",
+              "RelativeDocumentMoniker": "Room.cs",
+              "ToolTip": "D:\\NT106\\NT106\\Login\\Room.cs",
+              "RelativeToolTip": "Room.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAYwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T17:18:30.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\NT106\\NT106\\Login\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "D:\\NT106\\NT106\\Login\\Login.cs",
+              "RelativeToolTip": "Login.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T16:55:18.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Room.cs [Design]",
+              "DocumentMoniker": "D:\\NT106\\NT106\\Login\\Room.cs",
+              "RelativeDocumentMoniker": "Room.cs",
+              "ToolTip": "D:\\NT106\\NT106\\Login\\Room.cs [Design]",
+              "RelativeToolTip": "Room.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T16:54:56.446Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KaraokeRoom.cs",
+              "DocumentMoniker": "D:\\NT106\\NT106\\Login\\KaraokeRoom.cs",
+              "RelativeDocumentMoniker": "KaraokeRoom.cs",
+              "ToolTip": "D:\\NT106\\NT106\\Login\\KaraokeRoom.cs",
+              "RelativeToolTip": "KaraokeRoom.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAADwvzYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T15:04:01.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Homepage.cs",
+              "DocumentMoniker": "D:\\NT106\\NT106\\Login\\Homepage.cs",
+              "RelativeDocumentMoniker": "Homepage.cs",
+              "ToolTip": "D:\\NT106\\NT106\\Login\\Homepage.cs",
+              "RelativeToolTip": "Homepage.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAYwBoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T15:03:40.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Homepage.cs [Design]",
               "DocumentMoniker": "D:\\NT106\\NT106\\Login\\Homepage.cs",
               "RelativeDocumentMoniker": "Homepage.cs",
               "ToolTip": "D:\\NT106\\NT106\\Login\\Homepage.cs [Design]",
               "RelativeToolTip": "Homepage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T13:37:22.398Z",
+              "WhenOpened": "2024-06-30T15:11:47.71Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\NT106\\NT106\\Login\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\NT106\\NT106\\Login\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAABoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T22:41:16.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ConfirmCode_Register.cs [Design]",
-              "DocumentMoniker": "D:\\NT106\\NT106\\Login\\ConfirmCode_Register.cs",
-              "RelativeDocumentMoniker": "ConfirmCode_Register.cs",
-              "ToolTip": "D:\\NT106\\NT106\\Login\\ConfirmCode_Register.cs [Design]",
-              "RelativeToolTip": "ConfirmCode_Register.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T17:22:15.134Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Register.cs [Design]",
-              "DocumentMoniker": "D:\\NT106\\NT106\\Login\\Register.cs",
-              "RelativeDocumentMoniker": "Register.cs",
-              "ToolTip": "D:\\NT106\\NT106\\Login\\Register.cs [Design]",
-              "RelativeToolTip": "Register.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T19:55:58.76Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Register.cs",
-              "DocumentMoniker": "D:\\NT106\\NT106\\Login\\Register.cs",
-              "RelativeDocumentMoniker": "Register.cs",
-              "ToolTip": "D:\\NT106\\NT106\\Login\\Register.cs",
-              "RelativeToolTip": "Register.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACYAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T19:58:22.938Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\NT106\\NT106\\Login\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\NT106\\NT106\\Login\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T18:48:41.037Z",
+              "WhenOpened": "2024-06-30T15:07:33.08Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CardSong.cs",
-              "DocumentMoniker": "D:\\NT106\\NT106\\Login\\CardSong.cs",
-              "RelativeDocumentMoniker": "CardSong.cs",
-              "ToolTip": "D:\\NT106\\NT106\\Login\\CardSong.cs",
-              "RelativeToolTip": "CardSong.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T01:15:25.47Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Search.cs [Design]",
-              "DocumentMoniker": "D:\\NT106\\NT106\\Login\\Search.cs",
-              "RelativeDocumentMoniker": "Search.cs",
-              "ToolTip": "D:\\NT106\\NT106\\Login\\Search.cs [Design]",
-              "RelativeToolTip": "Search.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T22:30:19.233Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CardSong.cs [Design]",
-              "DocumentMoniker": "D:\\NT106\\NT106\\Login\\CardSong.cs",
-              "RelativeDocumentMoniker": "CardSong.cs",
-              "ToolTip": "D:\\NT106\\NT106\\Login\\CardSong.cs [Design]",
-              "RelativeToolTip": "CardSong.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T18:41:00.254Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ForgotPassword.cs",
-              "DocumentMoniker": "D:\\NT106\\NT106\\Login\\ForgotPassword.cs",
-              "RelativeDocumentMoniker": "ForgotPassword.cs",
-              "ToolTip": "D:\\NT106\\NT106\\Login\\ForgotPassword.cs",
-              "RelativeToolTip": "ForgotPassword.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAlwEQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T03:39:04.349Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ConfirmCode_Register.cs",
-              "DocumentMoniker": "D:\\NT106\\NT106\\Login\\ConfirmCode_Register.cs",
-              "RelativeDocumentMoniker": "ConfirmCode_Register.cs",
-              "ToolTip": "D:\\NT106\\NT106\\Login\\ConfirmCode_Register.cs",
-              "RelativeToolTip": "ConfirmCode_Register.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAxwFEAAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T20:40:24.353Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "ConfirmVerificationCode.cs [Design]",
               "DocumentMoniker": "D:\\NT106\\NT106\\Login\\ConfirmVerificationCode.cs",
               "RelativeDocumentMoniker": "ConfirmVerificationCode.cs",
@@ -262,18 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ucProfile.cs [Design]",
-              "DocumentMoniker": "D:\\NT106\\NT106\\Login\\ucProfile.cs",
-              "RelativeDocumentMoniker": "ucProfile.cs",
-              "ToolTip": "D:\\NT106\\NT106\\Login\\ucProfile.cs [Design]",
-              "RelativeToolTip": "ucProfile.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T19:37:17.551Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 8,
               "Title": "ucProfile.cs",
               "DocumentMoniker": "D:\\NT106\\NT106\\Login\\ucProfile.cs",
               "RelativeDocumentMoniker": "ucProfile.cs",
@@ -281,11 +201,12 @@
               "RelativeToolTip": "ucProfile.cs",
               "ViewState": "AQIAAG8AAAAAAAAAAAApwHUAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T19:37:20.584Z"
+              "WhenOpened": "2024-05-05T19:37:20.584Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 10,
               "Title": "CardControl.cs [Design]",
               "DocumentMoniker": "D:\\NT106\\NT106\\Login\\CardControl.cs",
               "RelativeDocumentMoniker": "CardControl.cs",
@@ -296,19 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ClassCard.cs",
-              "DocumentMoniker": "D:\\NT106\\NT106\\Login\\ClassCard.cs",
-              "RelativeDocumentMoniker": "ClassCard.cs",
-              "ToolTip": "D:\\NT106\\NT106\\Login\\ClassCard.cs",
-              "RelativeToolTip": "ClassCard.cs",
-              "ViewState": "AQIAAGAAAAAAAAAAAAAAAGgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T18:31:05.9Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 9,
               "Title": "CardControl.cs",
               "DocumentMoniker": "D:\\NT106\\NT106\\Login\\CardControl.cs",
               "RelativeDocumentMoniker": "CardControl.cs",
@@ -320,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 11,
               "Title": "AddPlaylist.cs [Design]",
               "DocumentMoniker": "D:\\NT106\\NT106\\Login\\AddPlaylist.cs",
               "RelativeDocumentMoniker": "AddPlaylist.cs",
@@ -330,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 12,
               "Title": "USCAlbum.Designer.cs",
               "DocumentMoniker": "D:\\NT106\\NT106\\Login\\USCAlbum.Designer.cs",
               "RelativeDocumentMoniker": "USCAlbum.Designer.cs",
@@ -342,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 13,
               "Title": "USCSinger.cs [Design]",
               "DocumentMoniker": "D:\\NT106\\NT106\\Login\\USCSinger.cs",
               "RelativeDocumentMoniker": "USCSinger.cs",
@@ -352,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 15,
               "Title": "VerificationCode.cs [Design]",
               "DocumentMoniker": "D:\\NT106\\NT106\\Login\\VerificationCode.cs",
               "RelativeDocumentMoniker": "VerificationCode.cs",
@@ -362,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 14,
               "Title": "USCRankMusic.cs [Design]",
               "DocumentMoniker": "D:\\NT106\\NT106\\Login\\USCRankMusic.cs",
               "RelativeDocumentMoniker": "USCRankMusic.cs",
@@ -372,19 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "CheckFormat.cs",
-              "DocumentMoniker": "D:\\NT106\\NT106\\Login\\CheckFormat.cs",
-              "RelativeDocumentMoniker": "CheckFormat.cs",
-              "ToolTip": "D:\\NT106\\NT106\\Login\\CheckFormat.cs",
-              "RelativeToolTip": "CheckFormat.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T17:22:14.102Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 17,
               "Title": "cardTrack.cs",
               "DocumentMoniker": "D:\\NT106\\NT106\\Login\\cardTrack.cs",
               "RelativeDocumentMoniker": "cardTrack.cs",
@@ -396,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 16,
               "Title": "ChangePassword.cs [Design]",
               "DocumentMoniker": "D:\\NT106\\NT106\\Login\\ChangePassword.cs",
               "RelativeDocumentMoniker": "ChangePassword.cs",
@@ -406,7 +303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 18,
               "Title": "AddPlaylist.cs",
               "DocumentMoniker": "D:\\NT106\\NT106\\Login\\AddPlaylist.cs",
               "RelativeDocumentMoniker": "AddPlaylist.cs",
@@ -418,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 19,
               "Title": "ucPlaylists.Designer.cs",
               "DocumentMoniker": "D:\\NT106\\NT106\\Login\\ucPlaylists.Designer.cs",
               "RelativeDocumentMoniker": "ucPlaylists.Designer.cs",

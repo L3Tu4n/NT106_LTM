@@ -158,3 +158,4 @@ D:\NT106\NT106\Login\obj\Debug\Music.csproj.Up2Date
 D:\NT106\NT106\Login\obj\Debug\Music.exe
 D:\NT106\NT106\Login\obj\Debug\Music.pdb
 D:\NT106\NT106\Login\bin\Debug\Music.pdb
+D:\NT106\NT106\Login\obj\Debug\Music.KaraokeRoom.resources

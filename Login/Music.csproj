@@ -227,6 +227,12 @@
     <Compile Include="Homepage.Designer.cs">
       <DependentUpon>Homepage.cs</DependentUpon>
     </Compile>
+    <Compile Include="KaraokeRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KaraokeRoom.Designer.cs">
+      <DependentUpon>KaraokeRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="List.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -266,6 +272,12 @@
     <Compile Include=".Designer.cs">
       <DependentUpon>ConfirmVerificationCode.cs</DependentUpon>
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Room.Designer.cs">
+      <DependentUpon>Room.cs</DependentUpon>
     </Compile>
     <Compile Include="Search.cs">
       <SubType>UserControl</SubType>
@@ -348,6 +360,9 @@
     <EmbeddedResource Include="Homepage.resx">
       <DependentUpon>Homepage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KaraokeRoom.resx">
+      <DependentUpon>KaraokeRoom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="List.resx">
       <DependentUpon>List.cs</DependentUpon>
     </EmbeddedResource>
@@ -372,6 +387,9 @@
     </Compile>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room.resx">
+      <DependentUpon>Room.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Search.resx">
       <DependentUpon>Search.cs</DependentUpon>
@@ -554,6 +572,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pause_circle_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,6 +16,7 @@ namespace Music
         Homepage homepage = new Homepage();
         ucPlaylists ucPlaylists = new ucPlaylists();
         ucProfile ucProfile = new ucProfile();
+        KaraokeRoom room = new KaraokeRoom();
 
         public Form1()
         {
@@ -71,6 +72,11 @@ namespace Music
             }
             Search search = new Search(tbSearch.Text);
             addUserControl(search);
+        }
+
+        private void bunifuButton23_Click(object sender, EventArgs e)
+        {
+            addUserControl(room);
         }
     }
 }
