@@ -44,6 +44,7 @@ namespace Music
                         string Duration = track.DURATION.String;
                         trackCounter++;
                         string stt = trackCounter.ToString();
+                        //string fs_path= track.FS_PATH.String;
                         cardTrack card = new cardTrack(stt, imageURL, NameTrack, NameArtist, NameAlbum, Duration);
                         flowLayoutPanelTrack.Controls.Add(card);
                     }

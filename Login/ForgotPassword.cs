@@ -63,5 +63,10 @@ namespace Music
                 MessageBox.Show($"An error occurred: {ex.Message}");
             }
         }
+
+        private void bunifuPictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

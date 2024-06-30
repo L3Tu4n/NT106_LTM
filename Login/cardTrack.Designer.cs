@@ -72,11 +72,12 @@
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 84F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(995, 84);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 68F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(746, 67);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // panel5
@@ -84,9 +85,10 @@
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
             this.panel5.Controls.Add(this.Duration);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(896, 3);
+            this.panel5.Location = new System.Drawing.Point(670, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(96, 78);
+            this.panel5.Size = new System.Drawing.Size(74, 63);
             this.panel5.TabIndex = 9;
             // 
             // Duration
@@ -94,9 +96,10 @@
             this.Duration.AutoSize = true;
             this.Duration.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Duration.ForeColor = System.Drawing.Color.White;
-            this.Duration.Location = new System.Drawing.Point(15, 27);
+            this.Duration.Location = new System.Drawing.Point(11, 22);
+            this.Duration.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Duration.Name = "Duration";
-            this.Duration.Size = new System.Drawing.Size(67, 25);
+            this.Duration.Size = new System.Drawing.Size(54, 20);
             this.Duration.TabIndex = 1;
             this.Duration.Text = "03:52";
             // 
@@ -105,9 +108,10 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
             this.panel4.Controls.Add(this.NameAlbum);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(598, 3);
+            this.panel4.Location = new System.Drawing.Point(447, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(292, 78);
+            this.panel4.Size = new System.Drawing.Size(219, 63);
             this.panel4.TabIndex = 8;
             // 
             // NameAlbum
@@ -117,24 +121,25 @@
             this.NameAlbum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameAlbum.ForeColor = System.Drawing.Color.White;
             this.NameAlbum.LinkColor = System.Drawing.Color.White;
-            this.NameAlbum.Location = new System.Drawing.Point(0, 27);
+            this.NameAlbum.Location = new System.Drawing.Point(0, 22);
             this.NameAlbum.Margin = new System.Windows.Forms.Padding(0);
             this.NameAlbum.Name = "NameAlbum";
-            this.NameAlbum.Size = new System.Drawing.Size(292, 25);
+            this.NameAlbum.Size = new System.Drawing.Size(237, 20);
             this.NameAlbum.TabIndex = 3;
             this.NameAlbum.TabStop = true;
             this.NameAlbum.Text = "Em Của Ngày Hôm Qua (EP)";
             this.NameAlbum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.NameAlbum.VisitedLinkColor = System.Drawing.Color.White;
+            this.NameAlbum.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             // 
             // ImageArtist
             // 
             this.ImageArtist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
             this.ImageArtist.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ImageArtist.Image = global::Music.Properties.Resources._220px_Em_của_ngày_hôm_qua;
-            this.ImageArtist.Location = new System.Drawing.Point(102, 3);
+            this.ImageArtist.Location = new System.Drawing.Point(76, 2);
+            this.ImageArtist.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ImageArtist.Name = "ImageArtist";
-            this.ImageArtist.Size = new System.Drawing.Size(93, 78);
+            this.ImageArtist.Size = new System.Drawing.Size(70, 63);
             this.ImageArtist.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImageArtist.TabIndex = 1;
             this.ImageArtist.TabStop = false;
@@ -144,9 +149,10 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
             this.panel2.Controls.Add(this.STT);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Location = new System.Drawing.Point(2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(93, 78);
+            this.panel2.Size = new System.Drawing.Size(70, 63);
             this.panel2.TabIndex = 2;
             // 
             // STT
@@ -154,9 +160,10 @@
             this.STT.AutoSize = true;
             this.STT.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.STT.ForeColor = System.Drawing.Color.White;
-            this.STT.Location = new System.Drawing.Point(27, 16);
+            this.STT.Location = new System.Drawing.Point(20, 13);
+            this.STT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.STT.Name = "STT";
-            this.STT.Size = new System.Drawing.Size(43, 46);
+            this.STT.Size = new System.Drawing.Size(34, 37);
             this.STT.TabIndex = 0;
             this.STT.Text = "1";
             // 
@@ -165,9 +172,10 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
             this.panel3.Controls.Add(this.bunifuImageButton5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(201, 3);
+            this.panel3.Location = new System.Drawing.Point(150, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(93, 78);
+            this.panel3.Size = new System.Drawing.Size(70, 63);
             this.panel3.TabIndex = 3;
             // 
             // bunifuImageButton5
@@ -189,18 +197,17 @@
             this.bunifuImageButton5.ImageActive = null;
             this.bunifuImageButton5.ImageLocation = null;
             this.bunifuImageButton5.ImageMargin = 0;
-            this.bunifuImageButton5.ImageSize = new System.Drawing.Size(52, 48);
-            this.bunifuImageButton5.ImageZoomSize = new System.Drawing.Size(53, 49);
+            this.bunifuImageButton5.ImageSize = new System.Drawing.Size(39, 39);
+            this.bunifuImageButton5.ImageZoomSize = new System.Drawing.Size(40, 40);
             this.bunifuImageButton5.InitialImage = null;
-            this.bunifuImageButton5.Location = new System.Drawing.Point(22, 15);
-            this.bunifuImageButton5.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuImageButton5.Location = new System.Drawing.Point(16, 12);
             this.bunifuImageButton5.Name = "bunifuImageButton5";
             this.bunifuImageButton5.Rotation = 0;
             this.bunifuImageButton5.ShowActiveImage = false;
             this.bunifuImageButton5.ShowCursorChanges = true;
             this.bunifuImageButton5.ShowImageBorders = true;
             this.bunifuImageButton5.ShowSizeMarkers = false;
-            this.bunifuImageButton5.Size = new System.Drawing.Size(53, 49);
+            this.bunifuImageButton5.Size = new System.Drawing.Size(40, 40);
             this.bunifuImageButton5.TabIndex = 125;
             this.bunifuImageButton5.ToolTipText = "Tăng/Giảm âm lượng";
             this.bunifuImageButton5.WaitOnLoad = false;
@@ -213,9 +220,10 @@
             this.panel6.Controls.Add(this.NameArtist);
             this.panel6.Controls.Add(this.NameTrack);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(300, 3);
+            this.panel6.Location = new System.Drawing.Point(224, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(292, 78);
+            this.panel6.Size = new System.Drawing.Size(219, 63);
             this.panel6.TabIndex = 7;
             // 
             // NameArtist
@@ -223,9 +231,10 @@
             this.NameArtist.AutoSize = true;
             this.NameArtist.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameArtist.LinkColor = System.Drawing.Color.Gray;
-            this.NameArtist.Location = new System.Drawing.Point(3, 39);
+            this.NameArtist.Location = new System.Drawing.Point(2, 32);
+            this.NameArtist.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.NameArtist.Name = "NameArtist";
-            this.NameArtist.Size = new System.Drawing.Size(167, 25);
+            this.NameArtist.Size = new System.Drawing.Size(132, 20);
             this.NameArtist.TabIndex = 2;
             this.NameArtist.TabStop = true;
             this.NameArtist.Text = "Sơn Tùng M-TP";
@@ -236,9 +245,10 @@
             this.NameTrack.AutoSize = true;
             this.NameTrack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameTrack.ForeColor = System.Drawing.Color.White;
-            this.NameTrack.Location = new System.Drawing.Point(3, 14);
+            this.NameTrack.Location = new System.Drawing.Point(2, 11);
+            this.NameTrack.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.NameTrack.Name = "NameTrack";
-            this.NameTrack.Size = new System.Drawing.Size(242, 25);
+            this.NameTrack.Size = new System.Drawing.Size(197, 20);
             this.NameTrack.TabIndex = 0;
             this.NameTrack.Text = "Em Của Ngày Hôm Qua";
             // 
@@ -246,20 +256,22 @@
             // 
             this.panel1.AutoSize = true;
             this.panel1.Controls.Add(this.tableLayoutPanel1);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(995, 84);
+            this.panel1.Size = new System.Drawing.Size(746, 68);
             this.panel1.TabIndex = 0;
             // 
             // cardTrack
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
             this.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(216)))), ((int)(((byte)(87)))));
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "cardTrack";
-            this.Size = new System.Drawing.Size(999, 92);
+            this.Size = new System.Drawing.Size(749, 75);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();

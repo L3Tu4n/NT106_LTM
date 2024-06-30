@@ -50,6 +50,10 @@ func main() {
 		v1.POST("/Album", controller.GetAlbum)
 		v1.POST("/Artist", controller.GetArtist)
 		v1.GET("/Top5Tracks", controller.GetTop5Tracks)
+		//Search keyword name
+		v1.POST("/Search/Tracks", controller.GetSeachTop10Tracks)
+		v1.POST("/Search/Albums", controller.GetSeachTop5Album)
+		v1.POST("/Search/Artists", controller.GetSearchTop5Artist)
 	}
 	router.Run(":9999")
 }

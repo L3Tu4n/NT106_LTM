@@ -189,6 +189,84 @@ func GetTop5Tracks(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve top tracks"})
 		return
 	}
-
 	c.JSON(http.StatusOK, topTracks)
+}
+
+func GetSeachTop10Tracks(c *gin.Context) {
+	// Lấy keyword từ trường "keyword" trong JSON
+	var request struct {
+		Keyword string `json:"keyword"`
+	}
+	if err := c.ShouldBindJSON(&request); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+	keyword := request.Keyword
+
+	// Truy vấn ra top 10 bài hát có tên chứa keyword
+	var topTracks []Track
+	err := db.Select(&topTracks, "SELECT Tracks.*, Albums.name AS album_name, Artists.name AS artist_name "+
+		"FROM Tracks "+
+		"JOIN Albums ON Tracks.id_album = Albums.id "+
+		"JOIN Artists ON Tracks.id_artist = Artists.id "+
+		"WHERE Tracks.name LIKE '%' || ? || '%' COLLATE NOCASE "+
+		"ORDER BY Tracks.listen_count DESC "+
+		"LIMIT 10", keyword)
+
+	if err != nil {
+		log.Println(err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve top tracks"})
+		return
+	}
+	c.JSON(http.StatusOK, topTracks)
+}
+
+func GetSeachTop5Album(c *gin.Context) {
+	// Lấy keyword từ trường "keyword" trong JSON
+	var request struct {
+		Keyword string `json:"keyword"`
+	}
+	if err := c.ShouldBindJSON(&request); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+	keyword := request.Keyword
+
+	// Truy vấn ra top 5 album có tên chứa keyword
+	var topAlbums []Album
+	err := db.Select(&topAlbums, "SELECT Albums.*, Artists.name AS artist_name "+
+		"FROM Albums "+
+		"JOIN Artists ON Albums.id_artist = Artists.id "+
+		"WHERE Albums.name LIKE '%' || ? || '%' COLLATE NOCASE "+
+		"ORDER BY Albums.total_tracks DESC "+
+		"LIMIT 5", keyword)
+
+	if err != nil {
+		log.Println(err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve top albums"})
+		return
+	}
+	c.JSON(http.StatusOK, topAlbums)
+}
+func GetSearchTop5Artist(c *gin.Context) {
+	// Lấy keyword từ trường "keyword" trong JSON
+	var request struct {
+		Keyword string `json:"keyword"`
+	}
+	if err := c.ShouldBindJSON(&request); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+	keyword := request.Keyword
+
+	// Truy vấn ra top 5 nghệ sĩ có tên chứa keyword
+	var topArtists []Artist
+	err := db.Select(&topArtists, "SELECT * FROM Artists WHERE name LIKE '%' || ? || '%' COLLATE NOCASE ORDER BY RANDOM() LIMIT 5", keyword)
+
+	if err != nil {
+		log.Println(err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve top artists"})
+		return
+	}
+	c.JSON(http.StatusOK, topArtists)
 }
