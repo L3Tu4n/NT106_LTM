@@ -34,7 +34,6 @@
             this.lbRoomID = new Bunifu.UI.WinForms.BunifuLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.listTrack = new System.Windows.Forms.ListBox();
             this.button5 = new System.Windows.Forms.Button();
@@ -46,6 +45,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.listmember = new System.Windows.Forms.FlowLayoutPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lbID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.IDRoom.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -63,6 +64,7 @@
             // 
             // IDRoom
             // 
+            this.IDRoom.Controls.Add(this.lbID);
             this.IDRoom.Controls.Add(this.lbRoomID);
             this.IDRoom.Dock = System.Windows.Forms.DockStyle.Top;
             this.IDRoom.Location = new System.Drawing.Point(0, 0);
@@ -84,14 +86,14 @@
             this.lbRoomID.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbRoomID.Size = new System.Drawing.Size(152, 39);
             this.lbRoomID.TabIndex = 163;
-            this.lbRoomID.Text = "Room ID:  ";
+            this.lbRoomID.Text = "ID Room: ";
             this.lbRoomID.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbRoomID.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.bunifuLabel1);
             this.groupBox1.Controls.Add(this.trackBar1);
             this.groupBox1.Controls.Add(this.listTrack);
             this.groupBox1.Controls.Add(this.button5);
@@ -116,25 +118,6 @@
             this.label1.Size = new System.Drawing.Size(41, 25);
             this.label1.TabIndex = 174;
             this.label1.Text = "0%";
-            // 
-            // bunifuLabel1
-            // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
-            this.bunifuLabel1.CursorType = null;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel1.Location = new System.Drawing.Point(827, 151);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(89, 25);
-            this.bunifuLabel1.TabIndex = 173;
-            this.bunifuLabel1.Text = "Room ID: ";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel1.Click += new System.EventHandler(this.bunifuLabel1_Click);
             // 
             // trackBar1
             // 
@@ -240,6 +223,26 @@
             this.listmember.Size = new System.Drawing.Size(931, 152);
             this.listmember.TabIndex = 176;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(822, 157);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(79, 25);
+            this.label4.TabIndex = 176;
+            this.label4.Text = "Volumn";
+            // 
+            // lbID
+            // 
+            this.lbID.AutoSize = true;
+            this.lbID.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbID.ForeColor = System.Drawing.Color.White;
+            this.lbID.Location = new System.Drawing.Point(162, 2);
+            this.lbID.Name = "lbID";
+            this.lbID.Size = new System.Drawing.Size(0, 39);
+            this.lbID.TabIndex = 164;
+            // 
             // Room
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -279,11 +282,12 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.ListBox listTrack;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.FlowLayoutPanel listmember;
+        private System.Windows.Forms.Label lbID;
+        private System.Windows.Forms.Label label4;
     }
 }

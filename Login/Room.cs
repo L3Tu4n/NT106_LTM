@@ -19,32 +19,86 @@ namespace Music
 {
     public partial class Room : UserControl
     {
+        private HttpClient httpClient;
         private TcpClient client;
         private NetworkStream stream;
         private Thread receiveThread;
         private string roomId;
+        private string name;
+        private string image;
         public Room()
         {
             InitializeComponent();
-            avtkaraoke avtkaraoke = new avtkaraoke();
-            listmember.Controls.Add(avtkaraoke);
+            ConnectToServer();
         }
-        public Room(string roomId, TcpClient client, NetworkStream stream, Thread receiveThread)
+        public Room(string roomId)
         {
             InitializeComponent();
             this.roomId = roomId;
-            this.client = client;
-            this.stream = stream;
-            this.receiveThread = receiveThread;
-            lbRoomID.Text += roomId;
+            ConnectToServer();
+        }
 
-            // Bắt đầu nhận tin nhắn từ server
-            if (receiveThread == null || !receiveThread.IsAlive)
+        private void bunifuLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void Room_Load(object sender, EventArgs e)
+        {
+            await LoadProfile();
+
+            if (string.IsNullOrEmpty(roomId))
             {
-                this.receiveThread = new Thread(ListenForServerMessages);
-                this.receiveThread.IsBackground = true;
-                this.receiveThread.Start();
+                await CreateRoom();
+                MessageBox.Show(roomId);
+                lbRoomID.Text += roomId;
             }
+            else
+            {
+                await JoinRoom(roomId);
+                MessageBox.Show(roomId);
+                lbRoomID.Text += roomId;
+            }
+        }
+        private async Task LoadProfile()
+        {
+            using (var handler = new HttpClientHandler())
+            {
+                var cookieContainer = new CookieContainer();
+                handler.CookieContainer = cookieContainer;
+
+                using (var client = new HttpClient(handler))
+                {
+                    string token = manageToken.AccessToken;
+                    var cookie = new Cookie("token", token, "/", "localhost");
+
+                    cookieContainer.Add(cookie);
+                    var request = new HttpRequestMessage(HttpMethod.Get, "http://localhost:9999/v1/profiles/profile");
+                    var response = await client.SendAsync(request);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var responeContent = await response.Content.ReadAsStringAsync();
+                        var responseObj = JsonConvert.DeserializeObject<dynamic>(responeContent);
+
+                        name = responseObj.name;
+                        if (name == null || name == "") name = responseObj.email;
+                        image = responseObj.image;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed to retrieve profile information: " + response.ReasonPhrase);
+                    }
+                }
+            }
+        }
+        private void ConnectToServer()
+        {
+            client = new TcpClient("127.0.0.1", 8888); // Địa chỉ IP và cổng của máy chủ
+            stream = client.GetStream();
+            receiveThread = new Thread(ListenForServerMessages);
+            receiveThread.IsBackground = true;
+            receiveThread.Start();
         }
         private void ListenForServerMessages()
         {
@@ -69,51 +123,70 @@ namespace Music
         }
         private void HandleServerMessage(string message)
         {
-            dynamic data = JsonConvert.DeserializeObject(message);
-
-            if (data.type == "EXISTING_CLIENT_INFO" || data.type == "NEW_CLIENT_JOIN")
+            
+            if (message.StartsWith("JOIN_ROOM_SUCCESS") || message.StartsWith("CREATE_ROOM_SUCCESS"))
             {
-                string clientName = data.name;
-                string clientImage = data.image;
-                this.Invoke((MethodInvoker)delegate
+                roomId = message.Split(' ')[1];
+            }
+            else
+            {
+                try
                 {
-                    // Cập nhật giao diện để hiển thị thông tin client mới hoặc đã tồn tại
-                    AddClientToUI(clientName, clientImage);
-                });
+                    dynamic data = JsonConvert.DeserializeObject(message);
+                    if (data.type == "EXISTING_CLIENT_INFO" || data.type == "NEW_CLIENT_JOIN")
+                    {
+                        string clientName = data.name;
+                        string clientImage = data.image;
+                        this.Invoke((MethodInvoker)delegate
+                        {
+                            // Cập nhật giao diện để hiển thị thông tin client mới hoặc đã tồn tại
+                            AddClientToUI(clientName, clientImage);
+                        });
+                    }
+                }
+                catch (JsonReaderException ex)
+                {
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        MessageBox.Show($"Error parsing JSON: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    });
+                }
             }
         }
         private void AddClientToUI(string clientName, string clientImage)
         {
-            avtkaraoke avtkaraoke = new avtkaraoke(clientName,clientImage);
+            avtkaraoke avtkaraoke = new avtkaraoke(clientName, clientImage);
             listmember.Controls.Add(avtkaraoke);
         }
-        private void bunifuLabel1_Click(object sender, EventArgs e)
+        public async Task JoinRoom(string roomId)
         {
+            var data = new
+            {
+                roomId = roomId,
+                name = name,
+                image = image
+            };
 
+            string jsonData = JsonConvert.SerializeObject(data);
+            string joinMessage = $"JOIN_ROOM {jsonData}";
+            byte[] joinMessageBytes = Encoding.ASCII.GetBytes(joinMessage);
+
+            await stream.WriteAsync(joinMessageBytes, 0, joinMessageBytes.Length);
         }
 
-        private void Room_Load(object sender, EventArgs e)
+        public async Task CreateRoom()
         {
-            if (client != null && client.Connected && stream != null)
+            var data = new
             {
-                try
-                {
-                    // Send request to the server to get info of clients already joined in this room (roomId)
-                    string requestMessage = $"GET_CLIENTS_INFO {roomId}";
-                    byte[] requestMessageBytes = Encoding.ASCII.GetBytes(requestMessage);
-                    stream.Write(requestMessageBytes, 0, requestMessageBytes.Length);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Error sending request to server: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    // Handle the exception as needed, possibly close resources
-                }
-            }
-            else
-            {
-                MessageBox.Show("Client or stream is not available or connected.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                // Handle the case where client or stream is not available or connected
-            }
+                name = name,
+                image = image
+            };
+
+            string jsonData = JsonConvert.SerializeObject(data);
+            string createMessage = $"CREATE_ROOM {jsonData}";
+            byte[] createMessageBytes = Encoding.ASCII.GetBytes(createMessage);
+
+            await stream.WriteAsync(createMessageBytes, 0, createMessageBytes.Length);
         }
     }
 }

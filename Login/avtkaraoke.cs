@@ -17,7 +17,7 @@ namespace Music
         {
             InitializeComponent();
         }
-        public avtkaraoke(string imageUrl, string nameartist)
+        public avtkaraoke(string nameartist, string imageUrl)
         {
             InitializeComponent();
             // Gán các giá trị cho các thuộc tính

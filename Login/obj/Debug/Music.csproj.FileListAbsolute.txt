@@ -165,4 +165,4 @@ D:\NT106\NT106\Login\obj\Debug\AxInterop.WMPLib.dll
 D:\NT106\NT106\Login\obj\Debug\Music.csproj.ResolveComReference.cache
 D:\NT106\NT106\Login\obj\Debug\Music.avtkaraoke.resources
 D:\NT106\NT106\Login\obj\Debug\Music.Room.resources
-D:\NT106\NT106\Login\obj\Debug\Music.TcpHelper.resources
+D:\NT106\NT106\Login\obj\Debug\Music.KaraokeRoom.resources
