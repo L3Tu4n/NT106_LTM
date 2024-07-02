@@ -38,6 +38,7 @@
             this.picImage = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.bPlay = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.bPause = new Bunifu.UI.WinForms.BunifuImageButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lNameSinger = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.lNameSong = new Bunifu.UI.WinForms.BunifuLabel();
@@ -45,7 +46,6 @@
             this.lNameAlbum = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel6 = new System.Windows.Forms.Panel();
             this.lTime = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bPause = new Bunifu.UI.WinForms.BunifuImageButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -179,6 +179,42 @@
             this.bPlay.WaitOnLoad = false;
             this.bPlay.Zoom = 0;
             this.bPlay.ZoomSpeed = 10;
+            // 
+            // bPause
+            // 
+            this.bPause.ActiveImage = null;
+            this.bPause.AllowAnimations = true;
+            this.bPause.AllowBuffering = false;
+            this.bPause.AllowToggling = false;
+            this.bPause.AllowZooming = true;
+            this.bPause.AllowZoomingOnFocus = false;
+            this.bPause.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
+            this.bPause.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bPause.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bPause.ErrorImage = null;
+            this.bPause.FadeWhenInactive = false;
+            this.bPause.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.bPause.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bPause.Image = global::RankingMusic.Properties.Resources.pause_circle_48dp;
+            this.bPause.ImageActive = null;
+            this.bPause.ImageLocation = null;
+            this.bPause.ImageMargin = 0;
+            this.bPause.ImageSize = new System.Drawing.Size(39, 39);
+            this.bPause.ImageZoomSize = new System.Drawing.Size(40, 40);
+            this.bPause.InitialImage = null;
+            this.bPause.Location = new System.Drawing.Point(4, 9);
+            this.bPause.Name = "bPause";
+            this.bPause.Rotation = 0;
+            this.bPause.ShowActiveImage = false;
+            this.bPause.ShowCursorChanges = true;
+            this.bPause.ShowImageBorders = true;
+            this.bPause.ShowSizeMarkers = false;
+            this.bPause.Size = new System.Drawing.Size(40, 40);
+            this.bPause.TabIndex = 140;
+            this.bPause.ToolTipText = "Tăng/Giảm âm lượng";
+            this.bPause.WaitOnLoad = false;
+            this.bPause.Zoom = 0;
+            this.bPause.ZoomSpeed = 10;
             // 
             // panel4
             // 
@@ -429,42 +465,6 @@
             this.lTime.Text = "03:52";
             this.lTime.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.lTime.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bPause
-            // 
-            this.bPause.ActiveImage = null;
-            this.bPause.AllowAnimations = true;
-            this.bPause.AllowBuffering = false;
-            this.bPause.AllowToggling = false;
-            this.bPause.AllowZooming = true;
-            this.bPause.AllowZoomingOnFocus = false;
-            this.bPause.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
-            this.bPause.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bPause.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bPause.ErrorImage = null;
-            this.bPause.FadeWhenInactive = false;
-            this.bPause.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.bPause.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bPause.Image = global::RankingMusic.Properties.Resources.pause_circle_48dp;
-            this.bPause.ImageActive = null;
-            this.bPause.ImageLocation = null;
-            this.bPause.ImageMargin = 0;
-            this.bPause.ImageSize = new System.Drawing.Size(39, 39);
-            this.bPause.ImageZoomSize = new System.Drawing.Size(40, 40);
-            this.bPause.InitialImage = null;
-            this.bPause.Location = new System.Drawing.Point(4, 9);
-            this.bPause.Name = "bPause";
-            this.bPause.Rotation = 0;
-            this.bPause.ShowActiveImage = false;
-            this.bPause.ShowCursorChanges = true;
-            this.bPause.ShowImageBorders = true;
-            this.bPause.ShowSizeMarkers = false;
-            this.bPause.Size = new System.Drawing.Size(40, 40);
-            this.bPause.TabIndex = 140;
-            this.bPause.ToolTipText = "Tăng/Giảm âm lượng";
-            this.bPause.WaitOnLoad = false;
-            this.bPause.Zoom = 0;
-            this.bPause.ZoomSpeed = 10;
             // 
             // CardSong
             // 
