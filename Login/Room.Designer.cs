@@ -30,9 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Room));
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuLabel43 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.IDRoom = new System.Windows.Forms.Panel();
+            this.lbRoomID = new Bunifu.UI.WinForms.BunifuLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.listTrack = new System.Windows.Forms.ListBox();
@@ -42,12 +43,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.listmember = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.IDRoom.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
@@ -58,35 +58,35 @@
             this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 48);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(952, 364);
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(931, 364);
             this.axWindowsMediaPlayer1.TabIndex = 0;
             // 
-            // panel1
+            // IDRoom
             // 
-            this.panel1.Controls.Add(this.bunifuLabel43);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(952, 45);
-            this.panel1.TabIndex = 171;
+            this.IDRoom.Controls.Add(this.lbRoomID);
+            this.IDRoom.Dock = System.Windows.Forms.DockStyle.Top;
+            this.IDRoom.Location = new System.Drawing.Point(0, 0);
+            this.IDRoom.Name = "IDRoom";
+            this.IDRoom.Size = new System.Drawing.Size(931, 45);
+            this.IDRoom.TabIndex = 171;
             // 
-            // bunifuLabel43
+            // lbRoomID
             // 
-            this.bunifuLabel43.AllowParentOverrides = false;
-            this.bunifuLabel43.AutoEllipsis = false;
-            this.bunifuLabel43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
-            this.bunifuLabel43.CursorType = null;
-            this.bunifuLabel43.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel43.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel43.Location = new System.Drawing.Point(3, 2);
-            this.bunifuLabel43.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuLabel43.Name = "bunifuLabel43";
-            this.bunifuLabel43.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel43.Size = new System.Drawing.Size(152, 39);
-            this.bunifuLabel43.TabIndex = 163;
-            this.bunifuLabel43.Text = "Room ID: ";
-            this.bunifuLabel43.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuLabel43.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lbRoomID.AllowParentOverrides = false;
+            this.lbRoomID.AutoEllipsis = false;
+            this.lbRoomID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
+            this.lbRoomID.CursorType = null;
+            this.lbRoomID.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRoomID.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lbRoomID.Location = new System.Drawing.Point(3, 2);
+            this.lbRoomID.Margin = new System.Windows.Forms.Padding(4);
+            this.lbRoomID.Name = "lbRoomID";
+            this.lbRoomID.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbRoomID.Size = new System.Drawing.Size(152, 39);
+            this.lbRoomID.TabIndex = 163;
+            this.lbRoomID.Text = "Room ID:  ";
+            this.lbRoomID.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbRoomID.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // groupBox1
             // 
@@ -103,10 +103,19 @@
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.groupBox1.Location = new System.Drawing.Point(3, 434);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(946, 185);
+            this.groupBox1.Size = new System.Drawing.Size(931, 185);
             this.groupBox1.TabIndex = 172;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Controls";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(885, 99);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 25);
+            this.label1.TabIndex = 174;
+            this.label1.Text = "0%";
             // 
             // bunifuLabel1
             // 
@@ -204,15 +213,6 @@
             this.progressBar1.Size = new System.Drawing.Size(779, 16);
             this.progressBar1.TabIndex = 173;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(885, 99);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 25);
-            this.label1.TabIndex = 174;
-            this.label1.Text = "0%";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -233,30 +233,31 @@
             this.label3.TabIndex = 175;
             this.label3.Text = "00:00";
             // 
-            // flowLayoutPanel1
+            // listmember
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 621);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(946, 149);
-            this.flowLayoutPanel1.TabIndex = 176;
+            this.listmember.Location = new System.Drawing.Point(3, 621);
+            this.listmember.Name = "listmember";
+            this.listmember.Size = new System.Drawing.Size(931, 152);
+            this.listmember.TabIndex = 176;
             // 
             // Room
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.listmember);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.IDRoom);
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Name = "Room";
-            this.Size = new System.Drawing.Size(952, 773);
+            this.Size = new System.Drawing.Size(931, 773);
+            this.Load += new System.EventHandler(this.Room_Load);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.IDRoom.ResumeLayout(false);
+            this.IDRoom.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
@@ -268,8 +269,8 @@
         #endregion
 
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
-        private System.Windows.Forms.Panel panel1;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel43;
+        private System.Windows.Forms.Panel IDRoom;
+        private Bunifu.UI.WinForms.BunifuLabel lbRoomID;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
@@ -283,6 +284,6 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel listmember;
     }
 }

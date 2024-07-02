@@ -25,7 +25,7 @@ namespace Music
             addUserControl(homepage);
 
         }
-        private void addUserControl(UserControl userControl)
+        public void addUserControl(UserControl userControl)
         {
             userControl.Dock = DockStyle.Fill;
             panel3.Controls.Clear();

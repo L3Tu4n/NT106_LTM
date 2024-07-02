@@ -321,6 +321,12 @@
     <Compile Include="USCSinger.Designer.cs">
       <DependentUpon>USCSinger.cs</DependentUpon>
     </Compile>
+    <Compile Include="avtkaraoke.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="avtkaraoke.Designer.cs">
+      <DependentUpon>avtkaraoke.cs</DependentUpon>
+    </Compile>
     <Compile Include="VerificationCode.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -335,6 +341,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Artist.resx">
       <DependentUpon>Artist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="avtkaraoke.resx">
+      <DependentUpon>avtkaraoke.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CardSong.resx">
       <DependentUpon>CardSong.cs</DependentUpon>
