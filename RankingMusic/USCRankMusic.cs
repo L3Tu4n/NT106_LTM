@@ -103,19 +103,16 @@ namespace RankingMusic
                     _currentTrackArtist = trackArtist;
                     _currentTrackDuration = trackDuration;
 
-                    // Xử lý sự kiện khi bài hát dừng phát
-                    _waveOut.PlaybackStopped += HandlePlaybackStopped;
-
                     // Cập nhật trạng thái nút cho tất cả các CardSong
                     UpdateCardSongsPlayPauseState(trackUrl, true);
+
+                    // Cập nhật trạng thái nút cho tất cả các USCPlay
+                    UpdateUSCPlaysPlayPauseState(trackUrl, true);
 
                     // Thêm USCPlay vào panel
                     USCPlay uscPlay = new USCPlay(_currentTrackImage, _currentTrackName, _currentTrackArtist, _currentTrackDuration, _currentTrackPath, this); 
                     flowLayoutPanel2.Controls.Clear();
                     flowLayoutPanel2.Controls.Add(uscPlay);
-
-                    // Cập nhật trạng thái nút cho tất cả các USCPlay
-                    UpdateUSCPlaysPlayPauseState(trackUrl, true);
                 }
             }
             catch (Exception ex)
@@ -168,19 +165,6 @@ namespace RankingMusic
                 _isPlaying = false;
                 _isPaused = false;
             }
-        }
-
-        private void HandlePlaybackStopped(object sender, StoppedEventArgs args)
-        {
-            _audioFileReader.Dispose();
-            _isPlaying = false;
-            _isPaused = false;
-
-            // Cập nhật trạng thái nút cho tất cả các CardSong
-            UpdateCardSongsPlayPauseState(_currentTrackPath, false);
-
-            // Cập nhật trạng thái nút cho tất cả các USCPlay
-            UpdateUSCPlaysPlayPauseState(_currentTrackPath, false);
         }
     }
 }
