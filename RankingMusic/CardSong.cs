@@ -24,7 +24,7 @@ namespace RankingMusic
 
             // Gán các giá trị cho các thuộc tính
             lNumber.Text = stt;
-            picImage.Image = LoadImageFromUrl(imageUrl);
+            picImage.ImageLocation = imageUrl;
             lNameSong.Text = namesong;
             lNameSinger.Text = nameartist;
             lNameAlbum.Text = namealbum;
@@ -45,32 +45,12 @@ namespace RankingMusic
 
         private void PlayMusic()
         {
-            _rankMusicControl.PlayMusic(_trackUrl, picImage.Image, lNameSong.Text, lNameSinger.Text, lTime.Text);
+            _rankMusicControl.PlayMusic(_trackUrl, picImage.ImageLocation, lNameSong.Text, lNameSinger.Text, lTime.Text);
         }
 
         private void PauseMusic()
         {
             _rankMusicControl.PauseMusic();
-        }
-
-        private Image LoadImageFromUrl(string url)
-        {
-            try
-            {
-                using (WebClient webClient = new WebClient())
-                {
-                    byte[] data = webClient.DownloadData(url);
-                    using (var stream = new System.IO.MemoryStream(data))
-                    {
-                        return Image.FromStream(stream);
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Failed to load image from URL: " + ex.Message);
-                return null;
-            }
         }
 
         public void ShowPlayButton()
@@ -103,10 +83,10 @@ namespace RankingMusic
             get { return lNumber.Text; }
             set { lNumber.Text = value; }
         }
-        public Image TrackImage
+        public string TrackImage
         {
-            get { return picImage.Image; }
-            set { picImage.Image = value; }
+            get { return picImage.ImageLocation; }
+            set { picImage.ImageLocation = value; }
         }
         public string namesong
         {
