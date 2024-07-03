@@ -1,4 +1,4 @@
-﻿namespace Music
+﻿namespace RankingMusic
 {
     partial class CardSong
     {
@@ -96,13 +96,13 @@
             this.lNumber.AutoSizeHeightOnly = true;
             this.lNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
             this.lNumber.CursorType = null;
-            this.lNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lNumber.Font = new System.Drawing.Font("UTM Avo", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lNumber.ForeColor = System.Drawing.Color.White;
-            this.lNumber.Location = new System.Drawing.Point(0, 14);
+            this.lNumber.Location = new System.Drawing.Point(12, 4);
             this.lNumber.Margin = new System.Windows.Forms.Padding(0);
             this.lNumber.Name = "lNumber";
             this.lNumber.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lNumber.Size = new System.Drawing.Size(23, 38);
+            this.lNumber.Size = new System.Drawing.Size(23, 50);
             this.lNumber.TabIndex = 150;
             this.lNumber.Text = "1";
             this.lNumber.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -256,7 +256,7 @@
             this.lNameSinger.DisabledFillColor = System.Drawing.Color.Empty;
             this.lNameSinger.DisabledForecolor = System.Drawing.Color.Empty;
             this.lNameSinger.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.lNameSinger.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lNameSinger.Font = new System.Drawing.Font("UTM Avo", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lNameSinger.ForeColor = System.Drawing.Color.White;
             this.lNameSinger.IconLeft = null;
             this.lNameSinger.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -311,7 +311,7 @@
             this.lNameSinger.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.lNameSinger.OnPressedState.IconLeftImage = null;
             this.lNameSinger.OnPressedState.IconRightImage = null;
-            this.lNameSinger.Size = new System.Drawing.Size(42, 22);
+            this.lNameSinger.Size = new System.Drawing.Size(47, 22);
             this.lNameSinger.TabIndex = 139;
             this.lNameSinger.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lNameSinger.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -325,12 +325,12 @@
             this.lNameSong.AutoEllipsis = false;
             this.lNameSong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
             this.lNameSong.CursorType = null;
-            this.lNameSong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lNameSong.Font = new System.Drawing.Font("UTM Avo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lNameSong.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.lNameSong.Location = new System.Drawing.Point(14, 6);
             this.lNameSong.Name = "lNameSong";
             this.lNameSong.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lNameSong.Size = new System.Drawing.Size(188, 21);
+            this.lNameSong.Size = new System.Drawing.Size(195, 23);
             this.lNameSong.TabIndex = 138;
             this.lNameSong.Text = "Em Của Ngày Hôm Qua";
             this.lNameSong.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -376,7 +376,7 @@
             this.lNameAlbum.DisabledFillColor = System.Drawing.Color.Empty;
             this.lNameAlbum.DisabledForecolor = System.Drawing.Color.Empty;
             this.lNameAlbum.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.lNameAlbum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lNameAlbum.Font = new System.Drawing.Font("UTM Avo", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lNameAlbum.ForeColor = System.Drawing.Color.White;
             this.lNameAlbum.IconLeft = null;
             this.lNameAlbum.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -431,7 +431,7 @@
             this.lNameAlbum.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.lNameAlbum.OnPressedState.IconLeftImage = null;
             this.lNameAlbum.OnPressedState.IconRightImage = null;
-            this.lNameAlbum.Size = new System.Drawing.Size(202, 22);
+            this.lNameAlbum.Size = new System.Drawing.Size(223, 22);
             this.lNameAlbum.TabIndex = 143;
             this.lNameAlbum.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lNameAlbum.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -455,12 +455,12 @@
             this.lTime.AutoEllipsis = false;
             this.lTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
             this.lTime.CursorType = null;
-            this.lTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lTime.Font = new System.Drawing.Font("UTM Avo", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lTime.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.lTime.Location = new System.Drawing.Point(18, 18);
             this.lTime.Name = "lTime";
             this.lTime.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lTime.Size = new System.Drawing.Size(40, 21);
+            this.lTime.Size = new System.Drawing.Size(40, 23);
             this.lTime.TabIndex = 103;
             this.lTime.Text = "03:52";
             this.lTime.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;

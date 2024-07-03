@@ -34,7 +34,6 @@
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.song2 = new Music.CardSong();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -98,20 +97,11 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.song2);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 2);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(766, 329);
             this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // song2
-            // 
-            this.song2.Location = new System.Drawing.Point(2, 2);
-            this.song2.Margin = new System.Windows.Forms.Padding(2);
-            this.song2.Name = "song2";
-            this.song2.Size = new System.Drawing.Size(8, 34);
-            this.song2.TabIndex = 1;
             // 
             // USCSinger
             // 
@@ -139,6 +129,5 @@
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
-        private CardSong song2;
     }
 }

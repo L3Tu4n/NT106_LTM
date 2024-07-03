@@ -1,4 +1,5 @@
 ﻿using Music;
+using RankingMusic;
 
 namespace Music
 {
@@ -58,10 +59,9 @@ namespace Music
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(341, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Location = new System.Drawing.Point(256, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1058, 965);
+            this.panel3.Size = new System.Drawing.Size(793, 687);
             this.panel3.TabIndex = 3;
             // 
             // panel1
@@ -75,9 +75,8 @@ namespace Music
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(341, 965);
+            this.panel1.Size = new System.Drawing.Size(256, 687);
             this.panel1.TabIndex = 0;
             // 
             // bunifuButton23
@@ -127,8 +126,7 @@ namespace Music
             this.bunifuButton23.IdleIconLeftImage = global::Music.Properties.Resources.baseline_queue_music_white_48dp;
             this.bunifuButton23.IdleIconRightImage = null;
             this.bunifuButton23.IndicateFocus = false;
-            this.bunifuButton23.Location = new System.Drawing.Point(55, 554);
-            this.bunifuButton23.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuButton23.Location = new System.Drawing.Point(41, 450);
             this.bunifuButton23.Name = "bunifuButton23";
             this.bunifuButton23.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuButton23.OnDisabledState.BorderRadius = 1;
@@ -162,7 +160,7 @@ namespace Music
             this.bunifuButton23.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(216)))), ((int)(((byte)(87)))));
             this.bunifuButton23.OnPressedState.IconLeftImage = null;
             this.bunifuButton23.OnPressedState.IconRightImage = null;
-            this.bunifuButton23.Size = new System.Drawing.Size(241, 73);
+            this.bunifuButton23.Size = new System.Drawing.Size(181, 59);
             this.bunifuButton23.TabIndex = 10;
             this.bunifuButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton23.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -218,8 +216,7 @@ namespace Music
             this.bunifuButton27.IdleIconLeftImage = global::Music.Properties.Resources.baseline_person_white_48dp;
             this.bunifuButton27.IdleIconRightImage = null;
             this.bunifuButton27.IndicateFocus = false;
-            this.bunifuButton27.Location = new System.Drawing.Point(55, 473);
-            this.bunifuButton27.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuButton27.Location = new System.Drawing.Point(41, 384);
             this.bunifuButton27.Name = "bunifuButton27";
             this.bunifuButton27.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuButton27.OnDisabledState.BorderRadius = 1;
@@ -253,7 +250,7 @@ namespace Music
             this.bunifuButton27.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(216)))), ((int)(((byte)(87)))));
             this.bunifuButton27.OnPressedState.IconLeftImage = null;
             this.bunifuButton27.OnPressedState.IconRightImage = null;
-            this.bunifuButton27.Size = new System.Drawing.Size(241, 73);
+            this.bunifuButton27.Size = new System.Drawing.Size(181, 59);
             this.bunifuButton27.TabIndex = 9;
             this.bunifuButton27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton27.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -309,8 +306,7 @@ namespace Music
             this.bunifuButton26.IdleIconLeftImage = global::Music.Properties.Resources.baseline_queue_music_white_48dp;
             this.bunifuButton26.IdleIconRightImage = null;
             this.bunifuButton26.IndicateFocus = false;
-            this.bunifuButton26.Location = new System.Drawing.Point(55, 391);
-            this.bunifuButton26.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuButton26.Location = new System.Drawing.Point(41, 318);
             this.bunifuButton26.Name = "bunifuButton26";
             this.bunifuButton26.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuButton26.OnDisabledState.BorderRadius = 1;
@@ -344,7 +340,7 @@ namespace Music
             this.bunifuButton26.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(216)))), ((int)(((byte)(87)))));
             this.bunifuButton26.OnPressedState.IconLeftImage = null;
             this.bunifuButton26.OnPressedState.IconRightImage = null;
-            this.bunifuButton26.Size = new System.Drawing.Size(241, 73);
+            this.bunifuButton26.Size = new System.Drawing.Size(181, 59);
             this.bunifuButton26.TabIndex = 8;
             this.bunifuButton26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton26.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -401,8 +397,7 @@ namespace Music
             this.bunifuButton21.IdleIconRightImage = null;
             this.bunifuButton21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.bunifuButton21.IndicateFocus = false;
-            this.bunifuButton21.Location = new System.Drawing.Point(60, 310);
-            this.bunifuButton21.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuButton21.Location = new System.Drawing.Point(45, 252);
             this.bunifuButton21.Name = "bunifuButton21";
             this.bunifuButton21.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuButton21.OnDisabledState.BorderRadius = 1;
@@ -436,7 +431,7 @@ namespace Music
             this.bunifuButton21.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(216)))), ((int)(((byte)(87)))));
             this.bunifuButton21.OnPressedState.IconLeftImage = null;
             this.bunifuButton21.OnPressedState.IconRightImage = null;
-            this.bunifuButton21.Size = new System.Drawing.Size(241, 73);
+            this.bunifuButton21.Size = new System.Drawing.Size(181, 59);
             this.bunifuButton21.TabIndex = 4;
             this.bunifuButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton21.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -492,8 +487,7 @@ namespace Music
             this.bunifuButton22.IdleIconLeftImage = global::Music.Properties.Resources.outline_mic_white_48dp;
             this.bunifuButton22.IdleIconRightImage = null;
             this.bunifuButton22.IndicateFocus = false;
-            this.bunifuButton22.Location = new System.Drawing.Point(60, 230);
-            this.bunifuButton22.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuButton22.Location = new System.Drawing.Point(45, 187);
             this.bunifuButton22.Name = "bunifuButton22";
             this.bunifuButton22.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuButton22.OnDisabledState.BorderRadius = 1;
@@ -527,7 +521,7 @@ namespace Music
             this.bunifuButton22.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(216)))), ((int)(((byte)(87)))));
             this.bunifuButton22.OnPressedState.IconLeftImage = null;
             this.bunifuButton22.OnPressedState.IconRightImage = null;
-            this.bunifuButton22.Size = new System.Drawing.Size(241, 73);
+            this.bunifuButton22.Size = new System.Drawing.Size(181, 59);
             this.bunifuButton22.TabIndex = 2;
             this.bunifuButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton22.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -542,10 +536,9 @@ namespace Music
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel4.Controls.Add(this.tbSearch);
             this.panel4.Controls.Add(this.bunifuImageButton1);
-            this.panel4.Location = new System.Drawing.Point(16, 17);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Location = new System.Drawing.Point(12, 14);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(297, 114);
+            this.panel4.Size = new System.Drawing.Size(223, 93);
             this.panel4.TabIndex = 0;
             // 
             // tbSearch
@@ -578,8 +571,7 @@ namespace Music
             this.tbSearch.IconRight = null;
             this.tbSearch.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbSearch.Lines = new string[0];
-            this.tbSearch.Location = new System.Drawing.Point(72, 33);
-            this.tbSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.tbSearch.Location = new System.Drawing.Point(54, 27);
             this.tbSearch.MaxLength = 32767;
             this.tbSearch.MinimumSize = new System.Drawing.Size(1, 1);
             this.tbSearch.Modified = false;
@@ -605,7 +597,7 @@ namespace Music
             stateProperties4.ForeColor = System.Drawing.Color.White;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.tbSearch.OnIdleState = stateProperties4;
-            this.tbSearch.Padding = new System.Windows.Forms.Padding(4);
+            this.tbSearch.Padding = new System.Windows.Forms.Padding(3);
             this.tbSearch.PasswordChar = '\0';
             this.tbSearch.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.tbSearch.PlaceholderText = "";
@@ -615,7 +607,7 @@ namespace Music
             this.tbSearch.SelectionLength = 0;
             this.tbSearch.SelectionStart = 0;
             this.tbSearch.ShortcutsEnabled = true;
-            this.tbSearch.Size = new System.Drawing.Size(171, 44);
+            this.tbSearch.Size = new System.Drawing.Size(128, 36);
             this.tbSearch.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.tbSearch.TabIndex = 1;
             this.tbSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -646,18 +638,17 @@ namespace Music
             this.bunifuImageButton1.ImageActive = null;
             this.bunifuImageButton1.ImageLocation = null;
             this.bunifuImageButton1.ImageMargin = 0;
-            this.bunifuImageButton1.ImageSize = new System.Drawing.Size(32, 30);
-            this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(33, 31);
+            this.bunifuImageButton1.ImageSize = new System.Drawing.Size(24, 24);
+            this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(25, 25);
             this.bunifuImageButton1.InitialImage = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(247, 42);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(185, 34);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Rotation = 0;
             this.bunifuImageButton1.ShowActiveImage = false;
             this.bunifuImageButton1.ShowCursorChanges = true;
             this.bunifuImageButton1.ShowImageBorders = true;
             this.bunifuImageButton1.ShowSizeMarkers = false;
-            this.bunifuImageButton1.Size = new System.Drawing.Size(33, 31);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(25, 25);
             this.bunifuImageButton1.TabIndex = 1;
             this.bunifuImageButton1.ToolTipText = "";
             this.bunifuImageButton1.WaitOnLoad = false;
@@ -667,13 +658,12 @@ namespace Music
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1399, 965);
+            this.ClientSize = new System.Drawing.Size(1049, 687);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Soul Sound";

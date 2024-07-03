@@ -1,4 +1,4 @@
-﻿namespace Music
+﻿namespace RankingMusic
 {
     partial class USCPlay
     {
@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(USCPlay));
             this.ucPlaymusic = new Bunifu.UI.WinForms.BunifuUserControl();
-            this.pImageSong = new System.Windows.Forms.Panel();
             this.HSlider1 = new Bunifu.UI.WinForms.BunifuHSlider();
             this.lNameSinger = new Bunifu.UI.WinForms.BunifuLabel();
             this.lTime2 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -44,7 +43,10 @@
             this.bRepeat = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bSkipPrevious = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bSkipNext = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.picImage = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bPlay = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.bPause = new Bunifu.UI.WinForms.BunifuImageButton();
+            ((System.ComponentModel.ISupportInitialize)(this.picImage)).BeginInit();
             this.SuspendLayout();
             // 
             // ucPlaymusic
@@ -71,16 +73,6 @@
             this.ucPlaymusic.Size = new System.Drawing.Size(793, 131);
             this.ucPlaymusic.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
             this.ucPlaymusic.TabIndex = 3;
-            // 
-            // pImageSong
-            // 
-            this.pImageSong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pImageSong.BackgroundImage = global::Music.Properties.Resources._220px_Em_của_ngày_hôm_qua;
-            this.pImageSong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pImageSong.Location = new System.Drawing.Point(13, 10);
-            this.pImageSong.Name = "pImageSong";
-            this.pImageSong.Size = new System.Drawing.Size(110, 110);
-            this.pImageSong.TabIndex = 14;
             // 
             // HSlider1
             // 
@@ -473,6 +465,22 @@
             this.bSkipNext.Zoom = 0;
             this.bSkipNext.ZoomSpeed = 10;
             // 
+            // picImage
+            // 
+            this.picImage.AllowFocused = false;
+            this.picImage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picImage.AutoSizeHeight = true;
+            this.picImage.BorderRadius = 0;
+            this.picImage.Image = ((System.Drawing.Image)(resources.GetObject("picImage.Image")));
+            this.picImage.IsCircle = true;
+            this.picImage.Location = new System.Drawing.Point(13, 10);
+            this.picImage.Name = "picImage";
+            this.picImage.Size = new System.Drawing.Size(110, 110);
+            this.picImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picImage.TabIndex = 43;
+            this.picImage.TabStop = false;
+            this.picImage.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            // 
             // bPlay
             // 
             this.bPlay.ActiveImage = null;
@@ -480,15 +488,14 @@
             this.bPlay.AllowBuffering = false;
             this.bPlay.AllowToggling = false;
             this.bPlay.AllowZooming = true;
-            this.bPlay.AllowZoomingOnFocus = true;
-            this.bPlay.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.bPlay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.bPlay.BackgroundImage = global::Music.Properties.Resources.baseline_play_circle_outline_white_48dp;
+            this.bPlay.AllowZoomingOnFocus = false;
+            this.bPlay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
             this.bPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bPlay.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bPlay.ErrorImage = null;
             this.bPlay.FadeWhenInactive = false;
             this.bPlay.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.bPlay.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.bPlay.Image = global::Music.Properties.Resources.baseline_play_circle_outline_white_48dp;
             this.bPlay.ImageActive = null;
             this.bPlay.ImageLocation = null;
@@ -504,22 +511,60 @@
             this.bPlay.ShowImageBorders = true;
             this.bPlay.ShowSizeMarkers = false;
             this.bPlay.Size = new System.Drawing.Size(40, 40);
-            this.bPlay.TabIndex = 37;
+            this.bPlay.TabIndex = 106;
             this.bPlay.ToolTipText = "Tăng/Giảm âm lượng";
             this.bPlay.WaitOnLoad = false;
             this.bPlay.Zoom = 0;
             this.bPlay.ZoomSpeed = 10;
             // 
+            // bPause
+            // 
+            this.bPause.ActiveImage = null;
+            this.bPause.AllowAnimations = true;
+            this.bPause.AllowBuffering = false;
+            this.bPause.AllowToggling = false;
+            this.bPause.AllowZooming = true;
+            this.bPause.AllowZoomingOnFocus = false;
+            this.bPause.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
+            this.bPause.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bPause.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bPause.ErrorImage = null;
+            this.bPause.FadeWhenInactive = false;
+            this.bPause.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.bPause.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bPause.Image = global::Music.Properties.Resources.pause_circle_48dp;
+            this.bPause.ImageActive = null;
+            this.bPause.ImageLocation = null;
+            this.bPause.ImageMargin = 0;
+            this.bPause.ImageSize = new System.Drawing.Size(39, 39);
+            this.bPause.ImageZoomSize = new System.Drawing.Size(40, 40);
+            this.bPause.InitialImage = null;
+            this.bPause.Location = new System.Drawing.Point(437, 10);
+            this.bPause.Name = "bPause";
+            this.bPause.Rotation = 0;
+            this.bPause.ShowActiveImage = false;
+            this.bPause.ShowCursorChanges = true;
+            this.bPause.ShowImageBorders = true;
+            this.bPause.ShowSizeMarkers = false;
+            this.bPause.Size = new System.Drawing.Size(40, 40);
+            this.bPause.TabIndex = 141;
+            this.bPause.ToolTipText = "Tăng/Giảm âm lượng";
+            this.bPause.WaitOnLoad = false;
+            this.bPause.Zoom = 0;
+            this.bPause.ZoomSpeed = 10;
+            // 
             // USCPlay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.bPause);
+            this.Controls.Add(this.bPlay);
+            this.Controls.Add(this.picImage);
             this.Controls.Add(this.bAddPlaylist);
             this.Controls.Add(this.bShuffle);
             this.Controls.Add(this.bRepeat);
             this.Controls.Add(this.bSkipPrevious);
             this.Controls.Add(this.bSkipNext);
-            this.Controls.Add(this.bPlay);
             this.Controls.Add(this.bVolume);
             this.Controls.Add(this.HSlider1);
             this.Controls.Add(this.HSlider2);
@@ -527,10 +572,10 @@
             this.Controls.Add(this.lTime2);
             this.Controls.Add(this.lTime1);
             this.Controls.Add(this.lNameSong);
-            this.Controls.Add(this.pImageSong);
             this.Controls.Add(this.ucPlaymusic);
             this.Name = "USCPlay";
             this.Size = new System.Drawing.Size(793, 131);
+            ((System.ComponentModel.ISupportInitialize)(this.picImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -539,7 +584,6 @@
         #endregion
 
         private Bunifu.UI.WinForms.BunifuUserControl ucPlaymusic;
-        private System.Windows.Forms.Panel pImageSong;
         private Bunifu.UI.WinForms.BunifuHSlider HSlider1;
         private Bunifu.UI.WinForms.BunifuLabel lNameSinger;
         private Bunifu.UI.WinForms.BunifuLabel lTime2;
@@ -552,6 +596,8 @@
         private Bunifu.UI.WinForms.BunifuImageButton bRepeat;
         private Bunifu.UI.WinForms.BunifuImageButton bSkipPrevious;
         private Bunifu.UI.WinForms.BunifuImageButton bSkipNext;
+        private Bunifu.UI.WinForms.BunifuPictureBox picImage;
         private Bunifu.UI.WinForms.BunifuImageButton bPlay;
+        private Bunifu.UI.WinForms.BunifuImageButton bPause;
     }
 }
