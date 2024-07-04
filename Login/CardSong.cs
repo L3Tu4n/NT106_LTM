@@ -12,6 +12,7 @@ namespace RankingMusic
         private string _trackUrl;
         private USCRankMusic _rankMusicControl;
         private USCSinger _singerControl;
+        private USCAlbum _albumControl;
 
         public CardSong()
         {
@@ -49,6 +50,33 @@ namespace RankingMusic
         {
             InitializeComponent();
             _singerControl = singerControl;
+            _trackUrl = fs_path;
+
+            // Gán các giá trị cho các thuộc tính
+            lNumber.Text = FormatTrackNumber(stt);
+            picImage.ImageLocation = imageUrl;
+            lNameSong.Text = namesong;
+            lNameSinger.Text = nameartist;
+            lNameAlbum.Text = namealbum;
+            lTime.Text = duration;
+
+            bPause.Visible = false;
+
+            bPause.Click += (sender, e) =>
+            {
+                PauseMusic();
+            };
+
+            bPlay.Click += (sender, e) =>
+            {
+                PlayMusic();
+            };
+        }
+
+        public CardSong(string stt, string imageUrl, string namesong, string nameartist, string namealbum, string duration, string fs_path, USCAlbum albumControl)
+        {
+            InitializeComponent();
+            _albumControl = albumControl;
             _trackUrl = fs_path;
 
             // Gán các giá trị cho các thuộc tính

@@ -298,7 +298,7 @@ func GetTracksByAlbumName(c *gin.Context) {
 
     if err != nil {
         log.Println(err)
-        c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve tracks by artist name"})
+        c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve tracks by album name"})
         return
     }
     c.JSON(http.StatusOK, tracks)
