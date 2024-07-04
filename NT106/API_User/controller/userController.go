@@ -7,6 +7,7 @@ import (
 	"database/sql"
 	"log"
 	"net/http"
+	"strconv"
 	"time"
 
 	//Tạo token JWT
@@ -499,7 +500,7 @@ func GetAllPlaylistsByEmail(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
 	}
-
+	log.Print(playlists)
 	// Trả về danh sách playlist
 	c.JSON(http.StatusOK, playlists)
 }
@@ -529,7 +530,78 @@ func GetNewPlaylistInserted(c *gin.Context) { // Kiểm tra xem token có tồn 
 	// Trả về danh sách playlist
 	c.JSON(http.StatusOK, playlists)
 }
-func GetUpdateNamePlaylist(c *gin.Context) {
+func GetDetailPlaylistByID(c *gin.Context) {
+	// Kiểm tra token trong cookie
+	tokenString, err := c.Cookie("token")
+	if err != nil {
+		log.Print(err)
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "Unauthorized"})
+		c.Abort()
+		return
+	}
+
+	// Trích xuất email từ token
+	email, err := auth.ExtractEmailFromToken(tokenString)
+	if err != nil {
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid token"})
+		return
+	}
+
+	// Lấy ID từ query string
+	idStr := c.Query("ID")
+	id, err := strconv.Atoi(idStr)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid ID format"})
+		return
+	}
+
+	// Gọi hàm lấy chi tiết playlist từ models dựa trên email và ID
+	playlist, err := models.GetDetailPlaylistByID(email, id, db)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	}
+	log.Print(playlist)
+	// Trả về chi tiết playlist
+	c.JSON(http.StatusOK, playlist)
+}
+func DeletePlaylistByID(c *gin.Context) {
+	// Kiểm tra token trong cookie
+	tokenString, err := c.Cookie("token")
+	if err != nil {
+		log.Print(err)
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "Unauthorized"})
+		c.Abort()
+		return
+	}
+
+	// Trích xuất email từ token
+	email, err := auth.ExtractEmailFromToken(tokenString)
+	if err != nil {
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid token"})
+		return
+	}
+
+	// Lấy ID từ query string
+	idStr := c.Query("ID")
+	id, err := strconv.Atoi(idStr)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid ID format"})
+		return
+	}
+
+	// Gọi hàm xóa playlist từ models dựa trên email và ID
+	err = models.DeletePlaylistByID(email, id, db)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	}
+
+	// Trả về phản hồi thành công
+	c.JSON(http.StatusOK, gin.H{"message": "Playlist deleted successfully"})
+}
+
+func UpdateNamePlaylist(c *gin.Context) {
 	// Kiểm tra xem token có tồn tại trong cookie không
 	tokenString, err := c.Cookie("token")
 	if err != nil {
@@ -563,4 +635,131 @@ func GetUpdateNamePlaylist(c *gin.Context) {
 	}
 
 	c.JSON(http.StatusOK, gin.H{"message": "Playlist name updated successfully"})
+}
+
+func AddTrackToPlaylistHandler(c *gin.Context) {
+	// Kiểm tra xem token có tồn tại trong cookie không
+	tokenString, err := c.Cookie("token")
+	if err != nil {
+		log.Print(err)
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "Unauthorized"})
+		c.Abort()
+		return
+	}
+
+	// Trích xuất email từ token
+	email, err := auth.ExtractEmailFromToken(tokenString)
+	if err != nil {
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid token"})
+		return
+	}
+
+	var req AddTrackToPlaylistRequest
+	// Decode JSON request
+	if err := c.ShouldBindJSON(&req); err != nil {
+		log.Println("Error decoding JSON:", err)
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+
+	var playlistID, trackID string
+
+	// Check if the playlist exists for the given user
+	err = db.QueryRow("SELECT ID FROM Playlist WHERE NAME = ? AND EMAIL = ?", req.PlaylistName, email).Scan(&playlistID)
+	if err == sql.ErrNoRows {
+		// Playlist does not exist, create it
+		result, err := db.Exec("INSERT INTO Playlist (NAME, EMAIL, PLAYLIST_IMAGE) VALUES (?, ?, ?)", req.PlaylistName, email, req.Image)
+		if err != nil {
+			log.Println("Error inserting playlist:", err)
+			c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+			return
+		}
+		playlistID64, _ := result.LastInsertId()
+		playlistID = strconv.FormatInt(playlistID64, 10)
+	} else if err != nil {
+		log.Println("Error checking playlist existence:", err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	} else {
+		// Playlist exists, update the playlist image
+		_, err = db.Exec("UPDATE Playlist SET PLAYLIST_IMAGE = ? WHERE ID = ?", req.Image, playlistID)
+		if err != nil {
+			log.Println("Error updating playlist image:", err)
+			c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+			return
+		}
+	}
+
+	// Check if the track exists
+	err = db.QueryRow("SELECT ID FROM Tracks WHERE NAME = ?", req.SongName).Scan(&trackID)
+	if err == sql.ErrNoRows {
+		log.Println("Track not found:", req.SongName)
+		c.JSON(http.StatusNotFound, gin.H{"error": "Track not found"})
+		return
+	} else if err != nil {
+		log.Println("Error checking track existence:", err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	}
+
+	// Insert into Track_Playlist
+	_, err = db.Exec("INSERT INTO Track_Playlist (Playlist_id, Track_id) VALUES (?, ?)", playlistID, trackID)
+	if err != nil {
+		log.Println("Error inserting into Track_Playlist:", err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"message": "Track added to playlist successfully"})
+}
+func RemoveTrackFromPlaylistHandler(c *gin.Context) {
+	// Kiểm tra xem token có tồn tại trong cookie không
+	tokenString, err := c.Cookie("token")
+	if err != nil {
+		log.Print(err)
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "Unauthorized"})
+		c.Abort()
+		return
+	}
+
+	// Trích xuất email từ token
+	email, err := auth.ExtractEmailFromToken(tokenString)
+	if err != nil {
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid token"})
+		return
+	}
+
+	var req struct {
+		PlaylistID string `json:"playlistID"`
+		TrackID    string `json:"trackID"`
+	}
+	// Decode JSON request
+	if err := c.ShouldBindJSON(&req); err != nil {
+		log.Println("Error decoding JSON:", err)
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+
+	// Kiểm tra xem playlist có tồn tại và thuộc về user không
+	var playlistID string
+	err = db.QueryRow("SELECT ID FROM Playlist WHERE ID = ? AND EMAIL = ?", req.PlaylistID, email).Scan(&playlistID)
+	if err == sql.ErrNoRows {
+		log.Println("Playlist not found:", req.PlaylistID)
+		c.JSON(http.StatusNotFound, gin.H{"error": "Playlist not found"})
+		return
+	} else if err != nil {
+		log.Println("Error checking playlist existence:", err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	}
+
+	// Xóa track khỏi playlist
+	_, err = db.Exec("DELETE FROM Track_Playlist WHERE Playlist_id = ? AND Track_id = ?", req.PlaylistID, req.TrackID)
+	if err != nil {
+		log.Println("Error deleting track from playlist:", err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"message": "Track removed from playlist successfully"})
 }

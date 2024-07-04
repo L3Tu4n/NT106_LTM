@@ -41,7 +41,7 @@ func GetDataMusic(c *gin.Context) {
 		return
 	}
 
-	// Khởi tạo cấu hình OAuth2
+	// Khởi tạo cấu hình OAuth
 	config := &clientcredentials.Config{
 		ClientID:     clientID,
 		ClientSecret: clientSecret,

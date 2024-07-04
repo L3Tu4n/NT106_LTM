@@ -1,14 +1,13 @@
 package main
 
 import (
-	"Music/controller" //Tạo token JWT
+	"Music/controller"
 	"Music/middlewares"
 	"log"
 
 	"github.com/gin-gonic/gin"
-	"github.com/joho/godotenv" //để sử dụng biến môi trường trong .env
+	"github.com/joho/godotenv"
 	_ "github.com/mattn/go-sqlite3"
-	// Gửi gmail
 )
 
 func main() {
@@ -16,6 +15,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("Error getting env, %v", err)
 	}
+
 	router := gin.Default()
 	v1 := router.Group("/v1")
 	{
@@ -40,7 +40,11 @@ func main() {
 		v1.POST("/playlist/addname", middlewares.AuthMiddleware(), controller.SaveNamePlaylist)
 		v1.GET("/playlist/getall", middlewares.AuthMiddleware(), controller.GetAllPlaylistsByEmail)
 		v1.GET("/playlist/getnewinserted", middlewares.AuthMiddleware(), controller.GetNewPlaylistInserted)
-		v1.PUT("/playlist/updatename", middlewares.AuthMiddleware(), controller.GetUpdateNamePlaylist)
+		v1.GET("/playlist/getdetailbyid", middlewares.AuthMiddleware(), controller.GetDetailPlaylistByID)
+		v1.PUT("/playlist/updatename", middlewares.AuthMiddleware(), controller.UpdateNamePlaylist)
+		v1.DELETE("/playlist/deletebyid", middlewares.AuthMiddleware(), controller.DeletePlaylistByID)
+		v1.POST("/playlist/AddTrackToPlaylist", middlewares.AuthMiddleware(), controller.AddTrackToPlaylistHandler)
+
 		//getdataController
 		v1.POST("/Track", controller.GetTrack)
 		v1.GET("/Top10Tracks", controller.GetTop10TracksRandom)
@@ -50,10 +54,16 @@ func main() {
 		v1.POST("/Album", controller.GetAlbum)
 		v1.POST("/Artist", controller.GetArtist)
 		v1.GET("/Top5Tracks", controller.GetTop5Tracks)
+		//tracktoplaylist
+		v1.GET("/playlist/tracks", controller.GetTracksByPlaylistID)
+		v1.POST("/playlist/removetrack", controller.RemoveTrackFromPlaylistHandler)
 		//Search keyword name
 		v1.POST("/Search/Tracks", controller.GetSeachTop10Tracks)
 		v1.POST("/Search/Albums", controller.GetSeachTop5Album)
 		v1.POST("/Search/Artists", controller.GetSearchTop5Artist)
+		//Get tracks by artist name, album name
+		v1.GET("/Artist/Tracks/:name", controller.GetTracksByArtistName)
+		v1.GET("/Album/Tracks/:name", controller.GetTracksByAlbumName)
 	}
 	router.Run(":9999")
 }

@@ -73,8 +73,8 @@ func SendVerificationEmail(email, code string) error {
 		log.Fatalf("Error getting env, %v", err)
 	}
 	// Thông tin xác thực Gmail
-	emailFrom := "22521546@gm.uit.edu.vn"
-	password := "1162348797"
+	emailFrom := "22521585@gm.uit.edu.vn"
+	password := "Tranvantruong2609"
 
 	// Thông tin SMTP của Gmail
 	smtpHost := "smtp.gmail.com"
@@ -123,8 +123,8 @@ func ResetPasswordAndSendEmail(db *sqlx.DB, email, newPassword string) error {
 	}
 	// Gửi email chứa mật khẩu mới
 	// Thông tin xác thực Gmail
-	emailFrom := "22521546@gm.uit.edu.vn" // Địa chỉ email của bạn
-	password := "1162348797"              // Mật khẩu email của bạn
+	emailFrom := "22521585@gm.uit.edu.vn" // Địa chỉ email của bạn
+	password := "Tranvantruong2609"       // Mật khẩu email của bạn
 
 	// Thông tin SMTP của Gmail
 	smtpHost := "smtp.gmail.com"
