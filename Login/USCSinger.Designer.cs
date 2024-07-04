@@ -30,78 +30,75 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(USCSinger));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.pArtistImage = new System.Windows.Forms.PictureBox();
+            this.lArtistName = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanelTrack = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pArtistImage)).BeginInit();
             this.panel1.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
+            this.panel2.AutoScroll = true;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(216)))), ((int)(((byte)(87)))));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.bunifuPictureBox1);
-            this.panel2.Controls.Add(this.bunifuLabel1);
+            this.panel2.Controls.Add(this.pArtistImage);
+            this.panel2.Controls.Add(this.lArtistName);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(793, 246);
             this.panel2.TabIndex = 3;
             // 
-            // bunifuPictureBox1
+            // pArtistImage
             // 
-            this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BorderRadius = 103;
-            this.bunifuPictureBox1.Image = global::Music.Properties.Resources.Sơn_Tùng;
-            this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(32, 3);
-            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(207, 207);
-            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox1.TabIndex = 4;
-            this.bunifuPictureBox1.TabStop = false;
-            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.pArtistImage.Location = new System.Drawing.Point(28, 30);
+            this.pArtistImage.Name = "pArtistImage";
+            this.pArtistImage.Size = new System.Drawing.Size(180, 180);
+            this.pArtistImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pArtistImage.TabIndex = 5;
+            this.pArtistImage.TabStop = false;
             // 
-            // bunifuLabel1
+            // lArtistName
             // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.bunifuLabel1.AutoEllipsis = true;
-            this.bunifuLabel1.CursorType = null;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel1.Location = new System.Drawing.Point(265, 79);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(490, 89);
-            this.bunifuLabel1.TabIndex = 3;
-            this.bunifuLabel1.Text = "Sơn Tùng M-TP";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lArtistName.AllowParentOverrides = false;
+            this.lArtistName.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lArtistName.AutoEllipsis = true;
+            this.lArtistName.CursorType = null;
+            this.lArtistName.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold);
+            this.lArtistName.ForeColor = System.Drawing.Color.White;
+            this.lArtistName.Location = new System.Drawing.Point(236, 79);
+            this.lArtistName.Name = "lArtistName";
+            this.lArtistName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lArtistName.Size = new System.Drawing.Size(350, 65);
+            this.lArtistName.TabIndex = 3;
+            this.lArtistName.Text = "Sơn Tùng M-TP";
+            this.lArtistName.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lArtistName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.flowLayoutPanel1);
+            this.panel1.Controls.Add(this.flowLayoutPanelTrack);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 246);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(793, 382);
+            this.panel1.Size = new System.Drawing.Size(793, 441);
             this.panel1.TabIndex = 5;
             // 
-            // flowLayoutPanel1
+            // flowLayoutPanelTrack
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 2);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(766, 329);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.flowLayoutPanelTrack.AutoScroll = true;
+            this.flowLayoutPanelTrack.AutoSize = true;
+            this.flowLayoutPanelTrack.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanelTrack.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanelTrack.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanelTrack.Name = "flowLayoutPanelTrack";
+            this.flowLayoutPanelTrack.Size = new System.Drawing.Size(793, 441);
+            this.flowLayoutPanelTrack.TabIndex = 0;
             // 
             // USCSinger
             // 
@@ -112,12 +109,12 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "USCSinger";
-            this.Size = new System.Drawing.Size(793, 628);
+            this.Size = new System.Drawing.Size(793, 687);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pArtistImage)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -125,9 +122,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private Bunifu.UI.WinForms.BunifuLabel lArtistName;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pArtistImage;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelTrack;
     }
 }

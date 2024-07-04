@@ -20,42 +20,36 @@ namespace Music
         public Artist(string imageUrl, string nameartist)
         {
             InitializeComponent();
-            // Gán các giá trị cho các thuộc tính
-            Image image = LoadImageFromUrl(imageUrl);
-            if (image != null)
-            {
-                imageArtist.Image = image;
-            }
+            imageArtist.ImageLocation = imageUrl;
             lbNameArtist.Text = nameartist;
+
+            RegisterMouseDownEvent(this);
         }
-        private Image LoadImageFromUrl(string url)
+
+        private void RegisterMouseDownEvent(Control control)
         {
-            try
+            control.MouseDown += Artist_MouseDown;
+
+            foreach (Control child in control.Controls)
             {
-                using (WebClient webClient = new WebClient())
-                {
-                    byte[] data = webClient.DownloadData(url);
-                    using (var stream = new System.IO.MemoryStream(data))
-                    {
-                        return Image.FromStream(stream);
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Failed to load image from URL: " + ex.Message);
-                return null;
+                RegisterMouseDownEvent(child);
             }
         }
-        public Image ItemImage
+
+        private void Artist_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.OnClick(e);
+        }
+
+        public string ItemImage
         {
             get
             {
-                return imageArtist.Image;
+                return imageArtist.ImageLocation;
             }
             set
             {
-                imageArtist.Image = value;
+                imageArtist.ImageLocation = value;
             }
         }
         public string NameArtist

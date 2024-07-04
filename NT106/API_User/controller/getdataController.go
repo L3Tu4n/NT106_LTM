@@ -175,6 +175,7 @@ func GetTop10RandomArtists(c *gin.Context) {
 	// Trả về top 10 nghệ sĩ
 	c.JSON(http.StatusOK, topArtists)
 }
+
 func GetTop5Tracks(c *gin.Context) {
 	var topTracks []Track
 	err := db.Select(&topTracks, "SELECT Tracks.*, Albums.name AS album_name, Artists.name AS artist_name "+
@@ -269,4 +270,36 @@ func GetSearchTop5Artist(c *gin.Context) {
 		return
 	}
 	c.JSON(http.StatusOK, topArtists)
+}
+
+func GetTracksByArtistName(c *gin.Context) {
+    artistName := c.Param("name")
+    var tracks []Track
+    err := db.Select(&tracks, "SELECT Tracks.*, Artists.name AS artist_name "+
+        "FROM Tracks "+
+        "JOIN Artists ON Tracks.id_artist = Artists.id "+
+        "WHERE Artists.name = ?", artistName)
+
+    if err != nil {
+        log.Println(err)
+        c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve tracks by artist name"})
+        return
+    }
+    c.JSON(http.StatusOK, tracks)
+}
+
+func GetTracksByAlbumName(c *gin.Context) {
+    albumName := c.Param("name")
+    var tracks []Track
+    err := db.Select(&tracks, "SELECT Tracks.*, Albums.name AS album_name "+
+        "FROM Tracks "+
+        "JOIN Albums ON Tracks.id_album = Albums.id "+
+        "WHERE Albums.name = ?", albumName)
+
+    if err != nil {
+        log.Println(err)
+        c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve tracks by artist name"})
+        return
+    }
+    c.JSON(http.StatusOK, tracks)
 }

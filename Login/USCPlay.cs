@@ -1,4 +1,5 @@
-﻿using NAudio.Wave;
+﻿using Music;
+using NAudio.Wave;
 using System;
 using System.Drawing;
 using System.Net;
@@ -9,6 +10,7 @@ namespace RankingMusic
     public partial class USCPlay : UserControl
     {
         private USCRankMusic _rankMusicControl;
+        private USCSinger _singerControl;
         private string _trackUrl;
         public event EventHandler RepeatToggled;
         public event EventHandler ShuffleToggled;
@@ -58,6 +60,41 @@ namespace RankingMusic
             InitializeTimer();
         }
 
+        public USCPlay(string artistimage, string namesong, string nameartist, string duration, string fs_path, USCSinger singerControl)
+        {
+            InitializeComponent();
+
+            _singerControl = singerControl;
+            _trackUrl = fs_path;
+
+            picImage.ImageLocation = artistimage;
+            lNameSong.Text = namesong;
+            lNameSinger.Text = nameartist;
+            lTime2.Text = duration;
+
+            HSlider1.Minimum = 0;
+            HSlider1.Maximum = 100;
+            HSlider1.Value = 0;
+
+            HSlider2.Minimum = 0;
+            HSlider2.Maximum = 100;
+            HSlider2.Value = 50;
+
+            bPause.Click += (sender, e) => PauseMusic();
+            bPlay.Click += (sender, e) => PlayMusic();
+            bRepeat.Click += (sender, e) => ToggleRepeat();
+            bShuffle.Click += (sender, e) => ToggleShuffle();
+            bSkipNext.Click += (sender, e) => SkipNext();
+            bSkipPrevious.Click += (sender, e) => SkipPrevious();
+
+            HSlider2.ValueChanged += hslider2_ValueChanged;
+            HSlider1.MouseDown += HSlider1_MouseDown;
+            HSlider1.MouseUp += HSlider1_MouseUp;
+            HSlider1.ValueChanged += HSlider1_ValueChanged;
+
+            InitializeTimer();
+        }
+
         private void InitializeTimer()
         {
             _timer = new Timer();
@@ -67,7 +104,7 @@ namespace RankingMusic
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            if (_rankMusicControl.IsPlaying)
+            if (_rankMusicControl != null && _rankMusicControl.IsPlaying)
             {
                 var currentTime = _rankMusicControl.CurrentTime;
                 var totalTime = _rankMusicControl.TotalTime;
@@ -81,6 +118,20 @@ namespace RankingMusic
                     HSlider1.Value = (int)((currentTime.TotalSeconds / totalTime.TotalSeconds) * HSlider1.Maximum);
                 }
             }
+            else if (_singerControl != null && _singerControl.IsPlaying)
+            {
+                var currentTime = _singerControl.CurrentTime;
+                var totalTime = _singerControl.TotalTime;
+
+                // Cập nhật thời gian đã phát
+                lTime1.Text = $"{currentTime.Minutes:D2}:{currentTime.Seconds:D2}";
+
+                // Cập nhật HSlider1
+                if (totalTime.TotalSeconds > 0)
+                {
+                    HSlider1.Value = (int)((currentTime.TotalSeconds / totalTime.TotalSeconds) * HSlider1.Maximum);
+                }
+            }    
         }
 
         private void HSlider1_MouseDown(object sender, MouseEventArgs e)
@@ -158,13 +209,29 @@ namespace RankingMusic
 
         private void PlayMusic()
         {
-            _rankMusicControl.PlayMusic(_trackUrl, picImage.ImageLocation, lNameSong.Text, lNameSinger.Text, lTime2.Text);
+            if (_rankMusicControl != null)
+            {
+                _singerControl?.StopMusic(); // Dừng nhạc ở USCSinger nếu nó đang phát
+                _rankMusicControl.PlayMusic(_trackUrl, picImage.ImageLocation, lNameSong.Text, lNameSinger.Text, lTime2.Text);
+            }
+            else if (_singerControl != null)
+            {
+                _rankMusicControl?.StopMusic(); // Dừng nhạc ở USCRankMusic nếu nó đang phát
+                _singerControl.PlayMusic(_trackUrl, picImage.ImageLocation, lNameSong.Text, lNameSinger.Text, lTime2.Text);
+            }
             _timer.Start();
         }
 
         public void PauseMusic()
         {
-            _rankMusicControl.PauseMusic();
+            if (_rankMusicControl != null)
+            {
+                _rankMusicControl.PauseMusic();
+            }
+            else if ( _singerControl != null)
+            {
+                _singerControl.PauseMusic();
+            }
             _timer.Stop();
         }
 

@@ -88,13 +88,43 @@ namespace Music
                     {
                         string imageURL = artist.IMAGE.String;
                         string NameArtist = artist.NAME;
-                        Artist card = new Artist(imageURL, NameArtist);
+                        Artist card = new Artist(imageURL, NameArtist);;
+                        card.Click += (s, e) => OnArtistCardClick(imageURL, NameArtist);
                         flowLayoutPanelArtist.Controls.Add(card);
                     }
                 }
                 else
                 {
                     MessageBox.Show("Failed to retrieve top artists data");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}");
+            }
+        }
+
+        private async void OnArtistCardClick(string imageURL, string artistName)
+        {
+            try
+            {
+                var responseTracks = await httpClient.GetAsync($"http://localhost:9999/v1/Artist/Tracks/{artistName}");
+                if (responseTracks.IsSuccessStatusCode)
+                {
+                    var tracksContent = await responseTracks.Content.ReadAsStringAsync();
+                    var tracks = JsonConvert.DeserializeObject<List<dynamic>>(tracksContent);
+
+                    USCSinger singerPage = new USCSinger();
+                    singerPage.ParentForm = (Form1)this.FindForm();
+                    singerPage.SetArtistInfo(tracks, imageURL, artistName);
+
+                    // Thêm USCPlay vào Form1 và điều chỉnh docking style
+                    Form1 mainForm = (Form1)this.FindForm();
+                    mainForm.addUserControl(singerPage);
+                }
+                else
+                {
+                    MessageBox.Show("Failed to retrieve tracks data for the artist.");
                 }
             }
             catch (Exception ex)

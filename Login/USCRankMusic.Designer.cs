@@ -37,7 +37,6 @@
             this.bunifuLabel43 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuUserControl2 = new Bunifu.UI.WinForms.BunifuUserControl();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -175,21 +174,11 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(793, 0);
             this.flowLayoutPanel1.TabIndex = 90;
             // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.AutoSize = true;
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 628);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(793, 0);
-            this.flowLayoutPanel2.TabIndex = 91;
-            // 
             // USCRankMusic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
-            this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.bunifuLabel45);
             this.Controls.Add(this.bunifuLabel44);
@@ -215,6 +204,5 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel43;
         private Bunifu.UI.WinForms.BunifuUserControl bunifuUserControl2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
     }
 }

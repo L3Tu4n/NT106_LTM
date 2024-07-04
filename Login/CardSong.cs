@@ -1,4 +1,5 @@
-﻿using NAudio.Wave;
+﻿using Music;
+using NAudio.Wave;
 using System;
 using System.Drawing;
 using System.Net;
@@ -10,6 +11,7 @@ namespace RankingMusic
     {
         private string _trackUrl;
         private USCRankMusic _rankMusicControl;
+        private USCSinger _singerControl;
 
         public CardSong()
         {
@@ -23,7 +25,7 @@ namespace RankingMusic
             _trackUrl = fs_path;
 
             // Gán các giá trị cho các thuộc tính
-            lNumber.Text = stt;
+            lNumber.Text = FormatTrackNumber(stt);
             picImage.ImageLocation = imageUrl;
             lNameSong.Text = namesong;
             lNameSinger.Text = nameartist;
@@ -43,14 +45,69 @@ namespace RankingMusic
             };
         }
 
+        public CardSong(string stt, string imageUrl, string namesong, string nameartist, string namealbum, string duration, string fs_path, USCSinger singerControl)
+        {
+            InitializeComponent();
+            _singerControl = singerControl;
+            _trackUrl = fs_path;
+
+            // Gán các giá trị cho các thuộc tính
+            lNumber.Text = FormatTrackNumber(stt);
+            picImage.ImageLocation = imageUrl;
+            lNameSong.Text = namesong;
+            lNameSinger.Text = nameartist;
+            lNameAlbum.Text = namealbum;
+            lTime.Text = duration;
+
+            bPause.Visible = false;
+
+            bPause.Click += (sender, e) =>
+            {
+                PauseMusic();
+            };
+
+            bPlay.Click += (sender, e) =>
+            {
+                PlayMusic();
+            };
+        }
+
+        private string FormatTrackNumber(string stt)
+        {
+            if (int.TryParse(stt, out int number))
+            {
+                if (number >= 1 && number <= 9)
+                {
+                    return number.ToString("D2");
+                }
+            }
+            return stt;
+        }
+
         private void PlayMusic()
         {
-            _rankMusicControl.PlayMusic(_trackUrl, picImage.ImageLocation, lNameSong.Text, lNameSinger.Text, lTime.Text);
+            if (_rankMusicControl != null)
+            {
+                _singerControl?.StopMusic(); // Dừng nhạc ở USCSinger nếu nó đang phát
+                _rankMusicControl.PlayMusic(_trackUrl, picImage.ImageLocation, lNameSong.Text, lNameSinger.Text, lTime.Text);
+            }
+            else if (_singerControl != null)
+            {
+                _rankMusicControl?.StopMusic(); // Dừng nhạc ở USCRankMusic nếu nó đang phát
+                _singerControl.PlayMusic(_trackUrl, picImage.ImageLocation, lNameSong.Text, lNameSinger.Text, lTime.Text);
+            }
         }
 
         private void PauseMusic()
         {
-            _rankMusicControl.PauseMusic();
+            if (_rankMusicControl != null)
+            {
+                _rankMusicControl.PauseMusic();
+            }
+            else if (_singerControl != null)
+            {
+                _singerControl.PauseMusic();
+            }
         }
 
         public void ShowPlayButton()

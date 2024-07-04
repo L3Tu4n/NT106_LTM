@@ -130,6 +130,11 @@ namespace RankingMusic
         {
             try
             {
+                if (ParentForm != null)
+                {
+                    ParentForm.SetPlayingControl(this);
+                }
+
                 if (_isPaused && _currentTrackPath == trackUrl)
                 {
                     _waveOut.Play();
@@ -167,9 +172,6 @@ namespace RankingMusic
                     {
                         ParentForm.AddUSCPlay(uscPlay);
                     }
-
-                    //flowLayoutPanel2.Controls.Clear();
-                    //flowLayoutPanel2.Controls.Add(uscPlay);
 
                     uscPlay.UpdateRepeatShuffleState(isRepeatOn, isShuffleOn);
 

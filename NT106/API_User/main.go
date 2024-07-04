@@ -46,10 +46,13 @@ func main() {
 		v1.GET("/Top10Tracks", controller.GetTop10TracksRandom)
 		v1.GET("/Top10Albums", controller.GetTop10AlbumsByTotalTracks)
 		v1.GET("/Top10Artists", controller.GetTop10RandomArtists)
-		//rankmusic + album +artist
+		//rankmusic + album + artist
 		v1.POST("/Album", controller.GetAlbum)
 		v1.POST("/Artist", controller.GetArtist)
 		v1.GET("/Top5Tracks", controller.GetTop5Tracks)
+		//Get tracks by artist name, album name
+		v1.GET("/Artist/Tracks/:name", controller.GetTracksByArtistName)
+		v1.GET("/Album/Tracks/:name", controller.GetTracksByAlbumName)
 		//Search keyword name
 		v1.POST("/Search/Tracks", controller.GetSeachTop10Tracks)
 		v1.POST("/Search/Albums", controller.GetSeachTop5Album)

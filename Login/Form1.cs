@@ -20,6 +20,8 @@ namespace Music
         KaraokeRoom room = new KaraokeRoom();
         private USCPlay uscPlayControl;
         private Panel panel5;
+        public UserControl PlayingControl { get; set; }
+
         public Panel Panel3 => panel3;
 
         public Form1()
@@ -31,6 +33,23 @@ namespace Music
             panel3.Controls.Add(panel5);
 
             addUserControl(homepage);
+        }
+
+        public void SetPlayingControl(UserControl control)
+        {
+            if (PlayingControl != null && PlayingControl != control)
+            {
+                if (PlayingControl is USCRankMusic rankMusic)
+                {
+                    rankMusic.StopMusic();
+                }
+                else if (PlayingControl is USCSinger singer)
+                {
+                    singer.StopMusic();
+                }
+            }
+
+            PlayingControl = control;
         }
 
         public void addUserControl(UserControl userControl)
@@ -70,12 +89,15 @@ namespace Music
         {
             if (uscPlayControl != null)
             {
-                panel3.Controls.Remove(uscPlayControl);
-                uscPlayControl.Dispose();
-                uscPlayControl = null;
+                if (PlayingControl is USCRankMusic || PlayingControl is USCSinger)
+                {
+                    panel3.Controls.Remove(uscPlayControl);
+                    uscPlayControl.Dispose();
+                    uscPlayControl = null;
 
-                panel5.Dock = DockStyle.Fill;
-                panel5.Height = 0;
+                    panel5.Dock = DockStyle.Fill;
+                    panel5.Height = 0;
+                }
             }
         }
 
