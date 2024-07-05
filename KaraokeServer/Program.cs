@@ -18,6 +18,7 @@ public class Room
     public string RoomId { get; set; }
     public List<(TcpClient client, ClientInfo info)> Clients { get; set; }
 
+
     public Room(string roomId)
     {
         RoomId = roomId;
@@ -32,7 +33,7 @@ public class KaraokeServer
     private Dictionary<string, Room> rooms;
     private Random random;
     private object lockObj = new object();
-
+    private Dictionary<TcpClient, StringBuilder> clientBuffers = new Dictionary<TcpClient, StringBuilder>();
     public KaraokeServer()
     {
         server = new TcpListener(IPAddress.Any, 8888);
@@ -68,20 +69,12 @@ public class KaraokeServer
         TcpClient client = (TcpClient)obj;
         NetworkStream stream = client.GetStream();
         byte[] buffer = new byte[1024];
-
+        int bytesRead;
         try
         {
-            while (true)
+            while ((bytesRead = stream.Read(buffer, 0, buffer.Length)) > 0)
             {
-                int byteCount = stream.Read(buffer, 0, buffer.Length);
-                if (byteCount == 0)
-                {
-                    // Client disconnected
-                    break;
-                }
-
-                string message = Encoding.ASCII.GetString(buffer, 0, byteCount);
-                Console.WriteLine(message);
+                string message = Encoding.ASCII.GetString(buffer, 0, bytesRead).Trim();
                 ProcessMessage(client, message);
             }
         }
@@ -89,11 +82,13 @@ public class KaraokeServer
         {
             Console.WriteLine($"Error handling client: {ex.Message}");
         }
+
         finally
         {
             lock (lockObj)
             {
                 client.Close();
+                clientBuffers.Remove(client); // Xóa client buffer khi client ngắt kết nối
                 Console.WriteLine("Client disconnected.");
             }
         }
@@ -159,34 +154,84 @@ public class KaraokeServer
                         stream.Write(successMessageBytes, 0, successMessageBytes.Length);
                     }
 
-                    SendNewClientInfo(roomId, clientData["name"].ToString(), clientData["image"].ToString(),client);
+                    SendNewClientInfo(roomId, clientData["name"].ToString(), clientData["image"].ToString(), client);
                     SendExistingClientsInfo(roomId, client);
+                    //SendVideoState(roomId, client);
                 }
+
                 else
                 {
                     Console.WriteLine($"Room {roomId} not found");
                 }
             }
+
             else
             {
                 Console.WriteLine("Invalid JSON format for JOIN_ROOM");
             }
         }
-        else if (message.StartsWith("GET_CLIENTS_INFO"))
+        else if (message.StartsWith("VIDEO_CONTROL"))
         {
-            string roomId = message.Substring("GET_CLIENTS_INFO ".Length);
+            // Xử lý các lệnh điều khiển video
+            var jsonData = message.Substring("VIDEO_CONTROL ".Length);
+            var controlData = JsonConvert.DeserializeObject<JObject>(jsonData);
+            string roomId = controlData["roomId"].ToString();
             if (rooms.ContainsKey(roomId))
             {
-                SendExistingClientsInfo(roomId, client);
+                BroadcastMessage(roomId, message);
             }
-            else
+        }
+        else if (message.StartsWith("CHAT_MESSAGE"))
+        {
+            var jsonData = message.Substring("CHAT_MESSAGE ".Length);
+            var controlData = JsonConvert.DeserializeObject<JObject>(jsonData);
+            string roomId = controlData["roomId"].ToString();
+            if (rooms.ContainsKey(roomId))
             {
-                Console.WriteLine($"Room {roomId} not found");
+                BroadcastMessage(roomId, message);
             }
         }
         else
         {
             Console.WriteLine($"Unknown command: {message}");
+        }
+    }
+    private void BroadcastChatMessage(string roomId, string senderName, string message)
+    {
+        Room room = rooms[roomId];
+        lock (lockObj)
+        {
+            foreach ((TcpClient client, ClientInfo info) in room.Clients)
+            {
+                NetworkStream stream = client.GetStream();
+
+                var data = new
+                {
+                    type = "CHAT_MESSAGE",
+                    sender = senderName,
+                    message = message
+                };
+
+                string jsonData = JsonConvert.SerializeObject(data);
+                byte[] jsonDataBytes = Encoding.ASCII.GetBytes($"CHAT_MESSAGE {jsonData}");
+
+                stream.Write(jsonDataBytes, 0, jsonDataBytes.Length);
+            }
+        }
+    }
+
+    private void BroadcastMessage(string roomId, string message)
+    {
+        Room room = rooms[roomId];
+        lock (lockObj)
+        {
+            foreach ((TcpClient client, ClientInfo info) in room.Clients)
+            {
+                NetworkStream stream = client.GetStream();
+                byte[] messageBytes = Encoding.ASCII.GetBytes(message);
+                stream.Write(messageBytes, 0, messageBytes.Length);
+                Console.WriteLine(message);
+            }
         }
     }
 

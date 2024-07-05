@@ -1,45 +1,68 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\",
+  "WorkspaceRootPath": "D:\\NT106\\projects\\NT106\\Login\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|c:\\workspace\\nt106-rankmusic\\nt106\\login\\uscalbum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:uscalbum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|d:\\nt106\\projects\\nt106\\login\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|d:\\nt106\\projects\\nt106\\login\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|c:\\workspace\\nt106-rankmusic\\nt106\\login\\cardsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:cardsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1901494A-9ED0-4E89-BB85-49EB40374273}|..\\KaraokeServer\\KaraokeServer.csproj|d:\\nt106\\projects\\nt106\\karaokeserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|c:\\workspace\\nt106-rankmusic\\nt106\\login\\cardsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:cardsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|d:\\nt106\\projects\\nt106\\login\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|c:\\workspace\\nt106-rankmusic\\nt106\\login\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|d:\\nt106\\projects\\nt106\\login\\room.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:room.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|d:\\nt106\\projects\\nt106\\login\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\projects\\NT106\\Login\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|c:\\workspace\\nt106-rankmusic\\nt106\\login\\uscalbum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|d:\\nt106\\projects\\nt106\\login\\uscalbum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:uscalbum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\projects\\NT106\\Login\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\projects\\NT106\\Login\\cardsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:cardsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\projects\\NT106\\Login\\cardsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:cardsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\projects\\NT106\\Login\\uscalbum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:uscalbum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|c:\\workspace\\nt106-rankmusic\\nt106\\login\\uscsinger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\projects\\NT106\\Login\\uscsinger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:uscsinger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|c:\\workspace\\nt106-rankmusic\\nt106\\login\\uscsinger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\projects\\NT106\\Login\\uscsinger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:uscsinger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\uscrankmusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\projects\\NT106\\Login\\uscrankmusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:uscrankmusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|c:\\workspace\\nt106-rankmusic\\nt106\\login\\uscrankmusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|D:\\NT106\\projects\\NT106\\Login\\uscrankmusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}|Music.csproj|solutionrelative:uscrankmusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -50,27 +73,92 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\NT106\\projects\\NT106\\Login\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "D:\\NT106\\projects\\NT106\\Login\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AQIAALoAAAAAAAAAAAApwMYAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T09:22:55.194Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\NT106\\projects\\NT106\\KaraokeServer\\Program.cs",
+              "RelativeDocumentMoniker": "..\\KaraokeServer\\Program.cs",
+              "ToolTip": "D:\\NT106\\projects\\NT106\\KaraokeServer\\Program.cs",
+              "RelativeToolTip": "..\\KaraokeServer\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T09:22:18.381Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Room.cs",
+              "DocumentMoniker": "D:\\NT106\\projects\\NT106\\Login\\Room.cs",
+              "RelativeDocumentMoniker": "Room.cs",
+              "ToolTip": "D:\\NT106\\projects\\NT106\\Login\\Room.cs",
+              "RelativeToolTip": "Room.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAYwFoBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T09:20:09.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Room.Designer.cs",
+              "DocumentMoniker": "D:\\NT106\\projects\\NT106\\Login\\Room.Designer.cs",
+              "RelativeDocumentMoniker": "Room.Designer.cs",
+              "ToolTip": "D:\\NT106\\projects\\NT106\\Login\\Room.Designer.cs",
+              "RelativeToolTip": "Room.Designer.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAApwF8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T09:19:01.317Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Room.cs [Design]",
+              "DocumentMoniker": "D:\\NT106\\projects\\NT106\\Login\\Room.cs",
+              "RelativeDocumentMoniker": "Room.cs",
+              "ToolTip": "D:\\NT106\\projects\\NT106\\Login\\Room.cs [Design]",
+              "RelativeToolTip": "Room.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T09:18:45.855Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\NT106\\projects\\NT106\\Login\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\NT106\\projects\\NT106\\Login\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAlwIMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T09:17:30.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "USCAlbum.cs [Design]",
-              "DocumentMoniker": "C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\USCAlbum.cs",
+              "DocumentMoniker": "D:\\NT106\\projects\\NT106\\Login\\USCAlbum.cs",
               "RelativeDocumentMoniker": "USCAlbum.cs",
-              "ToolTip": "C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\USCAlbum.cs [Design]",
+              "ToolTip": "D:\\NT106\\projects\\NT106\\Login\\USCAlbum.cs [Design]",
               "RelativeToolTip": "USCAlbum.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-04T17:52:29.381Z",
@@ -78,11 +166,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\Form1.cs",
+              "DocumentMoniker": "D:\\NT106\\projects\\NT106\\Login\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\Form1.cs [Design]",
+              "ToolTip": "D:\\NT106\\projects\\NT106\\Login\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-04T17:32:43.383Z",
@@ -90,49 +178,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "CardSong.cs",
-              "DocumentMoniker": "C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\CardSong.cs",
+              "DocumentMoniker": "D:\\NT106\\projects\\NT106\\Login\\CardSong.cs",
               "RelativeDocumentMoniker": "CardSong.cs",
-              "ToolTip": "C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\CardSong.cs",
+              "ToolTip": "D:\\NT106\\projects\\NT106\\Login\\CardSong.cs",
               "RelativeToolTip": "CardSong.cs",
               "ViewState": "AQIAAEQAAAAAAAAAAAAwwFgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T17:20:00.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-04T17:20:00.792Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "CardSong.cs [Design]",
-              "DocumentMoniker": "C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\CardSong.cs",
+              "DocumentMoniker": "D:\\NT106\\projects\\NT106\\Login\\CardSong.cs",
               "RelativeDocumentMoniker": "CardSong.cs",
               "ToolTip": "C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\CardSong.cs [Design]",
-              "RelativeToolTip": "CardSong.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T17:19:58.695Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-04T17:19:58.695Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "Homepage.cs",
-              "DocumentMoniker": "C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\Homepage.cs",
+              "DocumentMoniker": "D:\\NT106\\projects\\NT106\\Login\\Homepage.cs",
               "RelativeDocumentMoniker": "Homepage.cs",
-              "ToolTip": "C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\Homepage.cs",
+              "ToolTip": "D:\\NT106\\projects\\NT106\\Login\\Homepage.cs",
               "RelativeToolTip": "Homepage.cs",
               "ViewState": "AQIAAIUAAAAAAAAAAAAYwJYAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T15:59:52.579Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-04T15:59:52.579Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "USCAlbum.cs",
-              "DocumentMoniker": "C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\USCAlbum.cs",
+              "DocumentMoniker": "D:\\NT106\\projects\\NT106\\Login\\USCAlbum.cs",
               "RelativeDocumentMoniker": "USCAlbum.cs",
-              "ToolTip": "C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\USCAlbum.cs",
+              "ToolTip": "D:\\NT106\\projects\\NT106\\Login\\USCAlbum.cs",
               "RelativeToolTip": "USCAlbum.cs",
               "ViewState": "AQIAAB0AAAAAAAAAAAAkwC8AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -141,63 +225,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "USCSinger.cs [Design]",
-              "DocumentMoniker": "C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\USCSinger.cs",
+              "DocumentMoniker": "D:\\NT106\\projects\\NT106\\Login\\USCSinger.cs",
               "RelativeDocumentMoniker": "USCSinger.cs",
               "ToolTip": "C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\USCSinger.cs [Design]",
-              "RelativeToolTip": "USCSinger.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T17:41:16.932Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-04T17:41:16.932Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "USCSinger.cs",
-              "DocumentMoniker": "C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\USCSinger.cs",
+              "DocumentMoniker": "D:\\NT106\\projects\\NT106\\Login\\USCSinger.cs",
               "RelativeDocumentMoniker": "USCSinger.cs",
-              "ToolTip": "C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\USCSinger.cs",
+              "ToolTip": "D:\\NT106\\projects\\NT106\\Login\\USCSinger.cs",
               "RelativeToolTip": "USCSinger.cs",
               "ViewState": "AQIAAB0AAAAAAAAAAAAkwCMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T17:09:35.936Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-04T17:09:35.936Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "USCRankMusic.cs",
-              "DocumentMoniker": "C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\USCRankMusic.cs",
+              "DocumentMoniker": "D:\\NT106\\projects\\NT106\\Login\\USCRankMusic.cs",
               "RelativeDocumentMoniker": "USCRankMusic.cs",
-              "ToolTip": "C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\USCRankMusic.cs",
+              "ToolTip": "D:\\NT106\\projects\\NT106\\Login\\USCRankMusic.cs",
               "RelativeToolTip": "USCRankMusic.cs",
               "ViewState": "AQIAADMAAAAAAAAAAAAcwEMBAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T15:08:18.809Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-04T15:08:18.809Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "USCRankMusic.cs [Design]",
-              "DocumentMoniker": "C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\USCRankMusic.cs",
+              "DocumentMoniker": "D:\\NT106\\projects\\NT106\\Login\\USCRankMusic.cs",
               "RelativeDocumentMoniker": "USCRankMusic.cs",
               "ToolTip": "C:\\Workspace\\NT106-RankMusic\\NT106\\Login\\USCRankMusic.cs [Design]",
-              "RelativeToolTip": "USCRankMusic.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T15:13:02.613Z",
-              "EditorCaption": " [Design]"
-            }
-          ]
-        },
-        {
-          "DockedHeight": 200,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "WhenOpened": "2024-07-04T15:13:02.613Z"
             }
           ]
         }

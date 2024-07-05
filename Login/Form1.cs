@@ -17,7 +17,6 @@ namespace Music
         Homepage homepage = new Homepage();
         ucPlaylists ucPlaylists = new ucPlaylists();
         ucProfile ucProfile = new ucProfile();
-        KaraokeRoom room = new KaraokeRoom();
         private USCPlay uscPlayControl;
         private Panel panel5;
         public UserControl PlayingControl { get; set; }
@@ -131,9 +130,16 @@ namespace Music
             Search search = new Search(tbSearch.Text);
             addUserControl(search);
         }
-
-        private void bunifuButton23_Click(object sender, EventArgs e)
+        private void btCreateRoom_Click(object sender, EventArgs e)
         {
+            Room room = new Room();
+            addUserControl(room);
+        }
+
+        private void btJoinRoom_Click(object sender, EventArgs e)
+        {
+            string roomId = tbRoomID.Text; // tbRoomID là TextBox để nhập ID phòng
+            Room room = new Room(roomId);
             addUserControl(room);
         }
     }

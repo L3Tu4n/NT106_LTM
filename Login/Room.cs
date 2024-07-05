@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using AxWMPLib;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,6 +14,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Web.Security;
 using System.Windows.Forms;
 using System.Xml.Linq;
 
@@ -26,6 +29,9 @@ namespace Music
         private string roomId;
         private string name;
         private string image;
+        private string[] paths, files;
+        private bool isMicOn = true;
+
         public Room()
         {
             InitializeComponent();
@@ -38,11 +44,6 @@ namespace Music
             ConnectToServer();
         }
 
-        private void bunifuLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private async void Room_Load(object sender, EventArgs e)
         {
             await LoadProfile();
@@ -50,14 +51,29 @@ namespace Music
             if (string.IsNullOrEmpty(roomId))
             {
                 await CreateRoom();
-                MessageBox.Show(roomId);
-                lbRoomID.Text += roomId;
             }
             else
             {
                 await JoinRoom(roomId);
-                MessageBox.Show(roomId);
-                lbRoomID.Text += roomId;
+            }
+            roomId = "ID Room: " + roomId;
+            MessageBox.Show(roomId);
+            lbRoomID.Text = roomId;
+            // Mở thư mục và thêm các tệp vào listTrack
+            string directoryPath = "D:\\NT106\\projects\\NT106\\Karaoke(mp4)";
+            if (Directory.Exists(directoryPath))
+            {
+                files = Directory.GetFiles(directoryPath, "*.mp4");
+                paths = new string[files.Length];
+                for (int i = 0; i < files.Length; i++)
+                {
+                    paths[i] = files[i];
+                    listTrack.Items.Add(Path.GetFileName(files[i]));
+                }
+            }
+            else
+            {
+                MessageBox.Show($"Directory {directoryPath} does not exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private async Task LoadProfile()
@@ -94,11 +110,19 @@ namespace Music
         }
         private void ConnectToServer()
         {
-            client = new TcpClient("127.0.0.1", 8888); // Địa chỉ IP và cổng của máy chủ
-            stream = client.GetStream();
-            receiveThread = new Thread(ListenForServerMessages);
-            receiveThread.IsBackground = true;
-            receiveThread.Start();
+            try
+            {
+                client = new TcpClient("127.0.0.1", 8888); // Địa chỉ IP và cổng của máy chủ
+                stream = client.GetStream();
+                receiveThread = new Thread(ListenForServerMessages);
+                receiveThread.IsBackground = true;
+                receiveThread.Start();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error connecting to server: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Task.Delay(5000).ContinueWith(t => ConnectToServer());
+            }
         }
         private void ListenForServerMessages()
         {
@@ -123,10 +147,45 @@ namespace Music
         }
         private void HandleServerMessage(string message)
         {
-            
             if (message.StartsWith("JOIN_ROOM_SUCCESS") || message.StartsWith("CREATE_ROOM_SUCCESS"))
             {
-                roomId = message.Split(' ')[1];
+                this.roomId = message.Split(' ')[1];
+            }
+            else if (message.StartsWith("VIDEO_CONTROL"))
+            {
+                // Xử lý các lệnh điều khiển video
+                var jsonData = message.Substring("VIDEO_CONTROL ".Length);
+                var controlData = JsonConvert.DeserializeObject<JObject>(jsonData);
+
+                string action = controlData["action"].ToString();
+                string path = controlData["videoPath"].ToString();
+                int currentTime = controlData["currentTime"].Value<int>();
+                // Xử lý thông điệp từ server
+                switch (action)
+                {
+                    case "play":
+                        PlayVideoOnClient(path);
+                        break;
+                    case "pause":
+                        player.Ctlcontrols.pause();
+                        break;
+                    case "seek":
+                        SeekVideo(currentTime);
+                        break;
+                    default:
+                        MessageBox.Show("Unknown action received from server: " + action, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        break;
+                }
+            }
+            else if (message.StartsWith("CHAT_MESSAGE"))
+            {
+                var jsonData = message.Substring("CHAT_MESSAGE ".Length);
+                var controlData = JsonConvert.DeserializeObject<JObject>(jsonData);
+                string senderName = controlData["sender"].ToString();
+                string chatMessage = controlData["message"].ToString();
+
+                // Update UI with the received chat message
+                UpdateChatUI($"{senderName}: {chatMessage}");
             }
             else
             {
@@ -143,6 +202,37 @@ namespace Music
                             AddClientToUI(clientName, clientImage);
                         });
                     }
+                    else if (data.type == "PLAY_VIDEO")
+                    {
+                        string videoPath = data.videoPath;
+                        this.Invoke((MethodInvoker)delegate
+                        {
+                            PlayVideoOnClient(videoPath);
+                        });
+                    }
+                    else if (data.type == "VIDEO_CONTROL")
+                    {
+                        string action = data.action;
+                        int currentTime = data.currentTime;
+
+                        // Xử lý thông điệp từ server
+                        switch (action)
+                        {
+                            case "play":
+                                PlayVideoOnClient(data.videoPath);
+                                break;
+                            case "pause":
+                                player.Ctlcontrols.pause();
+                                break;
+                            case "seek":
+                                SeekVideo(currentTime);
+                                break;
+                            default:
+                                MessageBox.Show("Unknown action received from server: " + action, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                break;
+                        }
+                    }
+
                 }
                 catch (JsonReaderException ex)
                 {
@@ -152,6 +242,35 @@ namespace Music
                     });
                 }
             }
+        }
+        private void UpdateChatUI(string message)
+        {
+            if (rtbKhungChat.InvokeRequired)
+            {
+                rtbKhungChat.Invoke((MethodInvoker)delegate
+                {
+                    rtbKhungChat.AppendText(message + Environment.NewLine);
+                    // Optionally, scroll to the end of the chat box
+                    rtbKhungChat.ScrollToCaret();
+                });
+            }
+            else
+            {
+                rtbKhungChat.AppendText(message + Environment.NewLine);
+                // Optionally, scroll to the end of the chat box
+                rtbKhungChat.ScrollToCaret();
+            }
+        }
+        private void PlayVideoOnClient(string videoPath)
+        {
+            // Mở và phát video tại videoPath
+            player.URL = videoPath;
+            player.Ctlcontrols.play();
+        }
+        private void SeekVideo(int currentTime)
+        {
+            // Tua đến thời gian currentTime (được gửi từ server)
+            player.Ctlcontrols.currentPosition = currentTime / 1000.0; // Chuyển đổi về giây
         }
         private void AddClientToUI(string clientName, string clientImage)
         {
@@ -187,6 +306,103 @@ namespace Music
             byte[] createMessageBytes = Encoding.ASCII.GetBytes(createMessage);
 
             await stream.WriteAsync(createMessageBytes, 0, createMessageBytes.Length);
+        }
+
+        private async void listTrack_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listTrack.SelectedIndex != -1)
+            {
+                await PlayVideo(paths[listTrack.SelectedIndex]);
+            }
+        }
+        private async Task PlayVideo(string videoPath)
+        {
+            try
+            {
+                // Gửi yêu cầu phát video tới server
+                var data = new
+                {
+                    roomId = roomId,
+                    action = "play",
+                    videoPath = videoPath,
+                    currentTime = 0,
+                };
+
+                string jsonData = JsonConvert.SerializeObject(data);
+                string playMessage = $"VIDEO_CONTROL {jsonData}";
+                byte[] playMessageBytes = Encoding.ASCII.GetBytes(playMessage);
+
+                await stream.WriteAsync(playMessageBytes, 0, playMessageBytes.Length);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error playing video: " + ex.Message,
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void btnPlay_Click(object sender, EventArgs e)
+        {
+            SendVideoControlMessage("play", GetVideoCurrentTime());
+        }
+
+        private void btnPause_Click(object sender, EventArgs e)
+        {
+            SendVideoControlMessage("pause", GetVideoCurrentTime());
+        }
+        private int GetVideoCurrentTime()
+        {
+            if (player.playState == WMPLib.WMPPlayState.wmppsPlaying)
+            {
+                return (int)player.Ctlcontrols.currentPosition * 1000; // Chuyển đổi sang miliseconds
+            }
+            return 0;
+        }
+
+        private async void btChat_Click(object sender, EventArgs e)
+        {
+            string message = rtbMessage.Text.Trim();
+            if (!string.IsNullOrEmpty(message))
+            {
+                await SendMessageToServer(message);
+                rtbMessage.Text = ""; // Clear the message box after sending
+            }
+        }
+        private async Task SendMessageToServer(string message)
+        {
+            try
+            {
+                var data = new
+                {
+                    roomId = roomId,
+                    message = message,
+                    sender = name // Assuming 'name' is the client's name or identifier
+                };
+
+                string jsonData = JsonConvert.SerializeObject(data);
+                string sendMessage = $"CHAT_MESSAGE {jsonData}";
+                byte[] sendMessageBytes = Encoding.ASCII.GetBytes(sendMessage);
+
+                await stream.WriteAsync(sendMessageBytes, 0, sendMessageBytes.Length);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error sending message: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void SendVideoControlMessage(string action, int currentTime)
+        {
+            var data = new
+            {
+                roomId = roomId,
+                action = action,
+                currentTime = currentTime
+            };
+
+            string jsonData = JsonConvert.SerializeObject(data);
+            string controlMessage = $"VIDEO_CONTROL {jsonData}";
+            byte[] controlMessageBytes = Encoding.ASCII.GetBytes(controlMessage);
+
+            stream.Write(controlMessageBytes, 0, controlMessageBytes.Length);
         }
     }
 }

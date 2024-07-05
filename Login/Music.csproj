@@ -227,12 +227,6 @@
     <Compile Include="Homepage.Designer.cs">
       <DependentUpon>Homepage.cs</DependentUpon>
     </Compile>
-    <Compile Include="KaraokeRoom.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="KaraokeRoom.Designer.cs">
-      <DependentUpon>KaraokeRoom.cs</DependentUpon>
-    </Compile>
     <Compile Include="List.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -368,9 +362,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Homepage.resx">
       <DependentUpon>Homepage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KaraokeRoom.resx">
-      <DependentUpon>KaraokeRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="List.resx">
       <DependentUpon>List.cs</DependentUpon>
