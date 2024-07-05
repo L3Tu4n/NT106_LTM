@@ -60,7 +60,7 @@ namespace Music
             MessageBox.Show(roomId);
             lbRoomID.Text = roomId;
             // Mở thư mục và thêm các tệp vào listTrack
-            string directoryPath = "D:\\NT106\\projects\\NT106\\Karaoke(mp4)";
+            string directoryPath = "D:\\NT106\\projects\\NT106\\mp4";
             if (Directory.Exists(directoryPath))
             {
                 files = Directory.GetFiles(directoryPath, "*.mp4");

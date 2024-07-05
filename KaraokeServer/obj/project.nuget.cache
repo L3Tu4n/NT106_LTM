@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LDCnhYL0IKjC5TmaNLIVoeQq7cntvl/aZEUFfoUYuZTKqATrvixFaBHpJgk/rpI4AqwjKkfS7cFKGT3uCqktVg==",
+  "dgSpecHash": "j4Fi30JoHMY15qD4P93V+nah4kBR1F49tW1hsPEFnS8vMSW8MMifQdJZkPMJtT8FGUB9bKgf9aDHNtnh2yo1Pw==",
   "success": true,
-  "projectFilePath": "D:\\NT106\\projects\\NT106\\KaraokeServer\\KaraokeServer.csproj",
+  "projectFilePath": "D:\\NT106\\projects\\NT106\\KaraokeServer\\Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],

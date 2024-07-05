@@ -61,9 +61,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\NT106\\projects\\NT106\\KaraokeServer\\KaraokeServer.csproj",
-      "projectName": "KaraokeServer",
-      "projectPath": "D:\\NT106\\projects\\NT106\\KaraokeServer\\KaraokeServer.csproj",
+      "projectUniqueName": "D:\\NT106\\projects\\NT106\\KaraokeServer\\Server.csproj",
+      "projectName": "Server",
+      "projectPath": "D:\\NT106\\projects\\NT106\\KaraokeServer\\Server.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "D:\\NT106\\projects\\NT106\\KaraokeServer\\obj\\",
       "projectStyle": "PackageReference",

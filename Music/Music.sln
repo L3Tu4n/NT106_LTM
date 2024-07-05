@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Music", "Music.csproj", "{2BEA8182-C6DB-4B9F-940E-C0B8971B7C79}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KaraokeServer", "..\KaraokeServer\KaraokeServer.csproj", "{1901494A-9ED0-4E89-BB85-49EB40374273}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "..\KaraokeServer\Server.csproj", "{1901494A-9ED0-4E89-BB85-49EB40374273}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
