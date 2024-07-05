@@ -87,15 +87,14 @@ namespace Music
             }
         }
 
-        private void deleteTimer_Tick(object sender, EventArgs e)
-        {
-            if(CardControl.isDeleted == true)
-            {
-                cardContainer.Controls.Clear();
-                initDetails();
-                loadCards();
-                CardControl.isDeleted = false;
-            }
-        }
+        //private void deleteTimer_Tick(object sender, EventArgs e)
+        //{
+        //    if (CardControl.isDeleted == true)
+        //    {
+        //        cardContainer.Controls.Clear();
+        //        initDetails();
+        //        CardControl.isDeleted = false;
+        //    }
+        //}
     }
 }

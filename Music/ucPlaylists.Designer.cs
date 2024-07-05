@@ -36,7 +36,6 @@
             this.cardContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.deleteTimer = new System.Windows.Forms.Timer(this.components);
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btAddPlaylists
@@ -118,13 +117,12 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 30;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // deleteTimer
             // 
             this.deleteTimer.Enabled = true;
-            this.deleteTimer.Tick += new System.EventHandler(this.deleteTimer_Tick);
+            //this.deleteTimer.Tick += new System.EventHandler(this.deleteTimer_Tick);
             // 
             // ucPlaylists
             // 
@@ -163,6 +161,5 @@
         private CardControl playlist_item13;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer deleteTimer;
-        private System.Windows.Forms.Timer timer2;
     }
 }

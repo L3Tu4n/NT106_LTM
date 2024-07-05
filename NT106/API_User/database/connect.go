@@ -9,7 +9,7 @@ import (
 )
 
 func ConnectDB() (*sqlx.DB, error) {
-	dsn := "file:E:/NT106/finalproject/Project/NT106/NT106/Database/musicstreaming.db" // nhớ thay đổi địa chỉ file sqlite3
+	dsn := "file:E:/NT106/finalproject/NT106/NT106/Database/musicstreaming.db" // nhớ thay đổi địa chỉ file sqlite3
 	db, err := sqlx.Connect("sqlite3", dsn)
 	if err != nil {
 		log.Fatalln("Cannot connect to sqlite3:", err)

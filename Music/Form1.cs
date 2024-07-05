@@ -86,7 +86,7 @@ namespace Music
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             if (tbSearch.Text == null)
-            {   
+            {
                 return;
             }
             Search search = new Search(tbSearch.Text);
@@ -100,11 +100,11 @@ namespace Music
             {
                 panel5.Controls.Clear();
                 List list = new List();
-                list.ParentForm = this ;
+                list.ParentForm = this;
                 addUserControl(list);
                 CardControl.isOpened = false;
             }
-            if(CardControl.isDeleted)
+            if (CardControl.isDeleted)
             {
                 panel5.Controls.Clear();
                 ucPlaylists list = new ucPlaylists();

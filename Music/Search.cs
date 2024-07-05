@@ -94,7 +94,7 @@ namespace Music
                 string json = JsonConvert.SerializeObject(resetpasswordRequest);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                 // Gọi API để lấy top 10 bài hát cùng thông tin về nghệ sĩ và album
-                var responseTracks = await httpClient.PostAsync("http://localhost:9999/v1/Search/Tracks",content);
+                var responseTracks = await httpClient.PostAsync("http://localhost:9999/v1/Search/Tracks", content);
                 if (responseTracks.IsSuccessStatusCode)
                 {
                     var tracksContent = await responseTracks.Content.ReadAsStringAsync();
@@ -142,7 +142,10 @@ namespace Music
                             string imageURL = album.IMAGE.String;
                             string NameArtist = album.ARTIST_NAME;
                             string NameAlbum = album.NAME;
+                            string date = album.RELEASE_DATE.String;
+                            string totalTracks = album.TOTAL_TRACKS.Int64;
                             album_item card = new album_item(imageURL, NameArtist, NameAlbum);
+                            card.Click += (s, e) => OnAlbumCardClick(imageURL, NameArtist, NameAlbum, date, totalTracks);
                             flowLayoutPanelAlbum.Controls.Add(card);
                         }
                     }
@@ -173,6 +176,7 @@ namespace Music
                             string imageURL = artist.IMAGE.String;
                             string NameArtist = artist.NAME;
                             Artist card = new Artist(imageURL, NameArtist);
+                            card.Click += (s, e) => OnArtistCardClick(imageURL, NameArtist);
                             flowLayoutPanelArtist.Controls.Add(card);
                         }
                     }
@@ -186,7 +190,7 @@ namespace Music
                 {
                     MessageBox.Show("Failed to retrieve top artists data");
                 }
-                if (lbAlbum.Text == null &&lbArtist.Text == null &&lbTrack.Text==null)
+                if (lbAlbum.Text == null && lbArtist.Text == null && lbTrack.Text == null)
                 {
                     lbAlbum.Text = "Not Found!!!";
                 }
@@ -419,5 +423,64 @@ namespace Music
 
             PlayMusic(trackPath, trackImage, trackName, trackArtist, trackDuration);
         }
+        private async void OnAlbumCardClick(string imageURL, string artistName, string albumName, string date, string totalTracks)
+        {
+            try
+            {
+                var responseTracks = await httpClient.GetAsync($"http://localhost:9999/v1/Album/Tracks/{albumName}");
+                if (responseTracks.IsSuccessStatusCode)
+                {
+                    var tracksContent = await responseTracks.Content.ReadAsStringAsync();
+                    var tracks = JsonConvert.DeserializeObject<List<dynamic>>(tracksContent);
+
+                    USCAlbum albumPage = new USCAlbum();
+                    albumPage.ParentForm = (Form1)this.FindForm();
+                    albumPage.SetAlbumInfo(tracks, imageURL, artistName, albumName, date, totalTracks);
+
+                    // Thêm USCPlay vào Form1 và điều chỉnh docking style
+                    Form1 mainForm = (Form1)this.FindForm();
+                    mainForm.addUserControl(albumPage);
+                }
+                else
+                {
+                    MessageBox.Show("Failed to retrieve tracks data for the artist.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}");
+            }
+        }
+        private async void OnArtistCardClick(string imageURL, string artistName)
+        {
+            try
+            {
+                var responseTracks = await httpClient.GetAsync($"http://localhost:9999/v1/Artist/Tracks/{artistName}");
+                if (responseTracks.IsSuccessStatusCode)
+                {
+                    var tracksContent = await responseTracks.Content.ReadAsStringAsync();
+                    var tracks = JsonConvert.DeserializeObject<List<dynamic>>(tracksContent);
+
+                    USCSinger singerPage = new USCSinger();
+                    singerPage.ParentForm = (Form1)this.FindForm();
+                    singerPage.SetArtistInfo(tracks, imageURL, artistName);
+
+                    // Thêm USCPlay vào Form1 và điều chỉnh docking style
+                    Form1 mainForm = (Form1)this.FindForm();
+                    mainForm.addUserControl(singerPage);
+                }
+                else
+                {
+                    MessageBox.Show("Failed to retrieve tracks data for the artist.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}");
+            }
+
+        }
+
     }
 }
+

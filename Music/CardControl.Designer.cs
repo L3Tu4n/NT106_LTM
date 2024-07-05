@@ -67,7 +67,7 @@
             this.btnEdit,
             this.btnDelete});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(215, 86);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(127, 56);
             // 
             // btnEdit
             // 
@@ -75,7 +75,7 @@
             this.btnEdit.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnEdit.Image = global::Music.Properties.Resources.icons8_edit_150;
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(214, 26);
+            this.btnEdit.Size = new System.Drawing.Size(126, 26);
             this.btnEdit.Text = "Edit";
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
@@ -85,7 +85,7 @@
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnDelete.Image = global::Music.Properties.Resources.icons8_delete_30;
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(214, 26);
+            this.btnDelete.Size = new System.Drawing.Size(126, 26);
             this.btnDelete.Text = "Delete";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -100,6 +100,7 @@
             // 
             // timer1
             // 
+            this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // pictureBox1
