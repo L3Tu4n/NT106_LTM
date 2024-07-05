@@ -225,7 +225,6 @@ E:\NT106\finalproject\Project\NT106\Music\obj\Debug\Music.Test.resources
 E:\NT106\finalproject\Project\NT106\Music\obj\Debug\Music.ForgotPassword.resources
 E:\NT106\finalproject\Project\NT106\Music\obj\Debug\Music.Form1.resources
 E:\NT106\finalproject\Project\NT106\Music\obj\Debug\Music.Homepage.resources
-E:\NT106\finalproject\Project\NT106\Music\obj\Debug\Music.KaraokeRoom.resources
 E:\NT106\finalproject\Project\NT106\Music\obj\Debug\Music.List.resources
 E:\NT106\finalproject\Project\NT106\Music\obj\Debug\Music.Login.resources
 E:\NT106\finalproject\Project\NT106\Music\obj\Debug\Music.AddPlaylist.resources
@@ -247,3 +246,4 @@ E:\NT106\finalproject\Project\NT106\Music\obj\Debug\Music.csproj.Up2Date
 E:\NT106\finalproject\Project\NT106\Music\obj\Debug\Music.exe
 E:\NT106\finalproject\Project\NT106\Music\obj\Debug\Music.pdb
 E:\NT106\finalproject\Project\NT106\Music\obj\Debug\Music.AddTrack.resources
+E:\NT106\finalproject\Project\NT106\Music\obj\Debug\Music.avtkaraoke.resources

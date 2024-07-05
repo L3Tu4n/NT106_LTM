@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Net;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Music;
@@ -126,7 +127,7 @@ namespace Music
             }
         }
 
-        public void PlayMusic(string trackUrl, string trackImage, string trackName, string trackArtist, string trackDuration)
+        public async void PlayMusic(string trackUrl, string trackImage, string trackName, string trackArtist, string trackDuration)
         {
             try
             {
@@ -139,7 +140,6 @@ namespace Music
                     _waveOut.Play();
                     _isPlaying = true;
                     _isPaused = false;
-
                     UpdateCardSongsPlayPauseState(trackUrl, true);
                     UpdateUSCPlaysPlayPauseState(trackUrl, true);
                 }
@@ -178,6 +178,15 @@ namespace Music
                     uscPlay.UpdateRepeatShuffleState(isRepeatOn, isShuffleOn);
 
                     uscPlay.StartTimerRank();
+
+                    var endpoint = $"http://localhost:9999/v1/Track/increment/{Uri.EscapeDataString(trackName)}";
+                    var content = new StringContent("", Encoding.UTF8, "application/json");
+                    var response = await httpClient.PostAsync(endpoint, content);
+
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        MessageBox.Show("Failed to increment listen count for track: " + trackName);
+                    }
                 }
             }
             catch (Exception ex)
@@ -228,7 +237,7 @@ namespace Music
                 _isPaused = false;
             }
 
-            ParentForm?.RemoveUSCPlay();
+            //ParentForm?.RemoveUSCPlay();
         }
 
         private void PlayRandomMusic()

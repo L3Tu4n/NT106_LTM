@@ -48,7 +48,7 @@
             this.NgheSi.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NgheSi.ForeColor = System.Drawing.Color.Silver;
             this.NgheSi.Location = new System.Drawing.Point(47, 181);
-            this.NgheSi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NgheSi.Margin = new System.Windows.Forms.Padding(2);
             this.NgheSi.Name = "NgheSi";
             this.NgheSi.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.NgheSi.Size = new System.Drawing.Size(46, 19);
@@ -62,7 +62,7 @@
             this.panel2.Controls.Add(this.lbNameArtist);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 162);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(140, 21);
             this.panel2.TabIndex = 6;
@@ -115,8 +115,9 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.NgheSi);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ForeColor = System.Drawing.Color.White;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Artist";
             this.Size = new System.Drawing.Size(140, 202);
             this.panel2.ResumeLayout(false);

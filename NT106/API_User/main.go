@@ -64,6 +64,7 @@ func main() {
 		//Get tracks by artist name, album name
 		v1.GET("/Artist/Tracks/:name", controller.GetTracksByArtistName)
 		v1.GET("/Album/Tracks/:name", controller.GetTracksByAlbumName)
+		v1.POST("/Track/increment/:nametrack", controller.IncrementListenCount)
 	}
 	router.Run(":9999")
 }

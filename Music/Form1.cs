@@ -7,7 +7,6 @@ namespace Music
     {
         Homepage homepage = new Homepage();
         ucProfile ucProfile = new ucProfile();
-        KaraokeRoom room = new KaraokeRoom();
         private USCPlay uscPlayControl;
         private Panel panel5;
         public UserControl PlayingControl;
@@ -16,14 +15,12 @@ namespace Music
         public Form1()
         {
             InitializeComponent();
-
+            homepage.ParentForm = this;
             panel5 = new Panel();
             panel5.Dock = DockStyle.Fill;
             panel3.Controls.Add(panel5);
             addUserControl(homepage);
-
         }
-
         public void addUserControl(UserControl userControl)
         {
             userControl.Dock = DockStyle.Fill;
@@ -51,7 +48,7 @@ namespace Music
         {
             if (uscPlayControl != null)
             {
-                if (PlayingControl is USCRankMusic || PlayingControl is USCSinger || PlayingControl is USCSinger)
+                //if (PlayingControl is USCRankMusic || PlayingControl is Homepage || PlayingControl is USCSinger || PlayingControl is USCAlbum || PlayingControl is List)
                 {
                     panel3.Controls.Remove(uscPlayControl);
                     uscPlayControl.Dispose();
@@ -64,6 +61,7 @@ namespace Music
         }
         private void bunifuButton22_Click_1(object sender, EventArgs e)
         {
+            homepage.ParentForm = this;
             addUserControl(homepage);
         }
 
@@ -92,12 +90,18 @@ namespace Music
                 return;
             }
             Search search = new Search(tbSearch.Text);
+            search.ParentForm = this;
             addUserControl(search);
         }
-
-        private void bunifuButton23_Click(object sender, EventArgs e)
+        private void btCreateRoom_Click(object sender, EventArgs e)
         {
+            Room room = new Room();
             addUserControl(room);
+        }
+
+        private void btJoinRoom_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void openTimer_Tick(object sender, EventArgs e)
@@ -133,6 +137,18 @@ namespace Music
                 else if (PlayingControl is USCSinger singer)
                 {
                     singer.StopMusic();
+                }
+                else if (PlayingControl is USCAlbum album)
+                {
+                    album.StopMusic();
+                }
+                else if (PlayingControl is Homepage page)
+                {
+                    page.StopMusic();
+                }
+                else if (PlayingControl is Search search)
+                {
+                    search.StopMusic();
                 }
             }
             PlayingControl = control;

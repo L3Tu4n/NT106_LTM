@@ -68,7 +68,7 @@
             this.ucPlaymusic.Image = null;
             this.ucPlaymusic.ImageMargin = new System.Windows.Forms.Padding(0);
             this.ucPlaymusic.Location = new System.Drawing.Point(0, 0);
-            this.ucPlaymusic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ucPlaymusic.Margin = new System.Windows.Forms.Padding(4);
             this.ucPlaymusic.Name = "ucPlaymusic";
             this.ucPlaymusic.ShowBorders = true;
             this.ucPlaymusic.Size = new System.Drawing.Size(1057, 161);
@@ -99,7 +99,7 @@
             this.HSlider1.ElapsedColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(216)))), ((int)(((byte)(87)))));
             this.HSlider1.LargeChange = 10;
             this.HSlider1.Location = new System.Drawing.Point(236, 60);
-            this.HSlider1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HSlider1.Margin = new System.Windows.Forms.Padding(4);
             this.HSlider1.Maximum = 100;
             this.HSlider1.Minimum = 0;
             this.HSlider1.MinimumSize = new System.Drawing.Size(0, 38);
@@ -135,7 +135,7 @@
             this.lNameSinger.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lNameSinger.ForeColor = System.Drawing.Color.Transparent;
             this.lNameSinger.Location = new System.Drawing.Point(177, 123);
-            this.lNameSinger.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lNameSinger.Margin = new System.Windows.Forms.Padding(4);
             this.lNameSinger.Name = "lNameSinger";
             this.lNameSinger.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lNameSinger.Size = new System.Drawing.Size(135, 24);
@@ -154,7 +154,7 @@
             this.lTime2.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.lTime2.ForeColor = System.Drawing.Color.Transparent;
             this.lTime2.Location = new System.Drawing.Point(1003, 69);
-            this.lTime2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lTime2.Margin = new System.Windows.Forms.Padding(4);
             this.lTime2.Name = "lTime2";
             this.lTime2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lTime2.Size = new System.Drawing.Size(39, 21);
@@ -173,7 +173,7 @@
             this.lTime1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.lTime1.ForeColor = System.Drawing.Color.Transparent;
             this.lTime1.Location = new System.Drawing.Point(177, 69);
-            this.lTime1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lTime1.Margin = new System.Windows.Forms.Padding(4);
             this.lTime1.Name = "lTime1";
             this.lTime1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lTime1.Size = new System.Drawing.Size(39, 21);
@@ -192,7 +192,7 @@
             this.lNameSong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.lNameSong.ForeColor = System.Drawing.Color.Transparent;
             this.lNameSong.Location = new System.Drawing.Point(177, 94);
-            this.lNameSong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lNameSong.Margin = new System.Windows.Forms.Padding(4);
             this.lNameSong.Name = "lNameSong";
             this.lNameSong.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lNameSong.Size = new System.Drawing.Size(210, 24);
@@ -225,7 +225,7 @@
             this.bVolume.ImageZoomSize = new System.Drawing.Size(33, 31);
             this.bVolume.InitialImage = null;
             this.bVolume.Location = new System.Drawing.Point(837, 101);
-            this.bVolume.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bVolume.Margin = new System.Windows.Forms.Padding(4);
             this.bVolume.Name = "bVolume";
             this.bVolume.Rotation = 0;
             this.bVolume.ShowActiveImage = false;
@@ -234,7 +234,7 @@
             this.bVolume.ShowSizeMarkers = false;
             this.bVolume.Size = new System.Drawing.Size(33, 31);
             this.bVolume.TabIndex = 31;
-            this.bVolume.ToolTipText = "Tăng/Giảm âm lượng";
+            this.bVolume.ToolTipText = "Sound";
             this.bVolume.WaitOnLoad = false;
             this.bVolume.Zoom = 0;
             this.bVolume.ZoomSpeed = 10;
@@ -262,7 +262,7 @@
             this.HSlider2.ElapsedColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(216)))), ((int)(((byte)(87)))));
             this.HSlider2.LargeChange = 10;
             this.HSlider2.Location = new System.Drawing.Point(879, 97);
-            this.HSlider2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HSlider2.Margin = new System.Windows.Forms.Padding(4);
             this.HSlider2.Maximum = 100;
             this.HSlider2.Minimum = 0;
             this.HSlider2.MinimumSize = new System.Drawing.Size(0, 38);
@@ -312,7 +312,7 @@
             this.bAddPlaylist.ImageZoomSize = new System.Drawing.Size(47, 43);
             this.bAddPlaylist.InitialImage = null;
             this.bAddPlaylist.Location = new System.Drawing.Point(740, 16);
-            this.bAddPlaylist.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bAddPlaylist.Margin = new System.Windows.Forms.Padding(4);
             this.bAddPlaylist.Name = "bAddPlaylist";
             this.bAddPlaylist.Rotation = 0;
             this.bAddPlaylist.ShowActiveImage = false;
@@ -321,7 +321,7 @@
             this.bAddPlaylist.ShowSizeMarkers = false;
             this.bAddPlaylist.Size = new System.Drawing.Size(47, 43);
             this.bAddPlaylist.TabIndex = 42;
-            this.bAddPlaylist.ToolTipText = "Tăng/Giảm âm lượng";
+            this.bAddPlaylist.ToolTipText = "Add to playlist";
             this.bAddPlaylist.WaitOnLoad = false;
             this.bAddPlaylist.Zoom = 0;
             this.bAddPlaylist.ZoomSpeed = 10;
@@ -351,7 +351,7 @@
             this.bShuffle.ImageZoomSize = new System.Drawing.Size(40, 37);
             this.bShuffle.InitialImage = null;
             this.bShuffle.Location = new System.Drawing.Point(487, 18);
-            this.bShuffle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bShuffle.Margin = new System.Windows.Forms.Padding(4);
             this.bShuffle.Name = "bShuffle";
             this.bShuffle.Rotation = 0;
             this.bShuffle.ShowActiveImage = false;
@@ -360,7 +360,7 @@
             this.bShuffle.ShowSizeMarkers = false;
             this.bShuffle.Size = new System.Drawing.Size(40, 37);
             this.bShuffle.TabIndex = 41;
-            this.bShuffle.ToolTipText = "Tăng/Giảm âm lượng";
+            this.bShuffle.ToolTipText = "Shuffle";
             this.bShuffle.WaitOnLoad = false;
             this.bShuffle.Zoom = 0;
             this.bShuffle.ZoomSpeed = 10;
@@ -389,7 +389,7 @@
             this.bRepeat.ImageZoomSize = new System.Drawing.Size(40, 37);
             this.bRepeat.InitialImage = null;
             this.bRepeat.Location = new System.Drawing.Point(692, 18);
-            this.bRepeat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bRepeat.Margin = new System.Windows.Forms.Padding(4);
             this.bRepeat.Name = "bRepeat";
             this.bRepeat.Rotation = 0;
             this.bRepeat.ShowActiveImage = false;
@@ -398,7 +398,7 @@
             this.bRepeat.ShowSizeMarkers = false;
             this.bRepeat.Size = new System.Drawing.Size(40, 37);
             this.bRepeat.TabIndex = 40;
-            this.bRepeat.ToolTipText = "Tăng/Giảm âm lượng";
+            this.bRepeat.ToolTipText = "Loop";
             this.bRepeat.WaitOnLoad = false;
             this.bRepeat.Zoom = 0;
             this.bRepeat.ZoomSpeed = 10;
@@ -427,7 +427,7 @@
             this.bSkipPrevious.ImageZoomSize = new System.Drawing.Size(40, 37);
             this.bSkipPrevious.InitialImage = null;
             this.bSkipPrevious.Location = new System.Drawing.Point(535, 18);
-            this.bSkipPrevious.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bSkipPrevious.Margin = new System.Windows.Forms.Padding(4);
             this.bSkipPrevious.Name = "bSkipPrevious";
             this.bSkipPrevious.Rotation = 0;
             this.bSkipPrevious.ShowActiveImage = false;
@@ -436,7 +436,7 @@
             this.bSkipPrevious.ShowSizeMarkers = false;
             this.bSkipPrevious.Size = new System.Drawing.Size(40, 37);
             this.bSkipPrevious.TabIndex = 39;
-            this.bSkipPrevious.ToolTipText = "Tăng/Giảm âm lượng";
+            this.bSkipPrevious.ToolTipText = "Previous";
             this.bSkipPrevious.WaitOnLoad = false;
             this.bSkipPrevious.Zoom = 0;
             this.bSkipPrevious.ZoomSpeed = 10;
@@ -465,7 +465,7 @@
             this.bSkipNext.ImageZoomSize = new System.Drawing.Size(40, 37);
             this.bSkipNext.InitialImage = null;
             this.bSkipNext.Location = new System.Drawing.Point(644, 18);
-            this.bSkipNext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bSkipNext.Margin = new System.Windows.Forms.Padding(4);
             this.bSkipNext.Name = "bSkipNext";
             this.bSkipNext.Rotation = 0;
             this.bSkipNext.ShowActiveImage = false;
@@ -474,7 +474,7 @@
             this.bSkipNext.ShowSizeMarkers = false;
             this.bSkipNext.Size = new System.Drawing.Size(40, 37);
             this.bSkipNext.TabIndex = 38;
-            this.bSkipNext.ToolTipText = "Tăng/Giảm âm lượng";
+            this.bSkipNext.ToolTipText = "Next";
             this.bSkipNext.WaitOnLoad = false;
             this.bSkipNext.Zoom = 0;
             this.bSkipNext.ZoomSpeed = 10;
@@ -485,9 +485,10 @@
             this.picImage.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picImage.AutoSizeHeight = true;
             this.picImage.BorderRadius = 0;
+            this.picImage.Image = ((System.Drawing.Image)(resources.GetObject("picImage.Image")));
             this.picImage.IsCircle = true;
             this.picImage.Location = new System.Drawing.Point(17, 12);
-            this.picImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picImage.Margin = new System.Windows.Forms.Padding(4);
             this.picImage.Name = "picImage";
             this.picImage.Size = new System.Drawing.Size(147, 147);
             this.picImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -518,7 +519,7 @@
             this.bPlay.ImageZoomSize = new System.Drawing.Size(53, 49);
             this.bPlay.InitialImage = null;
             this.bPlay.Location = new System.Drawing.Point(583, 12);
-            this.bPlay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bPlay.Margin = new System.Windows.Forms.Padding(4);
             this.bPlay.Name = "bPlay";
             this.bPlay.Rotation = 0;
             this.bPlay.ShowActiveImage = false;
@@ -527,7 +528,7 @@
             this.bPlay.ShowSizeMarkers = false;
             this.bPlay.Size = new System.Drawing.Size(53, 49);
             this.bPlay.TabIndex = 106;
-            this.bPlay.ToolTipText = "Tăng/Giảm âm lượng";
+            this.bPlay.ToolTipText = "Pause";
             this.bPlay.WaitOnLoad = false;
             this.bPlay.Zoom = 0;
             this.bPlay.ZoomSpeed = 10;
@@ -555,7 +556,7 @@
             this.bPause.ImageZoomSize = new System.Drawing.Size(53, 49);
             this.bPause.InitialImage = null;
             this.bPause.Location = new System.Drawing.Point(583, 12);
-            this.bPause.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bPause.Margin = new System.Windows.Forms.Padding(4);
             this.bPause.Name = "bPause";
             this.bPause.Rotation = 0;
             this.bPause.ShowActiveImage = false;
@@ -564,7 +565,7 @@
             this.bPause.ShowSizeMarkers = false;
             this.bPause.Size = new System.Drawing.Size(53, 49);
             this.bPause.TabIndex = 141;
-            this.bPause.ToolTipText = "Tăng/Giảm âm lượng";
+            this.bPause.ToolTipText = "Playing";
             this.bPause.WaitOnLoad = false;
             this.bPause.Zoom = 0;
             this.bPause.ZoomSpeed = 10;
@@ -589,7 +590,7 @@
             this.Controls.Add(this.lTime1);
             this.Controls.Add(this.lNameSong);
             this.Controls.Add(this.ucPlaymusic);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "USCPlay";
             this.Size = new System.Drawing.Size(1057, 161);
             ((System.ComponentModel.ISupportInitialize)(this.picImage)).EndInit();

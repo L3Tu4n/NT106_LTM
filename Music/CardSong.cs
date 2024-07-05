@@ -15,6 +15,7 @@ namespace Music
         private Homepage _homepageControl;
         private Search _searchControl;
         private USCSinger _singerControl;
+        private USCAlbum _albumControl;
         public CardSong()
         {
             InitializeComponent();
@@ -150,6 +151,32 @@ namespace Music
                 PlayMusicSearch();
             };
         }
+        public CardSong(string stt, string imageUrl, string namesong, string nameartist, string namealbum, string duration, string fs_path, USCAlbum albumControl)
+        {
+            InitializeComponent();
+            _albumControl = albumControl;
+            _trackUrl = fs_path;
+
+            // Gán các giá trị cho các thuộc tính
+            lNumber.Text = FormatTrackNumber(stt);
+            picImage.ImageLocation = imageUrl;
+            lNameSong.Text = namesong;
+            lNameSinger.Text = nameartist;
+            lNameAlbum.Text = namealbum;
+            lTime.Text = duration;
+
+            bPause.Visible = false;
+
+            bPause.Click += (sender, e) =>
+            {
+                PauseMusicAlbum();
+            };
+
+            bPlay.Click += (sender, e) =>
+            {
+                PlayMusicAlbum();
+            };
+        }
         private string FormatTrackNumber(string stt)
         {
             if (int.TryParse(stt, out int number))
@@ -175,17 +202,15 @@ namespace Music
         }
         private void PlayMusicHomepage()
         {
-
+            _homepageControl.PlayMusic(_trackUrl, picImage.ImageLocation, lNameSong.Text, lNameSinger.Text, lTime.Text);
         }
         private void PlayMusicSearch()
         {
-
+            _searchControl.PlayMusic(_trackUrl, picImage.ImageLocation, lNameSong.Text, lNameSinger.Text, lTime.Text);
         }
         private void PlayMusicAlbum()
         {
-
-        }
-        private void PlayMusicArtist() { 
+            _albumControl.PlayMusic(_trackUrl, picImage.ImageLocation, lNameSong.Text, lNameSinger.Text, lTime.Text);
         }
         private void PauseMusicRank()
         {
@@ -200,13 +225,16 @@ namespace Music
         {
             _singerControl.PauseMusicSinger();
         }
-        private void PauseMusicHomepage() { }
+        private void PauseMusicHomepage() {
+            _homepageControl.PauseMusicHomepage();
+        }
         private void PauseMusicSearch()
         {
-
+            _searchControl.PauseMusicSearch();
         }
-        private void PauseMusicAlbum() { }
-        private void PauseMusicArtist() { }
+        private void PauseMusicAlbum() {
+            _albumControl.PauseMusicAlbum();
+        }
         public void ShowPlayButton()
         {
             bPlay.Visible = true;

@@ -191,6 +191,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="avtkaraoke.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="avtkaraoke.Designer.cs">
+      <DependentUpon>avtkaraoke.cs</DependentUpon>
+    </Compile>
     <Compile Include="SharedData.cs" />
     <Compile Include="AddTrack.cs">
       <SubType>Form</SubType>
@@ -253,12 +259,6 @@
     </Compile>
     <Compile Include="Homepage.Designer.cs">
       <DependentUpon>Homepage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KaraokeRoom.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="KaraokeRoom.Designer.cs">
-      <DependentUpon>KaraokeRoom.cs</DependentUpon>
     </Compile>
     <Compile Include="List.cs">
       <SubType>UserControl</SubType>
@@ -366,6 +366,9 @@
     <EmbeddedResource Include="Artist.resx">
       <DependentUpon>Artist.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="avtkaraoke.resx">
+      <DependentUpon>avtkaraoke.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CardSong.resx">
       <DependentUpon>CardSong.cs</DependentUpon>
     </EmbeddedResource>
@@ -389,9 +392,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Homepage.resx">
       <DependentUpon>Homepage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KaraokeRoom.resx">
-      <DependentUpon>KaraokeRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="List.resx">
       <DependentUpon>List.cs</DependentUpon>

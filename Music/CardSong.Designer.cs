@@ -59,12 +59,12 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 6;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 332F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 360F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 107F));
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel3, 2, 0);
@@ -76,7 +76,7 @@
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1057, 80);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -87,34 +87,32 @@
             this.panel1.Location = new System.Drawing.Point(4, 4);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(51, 72);
+            this.panel1.Size = new System.Drawing.Size(73, 72);
             this.panel1.TabIndex = 0;
             // 
             // lNumber
             // 
             this.lNumber.AllowParentOverrides = false;
             this.lNumber.AutoEllipsis = false;
-            this.lNumber.AutoSize = false;
-            this.lNumber.AutoSizeHeightOnly = true;
             this.lNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
             this.lNumber.CursorType = null;
-            this.lNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lNumber.ForeColor = System.Drawing.Color.White;
-            this.lNumber.Location = new System.Drawing.Point(16, 5);
+            this.lNumber.Location = new System.Drawing.Point(13, 1);
             this.lNumber.Margin = new System.Windows.Forms.Padding(0);
             this.lNumber.Name = "lNumber";
             this.lNumber.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lNumber.Size = new System.Drawing.Size(31, 48);
+            this.lNumber.Size = new System.Drawing.Size(26, 53);
             this.lNumber.TabIndex = 150;
             this.lNumber.Text = "1";
-            this.lNumber.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lNumber.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.lNumber.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.picImage);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(63, 4);
+            this.panel2.Location = new System.Drawing.Point(85, 4);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(92, 72);
@@ -142,7 +140,7 @@
             this.panel3.Controls.Add(this.bPlay);
             this.panel3.Controls.Add(this.bPause);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(163, 4);
+            this.panel3.Location = new System.Drawing.Point(185, 4);
             this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(69, 72);
@@ -180,7 +178,7 @@
             this.bPlay.ShowSizeMarkers = false;
             this.bPlay.Size = new System.Drawing.Size(53, 49);
             this.bPlay.TabIndex = 105;
-            this.bPlay.ToolTipText = "Tăng/Giảm âm lượng";
+            this.bPlay.ToolTipText = "Pause";
             this.bPlay.WaitOnLoad = false;
             this.bPlay.Zoom = 0;
             this.bPlay.ZoomSpeed = 10;
@@ -217,7 +215,7 @@
             this.bPause.ShowSizeMarkers = false;
             this.bPause.Size = new System.Drawing.Size(53, 49);
             this.bPause.TabIndex = 140;
-            this.bPause.ToolTipText = "Tăng/Giảm âm lượng";
+            this.bPause.ToolTipText = "Playing";
             this.bPause.WaitOnLoad = false;
             this.bPause.Zoom = 0;
             this.bPause.ZoomSpeed = 10;
@@ -227,7 +225,7 @@
             this.panel4.Controls.Add(this.lNameSinger);
             this.panel4.Controls.Add(this.lNameSong);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(240, 4);
+            this.panel4.Location = new System.Drawing.Point(262, 4);
             this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(324, 72);
@@ -348,7 +346,7 @@
             // 
             this.panel5.Controls.Add(this.lNameAlbum);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(572, 4);
+            this.panel5.Location = new System.Drawing.Point(594, 4);
             this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(352, 72);
@@ -452,10 +450,10 @@
             // 
             this.panel6.Controls.Add(this.lTime);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(932, 4);
+            this.panel6.Location = new System.Drawing.Point(954, 4);
             this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(121, 72);
+            this.panel6.Size = new System.Drawing.Size(99, 72);
             this.panel6.TabIndex = 5;
             // 
             // lTime
@@ -467,7 +465,7 @@
             this.lTime.CursorType = null;
             this.lTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lTime.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lTime.Location = new System.Drawing.Point(24, 22);
+            this.lTime.Location = new System.Drawing.Point(20, 22);
             this.lTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lTime.Name = "lTime";
             this.lTime.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -484,11 +482,12 @@
             this.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
             this.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(216)))), ((int)(((byte)(87)))));
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(0);
+            this.Margin = new System.Windows.Forms.Padding(0, 0, 0, 6);
             this.Name = "CardSong";
             this.Size = new System.Drawing.Size(1057, 84);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picImage)).EndInit();
             this.panel3.ResumeLayout(false);

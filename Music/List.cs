@@ -132,7 +132,7 @@ namespace Music
                 ShowInformation($"An error occurred: {ex.Message}");
             }
         }
-        public void PlayMusic(string trackUrl, string trackImage, string trackName, string trackArtist, string trackDuration)
+        public async void PlayMusic(string trackUrl, string trackImage, string trackName, string trackArtist, string trackDuration)
         {
             try
             {
@@ -183,6 +183,14 @@ namespace Music
                     //flowLayoutPanel2.Controls.Add(uscPlay);
                     uscPlay.UpdateRepeatShuffleState(isRepeatOn, isShuffleOn);
                     uscPlay.StartTimerList();
+                    var endpoint = $"http://localhost:9999/v1/Track/increment/{Uri.EscapeDataString(trackName)}";
+                    var content = new StringContent("", Encoding.UTF8, "application/json");
+                    var response = await httpClient.PostAsync(endpoint, content);
+
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        MessageBox.Show("Failed to increment listen count for track: " + trackName);
+                    }
                 }
             }
             catch (Exception ex)
@@ -230,7 +238,7 @@ namespace Music
                 _isPaused = false;
             }
 
-            ParentForm?.RemoveUSCPlay();
+            //ParentForm?.RemoveUSCPlay();
         }
         private void PlayRandomMusic()
         {
