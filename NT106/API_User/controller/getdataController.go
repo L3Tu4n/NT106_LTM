@@ -30,6 +30,7 @@ type Album struct {
 	IMAGE        sql.NullString `json:"IMAGE" db:"album_images"`
 	ARTIST_NAME  string         `json:"ARTIST_NAME" db:"artist_name"` // Thêm trường ARTIST_NAME
 }
+
 type Artist struct {
 	ID    string         `json:"ID" db:"id"`
 	NAME  string         `json:"NAME" db:"name"`
@@ -349,4 +350,29 @@ func GetTracksByAlbumName(c *gin.Context) {
 		return
 	}
 	c.JSON(http.StatusOK, tracks)
+}
+
+func IncrementListenCount(c *gin.Context) {
+	trackName := c.Param("nametrack")
+
+	result, err := db.Exec("UPDATE Tracks SET listen_count = COALESCE(listen_count, 0) + 1 WHERE name = ?", trackName)
+	if err != nil {
+		log.Println(err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to update listen count"})
+		return
+	}
+
+	rowsAffected, err := result.RowsAffected()
+	if err != nil {
+		log.Println(err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to get rows affected"})
+		return
+	}
+
+	if rowsAffected == 0 {
+		c.JSON(http.StatusNotFound, gin.H{"error": "Track not found"})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"message": "Listen count increased successfully"})
 }

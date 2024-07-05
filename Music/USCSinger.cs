@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Net;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Music;
@@ -65,7 +66,7 @@ namespace Music
             httpClient = new HttpClient();
         }
 
-        public void PlayMusic(string trackUrl, string trackImage, string trackName, string trackArtist, string trackDuration)
+        public async void PlayMusic(string trackUrl, string trackImage, string trackName, string trackArtist, string trackDuration)
         {
             try
             {
@@ -115,6 +116,15 @@ namespace Music
                     uscPlay.UpdateRepeatShuffleState(isRepeatOn, isShuffleOn);
 
                     uscPlay.StartTimerSinger();
+
+                    var endpoint = $"http://localhost:9999/v1/Track/increment/{Uri.EscapeDataString(trackName)}";
+                    var content = new StringContent("", Encoding.UTF8, "application/json");
+                    var response = await httpClient.PostAsync(endpoint, content);
+
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        MessageBox.Show("Failed to increment listen count for track: " + trackName);
+                    }
                 }
             }
             catch (Exception ex)
