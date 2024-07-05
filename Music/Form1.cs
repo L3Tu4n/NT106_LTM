@@ -93,16 +93,6 @@ namespace Music
             search.ParentForm = this;
             addUserControl(search);
         }
-        private void btCreateRoom_Click(object sender, EventArgs e)
-        {
-            Room room = new Room();
-            addUserControl(room);
-        }
-
-        private void btJoinRoom_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void openTimer_Tick(object sender, EventArgs e)
         {
@@ -154,6 +144,25 @@ namespace Music
             PlayingControl = control;
         }
 
+        private void btJoinRoom_Click(object sender, EventArgs e)
+        {
+            string roomId = tbRoomID.Text;
+            if (string.IsNullOrEmpty(roomId))
+            {
+                lbError.Text = "Vui lòng nhập ID Room"; // lbError là Label để hiển thị lỗi
+            }
+            else
+            {
+                Room room = new Room(roomId);
+                addUserControl(room);
+                lbError.Text = string.Empty; // Xóa thông báo lỗi nếu có
+            }
+        }
 
+        private void btCreateRoom_Click_1(object sender, EventArgs e)
+        {
+            Room room = new Room();
+            addUserControl(room);
+        }
     }
 }

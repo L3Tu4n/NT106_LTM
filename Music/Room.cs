@@ -30,7 +30,7 @@ namespace Music
         private string name;
         private string image;
         private string[] paths, files;
-        private bool isMicOn = true;
+
 
         public Room()
         {
@@ -263,7 +263,13 @@ namespace Music
         }
         private void PlayVideoOnClient(string videoPath)
         {
-            // Mở và phát video tại videoPath
+            // Kiểm tra và tắt video hiện tại nếu đang phát
+            if (player.playState == WMPLib.WMPPlayState.wmppsPlaying)
+            {
+                player.Ctlcontrols.stop();
+            }
+
+            // Mở và phát video mới tại videoPath
             player.URL = videoPath;
             player.Ctlcontrols.play();
         }
@@ -389,6 +395,12 @@ namespace Music
                 MessageBox.Show($"Error sending message: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void player_Enter(object sender, EventArgs e)
+        {
+
+        }
+
         private void SendVideoControlMessage(string action, int currentTime)
         {
             var data = new
